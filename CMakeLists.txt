@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.10)
+
+project(Tetris)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
+
+include_directories(${PROJECT_SOURCE_DIR}/src/gui)
+
+include_directories(${PROJECT_SOURCE_DIR}/src/main)
+
+add_executable(tetris 
+    src/main/main.cpp
+    src/gui/TetrisGui.cpp
+)
+
+target_link_libraries(tetris sfml-graphics sfml-window sfml-system)
+
+enable_testing()
