@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/tetris.dir/src/main/main.cpp.o CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o -o tetris  /usr/lib64/libsfml-graphics.so.2.6.1 /usr/lib64/libsfml-window.so.2.6.1 /usr/lib64/libsfml-system.so.2.6.1 
+/usr/bin/c++ CMakeFiles/tetris.dir/src/main/main.cpp.o CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o CMakeFiles/tetris.dir/src/grid/Grid.cpp.o CMakeFiles/tetris.dir/src/grid/Coords.cpp.o -o tetris  /usr/lib64/libsfml-graphics.so.2.6.1 /usr/lib64/libsfml-window.so.2.6.1 /usr/lib64/libsfml-system.so.2.6.1 

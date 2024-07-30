@@ -1,6 +1,8 @@
+#pragma once
 #include <SFML/Graphics.hpp>
 #include <memory>
 #include <string>
+#include "Grid.h"
 
 class TetrisGui {
     public:
@@ -10,7 +12,7 @@ class TetrisGui {
     bool is_running();
     void handle_events();
     void update();
-    void render();
+    void render(Grid grid);
 
     private:
     sf::RenderWindow window;

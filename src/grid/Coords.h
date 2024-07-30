@@ -1,6 +1,7 @@
+#pragma once
 #include <stdexcept>
 
-struct Coords {
+class Coords {
     public:
     Coords(int x, int y);
 

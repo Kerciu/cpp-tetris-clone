@@ -4,6 +4,7 @@ TetrisGui::TetrisGui(std::string window_name, int width, int height)
     : window(sf::VideoMode(width, height), window_name)
 {
     window.setFramerateLimit(60);
+    
 }
 
 bool TetrisGui::is_running()
@@ -21,13 +22,13 @@ void TetrisGui::handle_events()
     }
 }
 
-void TetrisGui::render()
+void TetrisGui::render(Grid grid)
 {
-    window.clear();
+    window.clear(sf::Color(44, 44, 127, 255));
+    grid.display(&window);
     window.display();
 }
 
 void TetrisGui::update()
 {
 }
-

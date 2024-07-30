@@ -9,11 +9,15 @@ find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
 
 include_directories(${PROJECT_SOURCE_DIR}/src/gui)
 
+include_directories(${PROJECT_SOURCE_DIR}/src/grid)
+
 include_directories(${PROJECT_SOURCE_DIR}/src/main)
 
 add_executable(tetris 
     src/main/main.cpp
     src/gui/TetrisGui.cpp
+    src/grid/Grid.cpp
+    src/grid/Coords.cpp
 )
 
 target_link_libraries(tetris sfml-graphics sfml-window sfml-system)

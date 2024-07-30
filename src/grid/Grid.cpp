@@ -2,9 +2,6 @@
 
 Grid::Grid()
 {
-    num_rows = 20;
-    num_cols = 10;
-    cell_size = 30;
     initialize_grid();
     grid_colors = initialize_colors();
 }
@@ -26,18 +23,20 @@ void Grid::draw_grid_rectangle(sf::RenderWindow* window, int row, int col) {
 sf::RectangleShape Grid::create_rectangle(int row, int col) {
     int cell_val = grid_distribution[row][col];
     sf::Color current_color = grid_colors[cell_val];
-    Coords coords(col * cell_size, row * cell_size);
+    Coords coords(col * cell_size + OFFSET, row * cell_size + OFFSET);
 
-    sf::RectangleShape rectangle(sf::Vector2f(cell_size, cell_size));
+    sf::RectangleShape rectangle(sf::Vector2f(cell_size - OFFSET, cell_size - OFFSET));
 
     rectangle.setFillColor(current_color);
-    rectangle.setPosition(coords.get_x(), coords.get_y());
+    rectangle.setPosition(sf::Vector2f(coords.get_x(), coords.get_y()));
     return rectangle;
 }
 
 void Grid::initialize_grid()
 {
-    std::fill(grid_distribution.begin(), grid_distribution.end(), 0);
+    for (auto& row : grid_distribution) {
+        row.fill(0);
+    }
 }
 
 std::vector<sf::Color> Grid::initialize_colors() {

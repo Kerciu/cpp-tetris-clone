@@ -139,6 +139,54 @@ tetris/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/build
 .PHONY : tetris/fast
 
+src/grid/Coords.o: src/grid/Coords.cpp.o
+.PHONY : src/grid/Coords.o
+
+# target to build an object file
+src/grid/Coords.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/grid/Coords.cpp.o
+.PHONY : src/grid/Coords.cpp.o
+
+src/grid/Coords.i: src/grid/Coords.cpp.i
+.PHONY : src/grid/Coords.i
+
+# target to preprocess a source file
+src/grid/Coords.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/grid/Coords.cpp.i
+.PHONY : src/grid/Coords.cpp.i
+
+src/grid/Coords.s: src/grid/Coords.cpp.s
+.PHONY : src/grid/Coords.s
+
+# target to generate assembly for a file
+src/grid/Coords.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/grid/Coords.cpp.s
+.PHONY : src/grid/Coords.cpp.s
+
+src/grid/Grid.o: src/grid/Grid.cpp.o
+.PHONY : src/grid/Grid.o
+
+# target to build an object file
+src/grid/Grid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/grid/Grid.cpp.o
+.PHONY : src/grid/Grid.cpp.o
+
+src/grid/Grid.i: src/grid/Grid.cpp.i
+.PHONY : src/grid/Grid.i
+
+# target to preprocess a source file
+src/grid/Grid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/grid/Grid.cpp.i
+.PHONY : src/grid/Grid.cpp.i
+
+src/grid/Grid.s: src/grid/Grid.cpp.s
+.PHONY : src/grid/Grid.s
+
+# target to generate assembly for a file
+src/grid/Grid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/grid/Grid.cpp.s
+.PHONY : src/grid/Grid.cpp.s
+
 src/gui/TetrisGui.o: src/gui/TetrisGui.cpp.o
 .PHONY : src/gui/TetrisGui.o
 
@@ -197,6 +245,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... tetris"
+	@echo "... src/grid/Coords.o"
+	@echo "... src/grid/Coords.i"
+	@echo "... src/grid/Coords.s"
+	@echo "... src/grid/Grid.o"
+	@echo "... src/grid/Grid.i"
+	@echo "... src/grid/Grid.s"
 	@echo "... src/gui/TetrisGui.o"
 	@echo "... src/gui/TetrisGui.i"
 	@echo "... src/gui/TetrisGui.s"
