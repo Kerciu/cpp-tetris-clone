@@ -452,6 +452,8 @@ CMakeFiles/tetris.dir/src/grid/Grid.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/g
   /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h
 
 CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.cpp \
+  /home/kerciu/Desktop/tetris-cpp/src/grid/Coords.h \
+  /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.h \
   /home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.h \
   /usr/include/SFML/Config.hpp \
   /usr/include/SFML/Graphics.hpp \
@@ -595,6 +597,7 @@ CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o: /home/kerciu/Desktop/tetris-cpp/s
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
   /usr/include/c++/14/algorithm \
+  /usr/include/c++/14/array \
   /usr/include/c++/14/backward/auto_ptr.h \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
@@ -683,6 +686,7 @@ CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o: /home/kerciu/Desktop/tetris-cpp/s
   /usr/include/c++/14/cctype \
   /usr/include/c++/14/cerrno \
   /usr/include/c++/14/clocale \
+  /usr/include/c++/14/compare \
   /usr/include/c++/14/concepts \
   /usr/include/c++/14/cstddef \
   /usr/include/c++/14/cstdio \

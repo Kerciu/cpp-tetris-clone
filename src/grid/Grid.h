@@ -5,14 +5,21 @@
 
 class Grid {
     public:
+    typedef std::array<std::array<int, 10>, 20> distribution;
+    typedef std::vector<sf::Color> color_vector;
+
     Grid();
     ~Grid() = default;
 
     void display(sf::RenderWindow* window);
+    distribution get_grid_distribution();
+    color_vector get_colors();
+    void set_grid_distribution(distribution new_distribution);
+    void set_colors(color_vector new_grid_colors);
 
     private:
-    std::array<std::array<int, 10>, 20> grid_distribution;
-    std::vector<sf::Color> grid_colors;
+    distribution grid_distribution;
+    color_vector grid_colors;
     static const int OFFSET = 1;
     static const int num_rows = 20;
     static const int num_cols = 10;

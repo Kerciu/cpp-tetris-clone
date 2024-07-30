@@ -51,3 +51,19 @@ std::vector<sf::Color> Grid::initialize_colors() {
         sf::Color::Blue             // blue
     };
 }
+
+Grid::distribution Grid::get_grid_distribution() {
+    return grid_distribution;
+}
+
+Grid::color_vector Grid::get_colors() {
+    return grid_colors;
+}
+
+void Grid::set_grid_distribution(distribution new_distribution) {
+    grid_distribution = new_distribution;
+}
+
+void Grid::set_colors(color_vector new_grid_colors) {
+    grid_colors = new_grid_colors;
+}
