@@ -10,5 +10,6 @@ extern const sf::Color yellow;
 extern const sf::Color magenta;
 extern const sf::Color cyan;
 extern const sf::Color blue;
+extern const int OFFSET = 1;
 
 std::vector<sf::Color> get_cell_colors();

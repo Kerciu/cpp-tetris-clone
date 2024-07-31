@@ -23,7 +23,6 @@ class Grid {
     private:
     distribution grid_distribution;
     color_vector grid_colors;
-    static const int OFFSET = 1;
     static const int num_rows = 20;
     static const int num_cols = 10;
     static const int cell_size = 30;

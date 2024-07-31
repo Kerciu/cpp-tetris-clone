@@ -12,14 +12,16 @@ class Block {
 
     Block();
 
-    virtual void draw_block() = 0;
+    virtual void draw_block(sf::RenderWindow* window);
     virtual std::vector<position_vector> create_position_vec() = 0;
 
     int get_block_id();
     int get_cell_size();
     rotation_state get_rotation_state();
+    color_vector get_color_vector();
     void set_block_id(int block_id);
     std::map<rotation_state, position_vector>* get_cells_ptr();
+    void initialize_posiiton_states();
 
     private:
     int block_id;
