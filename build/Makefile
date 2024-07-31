@@ -139,6 +139,78 @@ tetris/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/build
 .PHONY : tetris/fast
 
+src/blocks/Block.o: src/blocks/Block.cpp.o
+.PHONY : src/blocks/Block.o
+
+# target to build an object file
+src/blocks/Block.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/blocks/Block.cpp.o
+.PHONY : src/blocks/Block.cpp.o
+
+src/blocks/Block.i: src/blocks/Block.cpp.i
+.PHONY : src/blocks/Block.i
+
+# target to preprocess a source file
+src/blocks/Block.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/blocks/Block.cpp.i
+.PHONY : src/blocks/Block.cpp.i
+
+src/blocks/Block.s: src/blocks/Block.cpp.s
+.PHONY : src/blocks/Block.s
+
+# target to generate assembly for a file
+src/blocks/Block.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/blocks/Block.cpp.s
+.PHONY : src/blocks/Block.cpp.s
+
+src/blocks/Blocks.o: src/blocks/Blocks.cpp.o
+.PHONY : src/blocks/Blocks.o
+
+# target to build an object file
+src/blocks/Blocks.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/blocks/Blocks.cpp.o
+.PHONY : src/blocks/Blocks.cpp.o
+
+src/blocks/Blocks.i: src/blocks/Blocks.cpp.i
+.PHONY : src/blocks/Blocks.i
+
+# target to preprocess a source file
+src/blocks/Blocks.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/blocks/Blocks.cpp.i
+.PHONY : src/blocks/Blocks.cpp.i
+
+src/blocks/Blocks.s: src/blocks/Blocks.cpp.s
+.PHONY : src/blocks/Blocks.s
+
+# target to generate assembly for a file
+src/blocks/Blocks.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/blocks/Blocks.cpp.s
+.PHONY : src/blocks/Blocks.cpp.s
+
+src/colors/colors.o: src/colors/colors.cpp.o
+.PHONY : src/colors/colors.o
+
+# target to build an object file
+src/colors/colors.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/colors/colors.cpp.o
+.PHONY : src/colors/colors.cpp.o
+
+src/colors/colors.i: src/colors/colors.cpp.i
+.PHONY : src/colors/colors.i
+
+# target to preprocess a source file
+src/colors/colors.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/colors/colors.cpp.i
+.PHONY : src/colors/colors.cpp.i
+
+src/colors/colors.s: src/colors/colors.cpp.s
+.PHONY : src/colors/colors.s
+
+# target to generate assembly for a file
+src/colors/colors.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/colors/colors.cpp.s
+.PHONY : src/colors/colors.cpp.s
+
 src/grid/Coords.o: src/grid/Coords.cpp.o
 .PHONY : src/grid/Coords.o
 
@@ -245,6 +317,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... tetris"
+	@echo "... src/blocks/Block.o"
+	@echo "... src/blocks/Block.i"
+	@echo "... src/blocks/Block.s"
+	@echo "... src/blocks/Blocks.o"
+	@echo "... src/blocks/Blocks.i"
+	@echo "... src/blocks/Blocks.s"
+	@echo "... src/colors/colors.o"
+	@echo "... src/colors/colors.i"
+	@echo "... src/colors/colors.s"
 	@echo "... src/grid/Coords.o"
 	@echo "... src/grid/Coords.i"
 	@echo "... src/grid/Coords.s"

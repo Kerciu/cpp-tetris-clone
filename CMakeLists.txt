@@ -18,6 +18,9 @@ add_executable(tetris
     src/gui/TetrisGui.cpp
     src/grid/Grid.cpp
     src/grid/Coords.cpp
+    src/colors/colors.cpp
+    src/blocks/Block.cpp
+    src/blocks/Blocks.cpp
 )
 
 target_link_libraries(tetris sfml-graphics sfml-window sfml-system)

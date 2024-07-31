@@ -8,6 +8,7 @@ const sf::Color yellow = sf::Color::Yellow;
 const sf::Color magenta = sf::Color::Magenta;
 const sf::Color cyan = sf::Color::Cyan;
 const sf::Color blue = sf::Color::Blue;
+const int OFFSET = 1;
 
 
 std::vector<sf::Color> get_cell_colors()

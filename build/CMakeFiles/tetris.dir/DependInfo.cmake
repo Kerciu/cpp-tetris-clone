@@ -8,6 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/kerciu/Desktop/tetris-cpp/src/blocks/Block.cpp" "CMakeFiles/tetris.dir/src/blocks/Block.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/blocks/Block.cpp.o.d"
+  "/home/kerciu/Desktop/tetris-cpp/src/blocks/Blocks.cpp" "CMakeFiles/tetris.dir/src/blocks/Blocks.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/blocks/Blocks.cpp.o.d"
+  "/home/kerciu/Desktop/tetris-cpp/src/colors/colors.cpp" "CMakeFiles/tetris.dir/src/colors/colors.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/colors/colors.cpp.o.d"
   "/home/kerciu/Desktop/tetris-cpp/src/grid/Coords.cpp" "CMakeFiles/tetris.dir/src/grid/Coords.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/grid/Coords.cpp.o.d"
   "/home/kerciu/Desktop/tetris-cpp/src/grid/Grid.cpp" "CMakeFiles/tetris.dir/src/grid/Grid.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/grid/Grid.cpp.o.d"
   "/home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.cpp" "CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o.d"

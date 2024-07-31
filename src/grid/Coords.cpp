@@ -29,5 +29,5 @@ void Coords::set_y(int new_y)
 
 bool Coords::validate(int new_coord)
 {
-    return (new_coord > 0);
+    return (new_coord >= 0);
 }

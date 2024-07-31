@@ -11,9 +11,10 @@ class Block {
     typedef std::vector<sf::Color> color_vector;
 
     Block();
+    virtual ~Block() = default;
 
-    virtual void draw_block(sf::RenderWindow* window);
     virtual std::vector<position_vector> create_position_vec() = 0;
+    void draw_block(sf::RenderWindow* window);
 
     int get_block_id();
     int get_cell_size();
