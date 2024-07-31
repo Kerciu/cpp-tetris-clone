@@ -18,6 +18,7 @@ class Block {
     void draw_block(sf::RenderWindow* window);
 
     void move_block(offset rows, offset cols);
+    void spawn_in_the_middle(offset pos);
 
     Block::position_vector get_occupied_cell_positions();
 
@@ -27,7 +28,7 @@ class Block {
     color_vector get_color_vector();
     void set_block_id(int block_id);
     std::map<rotation_state, position_vector>* get_cells_ptr();
-    void initialize_position_states();
+    void initialize_position_states(offset pos);
 
     private:
     int block_id;

@@ -6,7 +6,7 @@ class LBlock : public Block {
     public:
     LBlock() {
         this->set_block_id(1); 
-        this->initialize_position_states();
+        this->initialize_position_states(3);
     }
 
     private:
@@ -24,7 +24,7 @@ class JBlock : public Block {
     public:
     JBlock() {
         this->set_block_id(2);
-        this->initialize_position_states();
+        this->initialize_position_states(3);
     }
 
     private:
@@ -42,7 +42,7 @@ class IBlock : public Block {
     public:
     IBlock() {
         this->set_block_id(3);
-        this->initialize_position_states();
+        this->initialize_position_states(3);
     }
 
     private:
@@ -60,7 +60,7 @@ class OBlock : public Block {
     public:
     OBlock() {
         this->set_block_id(4);
-        this->initialize_position_states();
+        this->initialize_position_states(4);
     }
 
     private:
@@ -78,7 +78,7 @@ class SBlock : public Block {
     public:
     SBlock() {
         this->set_block_id(5);
-        this->initialize_position_states();
+        this->initialize_position_states(3);
     }
 
     private:
@@ -96,7 +96,7 @@ class TBlock : public Block {
     public:
     TBlock() {
         this->set_block_id(6);
-        this->initialize_position_states();
+        this->initialize_position_states(3);
     }
 
     private:
@@ -114,7 +114,7 @@ class ZBlock : public Block {
     public:
     ZBlock() {
         this->set_block_id(7);
-        this->initialize_position_states();
+        this->initialize_position_states(3);
     }
 
     private:

@@ -37,10 +37,13 @@ std::map<Block::rotation_state, Block::position_vector> *Block::get_cells_ptr()
     return &cells;
 }
 
-void Block::initialize_position_states() {
+void Block::initialize_position_states(offset pos) {
     std::vector<position_vector> position_vec = create_position_vec();
-    for (int i = 0; i < 4; ++i)
+    for (int i = 0; i < 4; ++i) {
         (*this->get_cells_ptr())[i] = position_vec[i];
+    }
+    spawn_in_the_middle(pos);
+        
 }
 
 void Block::draw_block(sf::RenderWindow* window) {
@@ -77,4 +80,8 @@ Block::position_vector Block::get_occupied_cell_positions() {
     }
 
     return moved_tiles;
+}
+
+void Block::spawn_in_the_middle(offset pos) {
+    this->move_block(pos, 0);
 }
