@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/kerciu/Desktop/tetris-cpp/build",
+  "command": "/usr/bin/g++  -I/home/kerciu/Desktop/tetris-cpp/src/gui -I/home/kerciu/Desktop/tetris-cpp/src/grid -I/home/kerciu/Desktop/tetris-cpp/src/main -g -std=gnu++17 -o CMakeFiles/tetris.dir/src/main/main.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/main/main.cpp",
+  "file": "/home/kerciu/Desktop/tetris-cpp/src/main/main.cpp",
+  "output": "CMakeFiles/tetris.dir/src/main/main.cpp.o"
+},
+{
+  "directory": "/home/kerciu/Desktop/tetris-cpp/build",
+  "command": "/usr/bin/g++  -I/home/kerciu/Desktop/tetris-cpp/src/gui -I/home/kerciu/Desktop/tetris-cpp/src/grid -I/home/kerciu/Desktop/tetris-cpp/src/main -g -std=gnu++17 -o CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.cpp",
+  "file": "/home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.cpp",
+  "output": "CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o"
+},
+{
+  "directory": "/home/kerciu/Desktop/tetris-cpp/build",
+  "command": "/usr/bin/g++  -I/home/kerciu/Desktop/tetris-cpp/src/gui -I/home/kerciu/Desktop/tetris-cpp/src/grid -I/home/kerciu/Desktop/tetris-cpp/src/main -g -std=gnu++17 -o CMakeFiles/tetris.dir/src/grid/Grid.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.cpp",
+  "file": "/home/kerciu/Desktop/tetris-cpp/src/grid/Grid.cpp",
+  "output": "CMakeFiles/tetris.dir/src/grid/Grid.cpp.o"
+},
+{
+  "directory": "/home/kerciu/Desktop/tetris-cpp/build",
+  "command": "/usr/bin/g++  -I/home/kerciu/Desktop/tetris-cpp/src/gui -I/home/kerciu/Desktop/tetris-cpp/src/grid -I/home/kerciu/Desktop/tetris-cpp/src/main -g -std=gnu++17 -o CMakeFiles/tetris.dir/src/grid/Coords.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/grid/Coords.cpp",
+  "file": "/home/kerciu/Desktop/tetris-cpp/src/grid/Coords.cpp",
+  "output": "CMakeFiles/tetris.dir/src/grid/Coords.cpp.o"
+}
+]

@@ -16,6 +16,8 @@ class Grid {
     color_vector get_colors();
     void set_grid_distribution(distribution new_distribution);
     void set_colors(color_vector new_grid_colors);
+    int get_num_rows();
+    int get_num_cols();
 
     private:
     distribution grid_distribution;

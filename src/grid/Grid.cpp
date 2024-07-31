@@ -67,3 +67,13 @@ void Grid::set_grid_distribution(distribution new_distribution) {
 void Grid::set_colors(color_vector new_grid_colors) {
     grid_colors = new_grid_colors;
 }
+
+int Grid::get_num_rows()
+{
+    return num_rows;
+}
+
+int Grid::get_num_cols()
+{
+    return num_cols;
+}
