@@ -1,23 +1,38 @@
-#pragma once
-#include <vector>
-#include <map>
-#include "Coords.h"
+#include "Block.h"
 
-class Block {
-    public:
-    typedef int rotation_state;
-    typedef std::vector<Coords> position_vector;
+Block::Block()
+{
+    cell_size = 30;
+    rotation = 0;
+    colors = get_cell_colors();
+}
 
-    Block();
+void Block::draw_block()
+{
 
-    int get_block_id();
-    int get_cell_size();
-    rotation_state get_rotation_state();
-    void set_block_id(int block_id);
+}
 
-    private:
-    int block_id;
-    int cell_size;
-    rotation_state rotation_state;
-    std::map<rotation_state, position_vector> cells;
-};
+int Block::get_block_id()
+{
+    return block_id;
+}
+
+int Block::get_cell_size()
+{
+    return cell_size;
+}
+
+Block::rotation_state Block::get_rotation_state()
+{
+    return rotation;
+}
+
+void Block::set_block_id(int block_id)
+{
+    this->block_id = block_id;
+}
+
+std::map<Block::rotation_state, Block::position_vector> *Block::get_cells_ptr()
+{
+    return &cells;
+}
