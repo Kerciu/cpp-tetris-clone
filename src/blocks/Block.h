@@ -11,6 +11,10 @@ class Block {
     typedef std::vector<Coords> position_vector;
     typedef std::vector<sf::Color> color_vector;
 
+    enum class BlockType {
+        I_BLOCK, O_BLOCK, OTHER_BLOCK
+    };
+
     Block();
     virtual ~Block() = default;
 
@@ -18,7 +22,7 @@ class Block {
     void draw_block(sf::RenderWindow* window);
 
     void move_block(offset rows, offset cols);
-    void spawn_in_the_middle(offset pos);
+    void spawn_in_the_middle(BlockType type);
 
     Block::position_vector get_occupied_cell_positions();
 
@@ -28,7 +32,7 @@ class Block {
     color_vector get_color_vector();
     void set_block_id(int block_id);
     std::map<rotation_state, position_vector>* get_cells_ptr();
-    void initialize_position_states(offset pos);
+    void initialize_position_states(BlockType type);
 
     private:
     int block_id;

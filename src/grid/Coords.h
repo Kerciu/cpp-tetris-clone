@@ -14,6 +14,4 @@ class Coords {
     private:
     int x;
     int y;
-
-    bool validate(int new_coord);
 };
