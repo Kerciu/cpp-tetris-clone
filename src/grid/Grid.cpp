@@ -1,9 +1,10 @@
 #include "Grid.h"
+#include "colors.h"
 
 Grid::Grid()
 {
     initialize_grid();
-    grid_colors = initialize_colors();
+    grid_colors = get_cell_colors();
 }
 
 void Grid::display(sf::RenderWindow* window)
@@ -39,25 +40,8 @@ void Grid::initialize_grid()
     }
 }
 
-std::vector<sf::Color> Grid::initialize_colors() {
-    return {
-        sf::Color(26, 31, 40, 255), // dark grey
-        sf::Color::Green,           // green
-        sf::Color::Red,             // red
-        sf::Color(226, 116, 17, 255), // orange
-        sf::Color::Yellow,          // yellow
-        sf::Color::Magenta,         // magenta
-        sf::Color::Cyan,            // cyan
-        sf::Color::Blue             // blue
-    };
-}
-
 Grid::distribution Grid::get_grid_distribution() {
     return grid_distribution;
-}
-
-Grid::color_vector Grid::get_colors() {
-    return grid_colors;
 }
 
 void Grid::set_grid_distribution(distribution new_distribution) {
@@ -66,6 +50,11 @@ void Grid::set_grid_distribution(distribution new_distribution) {
 
 void Grid::set_colors(color_vector new_grid_colors) {
     grid_colors = new_grid_colors;
+}
+
+Grid::color_vector Grid::get_colors()
+{
+    return grid_colors;
 }
 
 int Grid::get_num_rows()

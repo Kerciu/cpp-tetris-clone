@@ -8,3 +8,8 @@ const sf::Color yellow = sf::Color::Yellow;
 const sf::Color magenta = sf::Color::Magenta;
 const sf::Color cyan = sf::Color::Cyan;
 const sf::Color blue = sf::Color::Blue;
+
+std::vector<sf::Color> get_cell_colors()
+{
+    return {dark_grey, green, red, orange, yellow, magenta, cyan, blue};
+}
