@@ -12,7 +12,8 @@ class Block {
 
     Block();
 
-    void draw_block();
+    virtual void draw_block() = 0;
+    virtual std::vector<position_vector> create_position_vec() = 0;
 
     int get_block_id();
     int get_cell_size();
