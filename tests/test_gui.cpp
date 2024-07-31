@@ -77,7 +77,7 @@ TEST_F(TetrisGuiTest, GridCreationDistributionGetter) {
 
 TEST_F(TetrisGuiTest, GridCreationDistributionSetter) {
     Grid grid;
-    Grid::distribution new_distribution = {{1, 2}, {3, 4}};
+    Grid::distribution new_distribution = {{1, 2}}; //std::array<std::array<int, 10>, 20>
     grid.set_grid_distribution(new_distribution);
     auto distribution = grid.get_grid_distribution();
     EXPECT_EQ(distribution, new_distribution);
