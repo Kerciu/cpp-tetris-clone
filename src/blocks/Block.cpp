@@ -1,6 +1,6 @@
 #include "Block.h"
 
-Block::Block()
+Block::Block() : cell_size(30), rotation(0), block_id(0)
 {
     cell_size = 30;
     rotation = 0;
@@ -37,7 +37,7 @@ std::map<Block::rotation_state, Block::position_vector> *Block::get_cells_ptr()
     return &cells;
 }
 
-void Block::initialize_posiiton_states() {
+void Block::initialize_position_states() {
     std::vector<position_vector> position_vec = create_position_vec();
     for (int i = 0; i < 4; ++i)
         (*this->get_cells_ptr())[i] = position_vec[i];

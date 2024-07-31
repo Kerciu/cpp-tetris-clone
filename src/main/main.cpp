@@ -7,7 +7,7 @@
 int main(int argc, char** argv) {
     std::unique_ptr<TetrisGui> tetris_gui = std::make_unique<TetrisGui>("Tetris", 300, 600);
     Grid grid;
-    LBlock lb = LBlock();
+    IBlock lb = IBlock();
 
     while(tetris_gui->is_running()) {
         tetris_gui->handle_events();

@@ -22,7 +22,7 @@ class Block {
     color_vector get_color_vector();
     void set_block_id(int block_id);
     std::map<rotation_state, position_vector>* get_cells_ptr();
-    void initialize_posiiton_states();
+    void initialize_position_states();
 
     private:
     int block_id;
