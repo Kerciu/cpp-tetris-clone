@@ -1,5 +1,4 @@
 #include "Grid.h"
-#include "../colors/colors.h"
 
 Grid::Grid()
 {

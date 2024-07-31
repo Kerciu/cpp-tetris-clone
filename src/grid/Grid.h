@@ -1,8 +1,8 @@
 #pragma once
 #include <array>
 #include <SFML/Graphics.hpp>
-#include "Coords.h"
-#include "../colors/colors.h"
+#include "../utils/Coords.h"
+#include "../utils/colors.h"
 
 class Grid {
     public:

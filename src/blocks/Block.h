@@ -1,8 +1,8 @@
 #pragma once
 #include <vector>
 #include <map>
-#include "../grid/Coords.h"
-#include "../colors/colors.h"
+#include "../utils/Coords.h"
+#include "../utils/colors.h"
 
 class Block {
     public:

@@ -17,8 +17,8 @@ add_executable(tetris
     src/main/main.cpp
     src/gui/TetrisGui.cpp
     src/grid/Grid.cpp
-    src/grid/Coords.cpp
-    src/colors/colors.cpp
+    src/utils/Coords.cpp
+    src/utils/colors.cpp
     src/blocks/Block.cpp
     src/blocks/Blocks.cpp
 )

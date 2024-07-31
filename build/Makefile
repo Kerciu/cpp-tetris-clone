@@ -187,54 +187,6 @@ src/blocks/Blocks.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/blocks/Blocks.cpp.s
 .PHONY : src/blocks/Blocks.cpp.s
 
-src/colors/colors.o: src/colors/colors.cpp.o
-.PHONY : src/colors/colors.o
-
-# target to build an object file
-src/colors/colors.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/colors/colors.cpp.o
-.PHONY : src/colors/colors.cpp.o
-
-src/colors/colors.i: src/colors/colors.cpp.i
-.PHONY : src/colors/colors.i
-
-# target to preprocess a source file
-src/colors/colors.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/colors/colors.cpp.i
-.PHONY : src/colors/colors.cpp.i
-
-src/colors/colors.s: src/colors/colors.cpp.s
-.PHONY : src/colors/colors.s
-
-# target to generate assembly for a file
-src/colors/colors.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/colors/colors.cpp.s
-.PHONY : src/colors/colors.cpp.s
-
-src/grid/Coords.o: src/grid/Coords.cpp.o
-.PHONY : src/grid/Coords.o
-
-# target to build an object file
-src/grid/Coords.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/grid/Coords.cpp.o
-.PHONY : src/grid/Coords.cpp.o
-
-src/grid/Coords.i: src/grid/Coords.cpp.i
-.PHONY : src/grid/Coords.i
-
-# target to preprocess a source file
-src/grid/Coords.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/grid/Coords.cpp.i
-.PHONY : src/grid/Coords.cpp.i
-
-src/grid/Coords.s: src/grid/Coords.cpp.s
-.PHONY : src/grid/Coords.s
-
-# target to generate assembly for a file
-src/grid/Coords.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/grid/Coords.cpp.s
-.PHONY : src/grid/Coords.cpp.s
-
 src/grid/Grid.o: src/grid/Grid.cpp.o
 .PHONY : src/grid/Grid.o
 
@@ -307,6 +259,54 @@ src/main/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/main/main.cpp.s
 .PHONY : src/main/main.cpp.s
 
+src/utils/Coords.o: src/utils/Coords.cpp.o
+.PHONY : src/utils/Coords.o
+
+# target to build an object file
+src/utils/Coords.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/Coords.cpp.o
+.PHONY : src/utils/Coords.cpp.o
+
+src/utils/Coords.i: src/utils/Coords.cpp.i
+.PHONY : src/utils/Coords.i
+
+# target to preprocess a source file
+src/utils/Coords.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/Coords.cpp.i
+.PHONY : src/utils/Coords.cpp.i
+
+src/utils/Coords.s: src/utils/Coords.cpp.s
+.PHONY : src/utils/Coords.s
+
+# target to generate assembly for a file
+src/utils/Coords.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/Coords.cpp.s
+.PHONY : src/utils/Coords.cpp.s
+
+src/utils/colors.o: src/utils/colors.cpp.o
+.PHONY : src/utils/colors.o
+
+# target to build an object file
+src/utils/colors.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/colors.cpp.o
+.PHONY : src/utils/colors.cpp.o
+
+src/utils/colors.i: src/utils/colors.cpp.i
+.PHONY : src/utils/colors.i
+
+# target to preprocess a source file
+src/utils/colors.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/colors.cpp.i
+.PHONY : src/utils/colors.cpp.i
+
+src/utils/colors.s: src/utils/colors.cpp.s
+.PHONY : src/utils/colors.s
+
+# target to generate assembly for a file
+src/utils/colors.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/colors.cpp.s
+.PHONY : src/utils/colors.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -323,12 +323,6 @@ help:
 	@echo "... src/blocks/Blocks.o"
 	@echo "... src/blocks/Blocks.i"
 	@echo "... src/blocks/Blocks.s"
-	@echo "... src/colors/colors.o"
-	@echo "... src/colors/colors.i"
-	@echo "... src/colors/colors.s"
-	@echo "... src/grid/Coords.o"
-	@echo "... src/grid/Coords.i"
-	@echo "... src/grid/Coords.s"
 	@echo "... src/grid/Grid.o"
 	@echo "... src/grid/Grid.i"
 	@echo "... src/grid/Grid.s"
@@ -338,6 +332,12 @@ help:
 	@echo "... src/main/main.o"
 	@echo "... src/main/main.i"
 	@echo "... src/main/main.s"
+	@echo "... src/utils/Coords.o"
+	@echo "... src/utils/Coords.i"
+	@echo "... src/utils/Coords.s"
+	@echo "... src/utils/colors.o"
+	@echo "... src/utils/colors.i"
+	@echo "... src/utils/colors.s"
 .PHONY : help
 
 

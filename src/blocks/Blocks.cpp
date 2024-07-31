@@ -1,6 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include "Block.h"
-#include "../grid/Coords.h"
+#include "../utils/Coords.h"
 
 class LBlock : public Block {
     public:

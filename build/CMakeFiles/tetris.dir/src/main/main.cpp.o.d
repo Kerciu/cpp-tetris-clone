@@ -227,7 +227,7 @@ CMakeFiles/tetris.dir/src/main/main.cpp.o: \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
  /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.h \
  /usr/include/c++/14/array /usr/include/c++/14/compare \
- /home/kerciu/Desktop/tetris-cpp/src/grid/Coords.h \
- /home/kerciu/Desktop/tetris-cpp/src/grid/../colors/colors.h \
+ /home/kerciu/Desktop/tetris-cpp/src/grid/../utils/Coords.h \
+ /home/kerciu/Desktop/tetris-cpp/src/grid/../utils/colors.h \
  /home/kerciu/Desktop/tetris-cpp/src/main/../gui/../blocks/Block.h \
  /home/kerciu/Desktop/tetris-cpp/src/main/../blocks/Blocks.cpp

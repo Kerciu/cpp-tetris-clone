@@ -10,11 +10,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/kerciu/Desktop/tetris-cpp/src/blocks/Block.cpp" "CMakeFiles/tetris.dir/src/blocks/Block.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/blocks/Block.cpp.o.d"
   "/home/kerciu/Desktop/tetris-cpp/src/blocks/Blocks.cpp" "CMakeFiles/tetris.dir/src/blocks/Blocks.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/blocks/Blocks.cpp.o.d"
-  "/home/kerciu/Desktop/tetris-cpp/src/colors/colors.cpp" "CMakeFiles/tetris.dir/src/colors/colors.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/colors/colors.cpp.o.d"
-  "/home/kerciu/Desktop/tetris-cpp/src/grid/Coords.cpp" "CMakeFiles/tetris.dir/src/grid/Coords.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/grid/Coords.cpp.o.d"
   "/home/kerciu/Desktop/tetris-cpp/src/grid/Grid.cpp" "CMakeFiles/tetris.dir/src/grid/Grid.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/grid/Grid.cpp.o.d"
   "/home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.cpp" "CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o.d"
   "/home/kerciu/Desktop/tetris-cpp/src/main/main.cpp" "CMakeFiles/tetris.dir/src/main/main.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/main/main.cpp.o.d"
+  "/home/kerciu/Desktop/tetris-cpp/src/utils/Coords.cpp" "CMakeFiles/tetris.dir/src/utils/Coords.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/utils/Coords.cpp.o.d"
+  "/home/kerciu/Desktop/tetris-cpp/src/utils/colors.cpp" "CMakeFiles/tetris.dir/src/utils/colors.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/utils/colors.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

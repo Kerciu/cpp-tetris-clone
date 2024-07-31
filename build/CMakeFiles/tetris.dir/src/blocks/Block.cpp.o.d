@@ -57,7 +57,7 @@ CMakeFiles/tetris.dir/src/blocks/Block.cpp.o: \
  /usr/include/c++/14/bits/stl_map.h \
  /usr/include/c++/14/bits/stl_multimap.h \
  /usr/include/c++/14/bits/erase_if.h \
- /home/kerciu/Desktop/tetris-cpp/src/blocks/../grid/Coords.h \
+ /home/kerciu/Desktop/tetris-cpp/src/blocks/../utils/Coords.h \
  /usr/include/c++/14/stdexcept /usr/include/c++/14/exception \
  /usr/include/c++/14/bits/exception_ptr.h \
  /usr/include/c++/14/bits/cxxabi_init_exception.h \
@@ -110,7 +110,7 @@ CMakeFiles/tetris.dir/src/blocks/Block.cpp.o: \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/bits/types/error_t.h /usr/include/c++/14/bits/charconv.h \
  /usr/include/c++/14/bits/basic_string.tcc \
- /home/kerciu/Desktop/tetris-cpp/src/blocks/../colors/colors.h \
+ /home/kerciu/Desktop/tetris-cpp/src/blocks/../utils/colors.h \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \

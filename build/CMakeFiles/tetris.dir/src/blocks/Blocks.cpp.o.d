@@ -215,5 +215,5 @@ CMakeFiles/tetris.dir/src/blocks/Blocks.cpp.o: \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
  /home/kerciu/Desktop/tetris-cpp/src/blocks/Block.h \
- /home/kerciu/Desktop/tetris-cpp/src/blocks/../grid/Coords.h \
- /home/kerciu/Desktop/tetris-cpp/src/blocks/../colors/colors.h
+ /home/kerciu/Desktop/tetris-cpp/src/blocks/../utils/Coords.h \
+ /home/kerciu/Desktop/tetris-cpp/src/blocks/../utils/colors.h
