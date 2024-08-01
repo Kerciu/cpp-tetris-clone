@@ -1,6 +1,7 @@
 #pragma once
 #include <vector>
 #include <map>
+#include <memory>
 #include "../utils/Coords.h"
 #include "../utils/colors.h"
 
@@ -17,6 +18,7 @@ class Block {
 
     Block();
     virtual ~Block() = default;
+    virtual std::unique_ptr<Block> clone() const = 0;
 
     virtual std::vector<position_vector> create_position_vec() = 0;
     void draw_block(sf::RenderWindow* window);

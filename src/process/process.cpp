@@ -13,7 +13,12 @@ Grid Process::get_grid()
 
 Process::block_vector Process::get_blocks()
 {
-    return blocks;
+    // deep copy of blocks vector
+    block_vector dummy;
+    for (const auto& block : blocks) {
+        dummy.push_back(block->clone());
+    }
+    return dummy;
 }
 
 void Process::set_grid(Grid new_grid)
@@ -23,7 +28,13 @@ void Process::set_grid(Grid new_grid)
 
 void Process::set_blocks(block_vector new_blocks)
 {
-    this->blocks = new_blocks;
+    this->blocks = std::move(new_blocks);
+}
+
+void Process::display(sf::RenderWindow* window)
+{
+    grid.display(window);
+    current_block->draw_block(window);
 }
 
 std::unique_ptr<Block> Process::get_random_block() 
@@ -33,8 +44,9 @@ std::unique_ptr<Block> Process::get_random_block()
     }
 
     int idx = get_random_index();
-    std::unique_ptr<Block> block = std::make_unique<Block>(this->blocks[idx]);
+    std::unique_ptr<Block> block = std::move(this->blocks[idx]);
     blocks.erase(blocks.begin() + idx);
+    return block;
 }
 
 int Process::get_random_index()
@@ -48,8 +60,13 @@ int Process::get_random_index()
 
 Process::block_vector generate_blocks() 
 {
-    return { IBlock(), JBlock(), 
-             LBlock(), OBlock(),
-             SBlock(), TBlock(),
-             ZBlock()};
+    return {
+        std::make_unique<IBlock>(),
+        std::make_unique<JBlock>(), 
+        std::make_unique<LBlock>(), 
+        std::make_unique<OBlock>(),
+        std::make_unique<SBlock>(), 
+        std::make_unique<TBlock>(),
+        std::make_unique<ZBlock>()
+    };
 }

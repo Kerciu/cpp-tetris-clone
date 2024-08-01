@@ -9,6 +9,10 @@ class LBlock : public Block {
         this->initialize_position_states(BlockType::OTHER_BLOCK);
     }
 
+    std::unique_ptr<Block> clone() const override {
+        return std::make_unique<LBlock>(*this);
+    }
+
     private:
     std::vector<position_vector> create_position_vec() override {
         return {
@@ -25,6 +29,10 @@ class JBlock : public Block {
     JBlock() {
         this->set_block_id(2);
         this->initialize_position_states(BlockType::OTHER_BLOCK);
+    }
+
+    std::unique_ptr<Block> clone() const override {
+        return std::make_unique<JBlock>(*this);
     }
 
     private:
@@ -45,6 +53,10 @@ class IBlock : public Block {
         this->initialize_position_states(BlockType::I_BLOCK);
     }
 
+    std::unique_ptr<Block> clone() const override {
+        return std::make_unique<IBlock>(*this);
+    }
+
     private:
     std::vector<position_vector> create_position_vec() override {
         return {
@@ -61,6 +73,10 @@ class OBlock : public Block {
     OBlock() {
         this->set_block_id(4);
         this->initialize_position_states(BlockType::O_BLOCK);
+    }
+
+    std::unique_ptr<Block> clone() const override {
+        return std::make_unique<OBlock>(*this);
     }
 
     private:
@@ -81,6 +97,10 @@ class SBlock : public Block {
         this->initialize_position_states(BlockType::OTHER_BLOCK);
     }
 
+    std::unique_ptr<Block> clone() const override {
+        return std::make_unique<SBlock>(*this);
+    }
+
     private:
     std::vector<position_vector> create_position_vec() override {
         return {
@@ -99,6 +119,10 @@ class TBlock : public Block {
         this->initialize_position_states(BlockType::OTHER_BLOCK);
     }
 
+    std::unique_ptr<Block> clone() const override {
+        return std::make_unique<TBlock>(*this);
+    }
+
     private:
     std::vector<position_vector> create_position_vec() override {
         return {
@@ -115,6 +139,10 @@ class ZBlock : public Block {
     ZBlock() {
         this->set_block_id(7);
         this->initialize_position_states(BlockType::OTHER_BLOCK);
+    }
+
+    std::unique_ptr<Block> clone() const override {
+        return std::make_unique<ZBlock>(*this);
     }
 
     private:
