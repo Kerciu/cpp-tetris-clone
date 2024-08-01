@@ -230,7 +230,7 @@ CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o: \
  /usr/include/c++/14/array /usr/include/c++/14/compare \
  /home/kerciu/Desktop/tetris-cpp/src/grid/../utils/Coords.h \
  /home/kerciu/Desktop/tetris-cpp/src/grid/../utils/colors.h \
- /home/kerciu/Desktop/tetris-cpp/src/gui/../process/process.h \
+ /home/kerciu/Desktop/tetris-cpp/src/gui/../game/game.h \
  /usr/include/c++/14/unordered_map \
  /usr/include/c++/14/bits/unordered_map.h \
  /usr/include/c++/14/bits/hashtable.h \
@@ -263,5 +263,5 @@ CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o: \
  /usr/include/c++/14/bits/random.tcc /usr/include/c++/14/numeric \
  /usr/include/c++/14/bits/stl_numeric.h \
  /usr/include/c++/14/pstl/glue_numeric_defs.h \
- /home/kerciu/Desktop/tetris-cpp/src/gui/../process/../blocks/Blocks.cpp \
- /home/kerciu/Desktop/tetris-cpp/src/gui/../process/../blocks/Block.h
+ /home/kerciu/Desktop/tetris-cpp/src/gui/../game/../blocks/Blocks.cpp \
+ /home/kerciu/Desktop/tetris-cpp/src/gui/../game/../blocks/Block.h

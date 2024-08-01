@@ -1,4 +1,4 @@
-#include "Game.h"
+#include "game.h"
 
 Game::Game() : grid(Grid()), blocks(generate_blocks()), current_block(nullptr), next_block(nullptr)
 {

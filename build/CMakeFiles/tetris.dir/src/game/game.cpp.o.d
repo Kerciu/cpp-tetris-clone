@@ -1,7 +1,7 @@
-CMakeFiles/tetris.dir/src/process/process.cpp.o: \
- /home/kerciu/Desktop/tetris-cpp/src/process/process.cpp \
+CMakeFiles/tetris.dir/src/game/game.cpp.o: \
+ /home/kerciu/Desktop/tetris-cpp/src/game/game.cpp \
  /usr/include/stdc-predef.h \
- /home/kerciu/Desktop/tetris-cpp/src/process/process.h \
+ /home/kerciu/Desktop/tetris-cpp/src/game/game.h \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
@@ -214,24 +214,7 @@ CMakeFiles/tetris.dir/src/process/process.cpp.o: \
  /usr/include/SFML/Graphics/Glsl.hpp /usr/include/SFML/Graphics/Glsl.inl \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
- /usr/include/SFML/Graphics/VertexBuffer.hpp /usr/include/c++/14/memory \
- /usr/include/c++/14/bits/stl_raw_storage_iter.h \
- /usr/include/c++/14/bits/align.h /usr/include/c++/14/bits/unique_ptr.h \
- /usr/include/c++/14/bits/shared_ptr.h \
- /usr/include/c++/14/bits/shared_ptr_base.h \
- /usr/include/c++/14/bits/allocated_ptr.h \
- /usr/include/c++/14/ext/concurrence.h \
- /usr/include/c++/14/bits/shared_ptr_atomic.h \
- /usr/include/c++/14/bits/atomic_base.h \
- /usr/include/c++/14/bits/atomic_lockfree_defines.h \
- /usr/include/c++/14/backward/auto_ptr.h \
- /usr/include/c++/14/pstl/glue_memory_defs.h \
- /home/kerciu/Desktop/tetris-cpp/src/process/../gui/TetrisGui.h \
- /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.h \
- /usr/include/c++/14/array /usr/include/c++/14/compare \
- /home/kerciu/Desktop/tetris-cpp/src/grid/../utils/Coords.h \
- /home/kerciu/Desktop/tetris-cpp/src/grid/../utils/colors.h \
- /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../game/game.h \
+ /usr/include/SFML/Graphics/VertexBuffer.hpp \
  /usr/include/c++/14/unordered_map \
  /usr/include/c++/14/bits/unordered_map.h \
  /usr/include/c++/14/bits/hashtable.h \
@@ -263,6 +246,21 @@ CMakeFiles/tetris.dir/src/process/process.cpp.o: \
  /usr/include/c++/14/x86_64-redhat-linux/bits/opt_random.h \
  /usr/include/c++/14/bits/random.tcc /usr/include/c++/14/numeric \
  /usr/include/c++/14/bits/stl_numeric.h \
- /usr/include/c++/14/pstl/glue_numeric_defs.h \
- /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../game/../blocks/Blocks.cpp \
- /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../game/../blocks/Block.h
+ /usr/include/c++/14/pstl/glue_numeric_defs.h /usr/include/c++/14/memory \
+ /usr/include/c++/14/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/14/bits/align.h /usr/include/c++/14/bits/unique_ptr.h \
+ /usr/include/c++/14/bits/shared_ptr.h \
+ /usr/include/c++/14/bits/shared_ptr_base.h \
+ /usr/include/c++/14/bits/allocated_ptr.h \
+ /usr/include/c++/14/ext/concurrence.h \
+ /usr/include/c++/14/bits/shared_ptr_atomic.h \
+ /usr/include/c++/14/bits/atomic_base.h \
+ /usr/include/c++/14/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/14/backward/auto_ptr.h \
+ /usr/include/c++/14/pstl/glue_memory_defs.h \
+ /home/kerciu/Desktop/tetris-cpp/src/game/../grid/Grid.h \
+ /usr/include/c++/14/array /usr/include/c++/14/compare \
+ /home/kerciu/Desktop/tetris-cpp/src/game/../grid/../utils/Coords.h \
+ /home/kerciu/Desktop/tetris-cpp/src/game/../grid/../utils/colors.h \
+ /home/kerciu/Desktop/tetris-cpp/src/game/../blocks/Blocks.cpp \
+ /home/kerciu/Desktop/tetris-cpp/src/game/../blocks/Block.h

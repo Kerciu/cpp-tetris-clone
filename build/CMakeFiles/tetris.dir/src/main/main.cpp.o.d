@@ -192,7 +192,7 @@ CMakeFiles/tetris.dir/src/main/main.cpp.o: \
  /usr/include/c++/14/bits/atomic_lockfree_defines.h \
  /usr/include/c++/14/backward/auto_ptr.h \
  /usr/include/c++/14/pstl/glue_memory_defs.h \
- /home/kerciu/Desktop/tetris-cpp/src/main/../gui/TetrisGui.h \
+ /home/kerciu/Desktop/tetris-cpp/src/main/../process/process.h \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Graphics/BlendMode.hpp \
  /usr/include/SFML/Graphics/Export.hpp \
  /usr/include/SFML/Graphics/CircleShape.hpp \
@@ -225,11 +225,12 @@ CMakeFiles/tetris.dir/src/main/main.cpp.o: \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
+ /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/TetrisGui.h \
  /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.h \
  /usr/include/c++/14/array /usr/include/c++/14/compare \
  /home/kerciu/Desktop/tetris-cpp/src/grid/../utils/Coords.h \
  /home/kerciu/Desktop/tetris-cpp/src/grid/../utils/colors.h \
- /home/kerciu/Desktop/tetris-cpp/src/main/../gui/../game/game.h \
+ /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../game/game.h \
  /usr/include/c++/14/unordered_map \
  /usr/include/c++/14/bits/unordered_map.h \
  /usr/include/c++/14/bits/hashtable.h \
@@ -262,5 +263,5 @@ CMakeFiles/tetris.dir/src/main/main.cpp.o: \
  /usr/include/c++/14/bits/random.tcc /usr/include/c++/14/numeric \
  /usr/include/c++/14/bits/stl_numeric.h \
  /usr/include/c++/14/pstl/glue_numeric_defs.h \
- /home/kerciu/Desktop/tetris-cpp/src/main/../gui/../game/../blocks/Blocks.cpp \
- /home/kerciu/Desktop/tetris-cpp/src/main/../gui/../game/../blocks/Block.h
+ /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../game/../blocks/Blocks.cpp \
+ /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../game/../blocks/Block.h
