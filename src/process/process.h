@@ -30,6 +30,7 @@ class Process
     block_ptr current_block;
     block_ptr next_block;
 
+    bool is_block_outside();
     sf::Keyboard::Key get_key_pressed();
     block_vector generate_blocks();
     block_ptr get_random_block();

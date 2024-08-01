@@ -34,16 +34,19 @@ void Process::set_blocks(block_vector new_blocks)
 void Process::move_block_left()
 {
     current_block->move_block(-1, 0);
+    if (is_block_outside()) current_block->move_block(1, 0);
 }
 
 void Process::move_block_right()
 {
     current_block->move_block(1, 0);
+    if (is_block_outside()) current_block->move_block(-1, 0);
 }
 
 void Process::move_block_down()
 {
     current_block->move_block(0, 1);
+    if (is_block_outside()) current_block->move_block(0, -1);
 }
 
 void Process::handle_input()
@@ -63,7 +66,22 @@ void Process::handle_input()
         }
 }
 
-sf::Keyboard::Key Process::get_key_pressed() {
+bool Process::is_block_outside()
+{
+    Block::position_vector tiles = current_block->get_occupied_cell_positions();
+
+    for (Coords& v : tiles) {
+        if (!grid.validate_bounds(v.get_x(), v.get_y()))
+        {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+sf::Keyboard::Key Process::get_key_pressed()
+{
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
     {
         return sf::Keyboard::Left;

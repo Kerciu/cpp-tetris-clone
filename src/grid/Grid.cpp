@@ -65,3 +65,8 @@ int Grid::get_num_cols()
 {
     return num_cols;
 }
+
+bool Grid::validate_bounds(int row, int col)
+{
+    return (row >= 0 && row <= num_rows) && (col >= 0 && col <= num_cols);
+}

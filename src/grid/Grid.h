@@ -20,6 +20,8 @@ class Grid {
     int get_num_rows();
     int get_num_cols();
 
+    bool validate_bounds(int row, int col);
+
     private:
     distribution grid_distribution;
     color_vector grid_colors;
