@@ -2,12 +2,12 @@
 
 Coords::Coords(int x, int y) : x(x), y(y) { }
 
-int Coords::get_x()
+int Coords::get_x() const
 {
     return x;
 }
 
-int Coords::get_y()
+int Coords::get_y() const
 {
     return y;
 }

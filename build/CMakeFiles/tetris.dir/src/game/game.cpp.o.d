@@ -262,5 +262,5 @@ CMakeFiles/tetris.dir/src/game/game.cpp.o: \
  /usr/include/c++/14/array /usr/include/c++/14/compare \
  /home/kerciu/Desktop/tetris-cpp/src/game/../grid/../utils/Coords.h \
  /home/kerciu/Desktop/tetris-cpp/src/game/../grid/../utils/colors.h \
- /home/kerciu/Desktop/tetris-cpp/src/game/../blocks/Blocks.cpp \
+ /home/kerciu/Desktop/tetris-cpp/src/game/../blocks/Blocks.h \
  /home/kerciu/Desktop/tetris-cpp/src/game/../blocks/Block.h

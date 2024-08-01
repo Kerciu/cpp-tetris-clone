@@ -1,8 +1,8 @@
 #include <gtest/gtest.h>
 #include <SFML/Graphics.hpp>
-#include "TetrisGui.h"
-#include "Grid.h"
-#include "Coords.h"
+#include "../src/gui/TetrisGui.h"
+#include "../src/grid/Grid.h"
+#include "../src/utils/Coords.h"
 
 class TetrisGuiTest : public ::testing::Test {
 protected:

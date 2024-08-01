@@ -5,7 +5,7 @@
 #include <random>
 #include <memory>
 #include "../grid/Grid.h"
-#include "../blocks/Blocks.cpp"
+#include "../blocks/Blocks.h"
 
 class Game
 {
