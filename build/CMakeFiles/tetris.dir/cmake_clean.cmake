@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o.d"
   "CMakeFiles/tetris.dir/src/main/main.cpp.o"
   "CMakeFiles/tetris.dir/src/main/main.cpp.o.d"
+  "CMakeFiles/tetris.dir/src/process/process.cpp.o"
+  "CMakeFiles/tetris.dir/src/process/process.cpp.o.d"
   "CMakeFiles/tetris.dir/src/utils/Coords.cpp.o"
   "CMakeFiles/tetris.dir/src/utils/Coords.cpp.o.d"
   "CMakeFiles/tetris.dir/src/utils/colors.cpp.o"

@@ -21,6 +21,7 @@ add_executable(tetris
     src/utils/colors.cpp
     src/blocks/Block.cpp
     src/blocks/Blocks.cpp
+    src/process/process.cpp
 )
 
 target_link_libraries(tetris sfml-graphics sfml-window sfml-system)

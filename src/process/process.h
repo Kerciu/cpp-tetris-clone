@@ -26,5 +26,6 @@ class Process
 
     block_vector generate_blocks();
     block_ptr get_random_block();
-    int get_random_index();
+    void fill_empty_vector();
+    int get_random_index() const;
 };

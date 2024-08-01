@@ -1,9 +1,9 @@
 #include "process.h"
 
-Process::Process()
+Process::Process() : grid(Grid()), blocks(generate_blocks()), current_block(nullptr), next_block(nullptr)
 {
-    this->grid = Grid();
-    this->blocks = generate_blocks();
+    this->current_block = get_random_block();
+    this->next_block = get_random_block();
 }
 
 Grid Process::get_grid()
@@ -34,14 +34,12 @@ void Process::set_blocks(block_vector new_blocks)
 void Process::display(sf::RenderWindow* window)
 {
     grid.display(window);
-    current_block->draw_block(window);
+    if (current_block) current_block->draw_block(window);
 }
 
 std::unique_ptr<Block> Process::get_random_block() 
 {
-    if (blocks.empty()) {
-        this->blocks = generate_blocks();
-    }
+    fill_empty_vector();
 
     int idx = get_random_index();
     std::unique_ptr<Block> block = std::move(this->blocks[idx]);
@@ -49,7 +47,13 @@ std::unique_ptr<Block> Process::get_random_block()
     return block;
 }
 
-int Process::get_random_index()
+void Process::fill_empty_vector() {
+    if (blocks.empty()) {
+        this->blocks = generate_blocks();
+    }
+}
+
+int Process::get_random_index() const
 {
     std::random_device rd;
     std::mt19937 mt(rd());
@@ -58,15 +62,17 @@ int Process::get_random_index()
     return dist(mt);
 }
 
-Process::block_vector generate_blocks() 
+Process::block_vector Process::generate_blocks() 
 {
-    return {
-        std::make_unique<IBlock>(),
-        std::make_unique<JBlock>(), 
-        std::make_unique<LBlock>(), 
-        std::make_unique<OBlock>(),
-        std::make_unique<SBlock>(), 
-        std::make_unique<TBlock>(),
-        std::make_unique<ZBlock>()
-    };
+    block_vector vec;
+
+    vec.push_back(std::make_unique<IBlock>());
+    vec.push_back(std::make_unique<JBlock>());
+    vec.push_back(std::make_unique<LBlock>());
+    vec.push_back(std::make_unique<OBlock>());
+    vec.push_back(std::make_unique<SBlock>());
+    vec.push_back(std::make_unique<TBlock>());
+    vec.push_back(std::make_unique<ZBlock>());
+    
+    return vec;
 }

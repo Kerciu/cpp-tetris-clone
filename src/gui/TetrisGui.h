@@ -3,7 +3,7 @@
 #include <memory>
 #include <string>
 #include "Grid.h"
-#include "../blocks/Block.h"
+#include "../process/process.h"
 
 class TetrisGui {
     public:
@@ -13,7 +13,7 @@ class TetrisGui {
     bool is_running();
     void handle_events();
     void update();
-    void render(Grid grid, Block* block);
+    void render(Process* process);
 
     private:
     sf::RenderWindow window;

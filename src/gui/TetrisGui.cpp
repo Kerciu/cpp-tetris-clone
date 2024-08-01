@@ -22,11 +22,10 @@ void TetrisGui::handle_events()
     }
 }
 
-void TetrisGui::render(Grid grid, Block* block)
+void TetrisGui::render(Process* process)
 {
     window.clear(sf::Color(44, 44, 127, 255));
-    grid.display(&window);
-    block->draw_block(&window);
+    process->display(&window);
     window.display();
 }
 
