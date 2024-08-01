@@ -187,6 +187,30 @@ src/blocks/Blocks.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/blocks/Blocks.cpp.s
 .PHONY : src/blocks/Blocks.cpp.s
 
+src/game/game.o: src/game/game.cpp.o
+.PHONY : src/game/game.o
+
+# target to build an object file
+src/game/game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/game.cpp.o
+.PHONY : src/game/game.cpp.o
+
+src/game/game.i: src/game/game.cpp.i
+.PHONY : src/game/game.i
+
+# target to preprocess a source file
+src/game/game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/game.cpp.i
+.PHONY : src/game/game.cpp.i
+
+src/game/game.s: src/game/game.cpp.s
+.PHONY : src/game/game.s
+
+# target to generate assembly for a file
+src/game/game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/game.cpp.s
+.PHONY : src/game/game.cpp.s
+
 src/grid/Grid.o: src/grid/Grid.cpp.o
 .PHONY : src/grid/Grid.o
 
@@ -259,30 +283,6 @@ src/main/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/main/main.cpp.s
 .PHONY : src/main/main.cpp.s
 
-src/process/process.o: src/process/process.cpp.o
-.PHONY : src/process/process.o
-
-# target to build an object file
-src/process/process.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/process/process.cpp.o
-.PHONY : src/process/process.cpp.o
-
-src/process/process.i: src/process/process.cpp.i
-.PHONY : src/process/process.i
-
-# target to preprocess a source file
-src/process/process.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/process/process.cpp.i
-.PHONY : src/process/process.cpp.i
-
-src/process/process.s: src/process/process.cpp.s
-.PHONY : src/process/process.s
-
-# target to generate assembly for a file
-src/process/process.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/process/process.cpp.s
-.PHONY : src/process/process.cpp.s
-
 src/utils/Coords.o: src/utils/Coords.cpp.o
 .PHONY : src/utils/Coords.o
 
@@ -347,6 +347,9 @@ help:
 	@echo "... src/blocks/Blocks.o"
 	@echo "... src/blocks/Blocks.i"
 	@echo "... src/blocks/Blocks.s"
+	@echo "... src/game/game.o"
+	@echo "... src/game/game.i"
+	@echo "... src/game/game.s"
 	@echo "... src/grid/Grid.o"
 	@echo "... src/grid/Grid.i"
 	@echo "... src/grid/Grid.s"
@@ -356,9 +359,6 @@ help:
 	@echo "... src/main/main.o"
 	@echo "... src/main/main.i"
 	@echo "... src/main/main.s"
-	@echo "... src/process/process.o"
-	@echo "... src/process/process.i"
-	@echo "... src/process/process.s"
 	@echo "... src/utils/Coords.o"
 	@echo "... src/utils/Coords.i"
 	@echo "... src/utils/Coords.s"

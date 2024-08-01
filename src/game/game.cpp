@@ -1,17 +1,17 @@
-#include "process.h"
+#include "Game.h"
 
-Process::Process() : grid(Grid()), blocks(generate_blocks()), current_block(nullptr), next_block(nullptr)
+Game::Game() : grid(Grid()), blocks(generate_blocks()), current_block(nullptr), next_block(nullptr)
 {
     this->current_block = get_random_block();
     this->next_block = get_random_block();
 }
 
-Grid Process::get_grid()
+Grid Game::get_grid()
 {
     return grid;
 }
 
-Process::block_vector Process::get_blocks()
+Game::block_vector Game::get_blocks()
 {
     // deep copy of blocks vector
     block_vector dummy;
@@ -21,41 +21,41 @@ Process::block_vector Process::get_blocks()
     return dummy;
 }
 
-void Process::set_grid(Grid new_grid)
+void Game::set_grid(Grid new_grid)
 {
     this->grid = new_grid;
 }
 
-void Process::set_blocks(block_vector new_blocks)
+void Game::set_blocks(block_vector new_blocks)
 {
     this->blocks = std::move(new_blocks);
 }
 
-void Process::move_block_left()
+void Game::move_block_left()
 {
     current_block->move_block(-1, 0);
     if (is_block_outside()) current_block->move_block(1, 0);
 }
 
-void Process::move_block_right()
+void Game::move_block_right()
 {
     current_block->move_block(1, 0);
     if (is_block_outside()) current_block->move_block(-1, 0);
 }
 
-void Process::move_block_down()
+void Game::move_block_down()
 {
     current_block->move_block(0, 1);
     if (is_block_outside()) current_block->move_block(0, -1);
 }
 
-void Process::rotate_block()
+void Game::rotate_block()
 {
     current_block->rotate();
     if (is_block_outside()) current_block->undo_rotation();
 }
 
-void Process::handle_input()
+void Game::handle_input()
 {   
     auto now = std::chrono::steady_clock::now();
     sf::Keyboard::Key key_pressed = get_key_pressed();
@@ -81,7 +81,7 @@ void Process::handle_input()
     last_key_press_time[key_pressed] = now;
 }
 
-bool Process::is_block_outside()
+bool Game::is_block_outside()
 {
     Block::position_vector tiles = current_block->get_occupied_cell_positions();
 
@@ -95,7 +95,7 @@ bool Process::is_block_outside()
     return false;
 }
 
-sf::Keyboard::Key Process::get_key_pressed()
+sf::Keyboard::Key Game::get_key_pressed()
 {
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
     {
@@ -117,7 +117,7 @@ sf::Keyboard::Key Process::get_key_pressed()
     return sf::Keyboard::Unknown;
 }
 
-bool Process::can_execute(sf::Keyboard::Key key, std::chrono::steady_clock::time_point now) {
+bool Game::can_execute(sf::Keyboard::Key key, std::chrono::steady_clock::time_point now) {
         auto it = last_key_press_time.find(key);
         if (it != last_key_press_time.end()) {
             auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(now - it->second);
@@ -126,13 +126,13 @@ bool Process::can_execute(sf::Keyboard::Key key, std::chrono::steady_clock::time
         return true;
     }
 
-void Process::display(sf::RenderWindow* window)
+void Game::display(sf::RenderWindow* window)
 {
     grid.display(window);
     if (current_block) current_block->draw_block(window);
 }
 
-std::unique_ptr<Block> Process::get_random_block() 
+std::unique_ptr<Block> Game::get_random_block() 
 {
     fill_empty_vector();
 
@@ -142,13 +142,13 @@ std::unique_ptr<Block> Process::get_random_block()
     return block;
 }
 
-void Process::fill_empty_vector() {
+void Game::fill_empty_vector() {
     if (blocks.empty()) {
         this->blocks = generate_blocks();
     }
 }
 
-int Process::get_random_index() const
+int Game::get_random_index() const
 {
     std::random_device rd;
     std::mt19937 mt(rd());
@@ -157,7 +157,7 @@ int Process::get_random_index() const
     return dist(mt);
 }
 
-Process::block_vector Process::generate_blocks() 
+Game::block_vector Game::generate_blocks() 
 {
     block_vector vec;
 

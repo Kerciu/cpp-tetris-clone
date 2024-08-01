@@ -7,12 +7,12 @@
 #include "../grid/Grid.h"
 #include "../blocks/Blocks.cpp"
 
-class Process
+class Game
 {
     public:
     typedef std::vector<std::unique_ptr<Block>> block_vector;
     typedef std::unique_ptr<Block> block_ptr;
-    Process();
+    Game();
 
     Grid get_grid();
     block_vector get_blocks();

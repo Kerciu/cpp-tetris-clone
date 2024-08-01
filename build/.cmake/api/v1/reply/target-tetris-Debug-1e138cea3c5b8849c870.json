@@ -203,7 +203,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/process/process.cpp",
+			"path" : "src/game/game.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

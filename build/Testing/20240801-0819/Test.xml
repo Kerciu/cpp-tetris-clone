@@ -6,7 +6,7 @@
 	CompilerName=""
 	CompilerVersion=""
 	OSName="Linux"
-	Hostname="fedora.home"
+	Hostname="fedora"
 	OSRelease="6.9.11-200.fc40.x86_64"
 	OSVersion="#1 SMP PREEMPT_DYNAMIC Thu Jul 25 18:17:34 UTC 2024"
 	OSPlatform="x86_64"
@@ -21,14 +21,14 @@
 	TotalVirtualMemory="7874"
 	TotalPhysicalMemory="7875"
 	LogicalProcessorsPerPhysical="1"
-	ProcessorClockFrequency="3536.4"
+	ProcessorClockFrequency="3500.25"
 	>
 	<Testing>
-		<StartDateTime>Aug 01 11:43 CEST</StartDateTime>
-		<StartTestTime>1722505386</StartTestTime>
+		<StartDateTime>Aug 01 12:20 CEST</StartDateTime>
+		<StartTestTime>1722507620</StartTestTime>
 		<TestList/>
-		<EndDateTime>Aug 01 11:43 CEST</EndDateTime>
-		<EndTestTime>1722505386</EndTestTime>
+		<EndDateTime>Aug 01 12:20 CEST</EndDateTime>
+		<EndTestTime>1722507620</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
