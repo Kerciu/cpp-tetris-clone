@@ -70,6 +70,11 @@ void Block::rotate()
     rotation = (++rotation) % (int)cells.size();
 }
 
+void Block::undo_rotation()
+{
+    rotation = (rotation - 1 + cells.size()) % cells.size();
+}
+
 void Block::move_block(offset rows, offset cols)
 {
     this->row_offset += rows;

@@ -52,6 +52,7 @@ void Process::move_block_down()
 void Process::rotate_block()
 {
     current_block->rotate();
+    if (is_block_outside()) current_block->undo_rotation();
 }
 
 void Process::handle_input()
