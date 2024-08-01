@@ -9,6 +9,7 @@ int main(int argc, char** argv) {
     Process process = Process();
 
     while(tetris_gui->is_running()) {
+        process.handle_input();
         tetris_gui->handle_events();
         tetris_gui->update();
         tetris_gui->render(&process);

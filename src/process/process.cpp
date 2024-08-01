@@ -31,6 +31,55 @@ void Process::set_blocks(block_vector new_blocks)
     this->blocks = std::move(new_blocks);
 }
 
+void Process::move_block_left()
+{
+    current_block->move_block(-1, 0);
+}
+
+void Process::move_block_right()
+{
+    current_block->move_block(1, 0);
+}
+
+void Process::move_block_down()
+{
+    current_block->move_block(0, 1);
+}
+
+void Process::handle_input()
+{
+    switch(get_key_pressed()) {
+        case sf::Keyboard::Left:
+            move_block_left();
+            break;
+        case sf::Keyboard::Right:
+            move_block_right();
+            break;
+        case sf::Keyboard::Down:
+            move_block_down();
+            break;
+        default:
+            break;
+        }
+}
+
+sf::Keyboard::Key Process::get_key_pressed() {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+    {
+        return sf::Keyboard::Left;
+    } 
+    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+    {
+        return sf::Keyboard::Right;
+    } 
+    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+    {
+        return sf::Keyboard::Down;
+    }
+
+    return sf::Keyboard::Unknown;
+}
+
 void Process::display(sf::RenderWindow* window)
 {
     grid.display(window);
