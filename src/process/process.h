@@ -1,4 +1,6 @@
 #pragma once
+#include <random>
+#include <memory>
 #include "../grid/Grid.h"
 #include "../blocks/Blocks.cpp"
 
@@ -18,4 +20,6 @@ class Process
     block_vector blocks;
 
     block_vector generate_blocks();
+    std::unique_ptr<Block> get_random_block();
+    int get_random_index();
 };
