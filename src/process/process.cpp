@@ -49,21 +49,35 @@ void Process::move_block_down()
     if (is_block_outside()) current_block->move_block(0, -1);
 }
 
-void Process::handle_input()
+void Process::rotate_block()
 {
-    switch(get_key_pressed()) {
-        case sf::Keyboard::Left:
-            move_block_left();
-            break;
-        case sf::Keyboard::Right:
-            move_block_right();
-            break;
-        case sf::Keyboard::Down:
-            move_block_down();
-            break;
-        default:
-            break;
+    current_block->rotate();
+}
+
+void Process::handle_input()
+{   
+    auto now = std::chrono::steady_clock::now();
+    sf::Keyboard::Key key_pressed = get_key_pressed();
+    
+    if (key_pressed != sf::Keyboard::Unknown && can_execute(key_pressed, now)) {
+        switch(get_key_pressed()) {
+            case sf::Keyboard::Left:
+                move_block_left();
+                break;
+            case sf::Keyboard::Right:
+                move_block_right();
+                break;
+            case sf::Keyboard::Down:
+                move_block_down();
+                break;
+            case sf::Keyboard::Up:
+                rotate_block();
+                break;
+            default:
+                break;
         }
+    }
+    last_key_press_time[key_pressed] = now;
 }
 
 bool Process::is_block_outside()
@@ -94,9 +108,22 @@ sf::Keyboard::Key Process::get_key_pressed()
     {
         return sf::Keyboard::Down;
     }
+    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+    {
+        return sf::Keyboard::Up;
+    }
 
     return sf::Keyboard::Unknown;
 }
+
+bool Process::can_execute(sf::Keyboard::Key key, std::chrono::steady_clock::time_point now) {
+        auto it = last_key_press_time.find(key);
+        if (it != last_key_press_time.end()) {
+            auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(now - it->second);
+            return elapsed >= debounce_time;
+        }
+        return true;
+    }
 
 void Process::display(sf::RenderWindow* window)
 {

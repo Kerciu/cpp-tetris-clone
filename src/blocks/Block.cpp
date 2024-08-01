@@ -65,7 +65,13 @@ void Block::draw_block(sf::RenderWindow* window) {
     }
 }
 
-void Block::move_block(offset rows, offset cols) {
+void Block::rotate()
+{
+    rotation = (++rotation) % (int)cells.size();
+}
+
+void Block::move_block(offset rows, offset cols)
+{
     this->row_offset += rows;
     this->col_offset += cols;
 }

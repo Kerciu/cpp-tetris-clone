@@ -23,6 +23,7 @@ class Block {
     virtual std::vector<position_vector> create_position_vec() = 0;
     void draw_block(sf::RenderWindow* window);
 
+    void rotate();
     void move_block(offset rows, offset cols);
     void spawn_in_the_middle(BlockType type);
 
