@@ -1,9 +1,8 @@
 #include "Block.h"
+#include <iostream>
 
 Block::Block() : cell_size(30), rotation(0), block_id(0), row_offset(0), col_offset(0)
 {
-    cell_size = 30;
-    rotation = 0;
     colors = get_cell_colors();
 }
 
@@ -53,6 +52,9 @@ void Block::draw_block(sf::RenderWindow* window) {
     for (Coords& coord : tiles) {
         int x_coord = coord.get_x() * cell_size + OFFSET;
         int y_coord = coord.get_y() * cell_size + OFFSET;
+
+        std::cout << "Drawing rectangle at (" << x_coord << ", " << y_coord << ")" << std::endl;
+
         int width, height;
         width = height = cell_size - OFFSET;
         sf::Color color = get_cell_colors()[this->get_block_id()];
@@ -77,8 +79,18 @@ void Block::undo_rotation()
 
 void Block::move_block(offset rows, offset cols)
 {
+    /*debug*/
+    std::cout << "Moving block by rows: " << rows << ", cols: " << cols << std::endl;
     this->row_offset += rows;
     this->col_offset += cols;
+
+    /*debug*/
+    auto new_positions = get_occupied_cell_positions();
+    std::cout << "New positions: ";
+    for (const auto& pos : new_positions) {
+        std::cout << "(" << pos.get_x() << ", " << pos.get_y() << ") ";
+    }
+    std::cout << std::endl;
 }
 
 Block::position_vector Block::get_occupied_cell_positions() {
@@ -105,5 +117,4 @@ void Block::spawn_in_the_middle(BlockType type) {
             this->move_block(3, 0);
             break;
     }
-    
 }

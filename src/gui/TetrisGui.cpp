@@ -28,7 +28,3 @@ void TetrisGui::render(Game* game)
     game->display(&window);
     window.display();
 }
-
-void TetrisGui::update()
-{
-}

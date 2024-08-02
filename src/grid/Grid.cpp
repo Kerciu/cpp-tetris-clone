@@ -3,13 +3,12 @@
 Grid::Grid()
 {
     initialize_grid();
-    grid_colors = get_cell_colors();
 }
 
 void Grid::display(sf::RenderWindow* window)
 {
-    for (int i = 0; i < num_rows; ++i) {
-        for (int j = 0; j < num_cols; ++j) {
+    for (int i = 0; i < num_cols; ++i) {
+        for (int j = 0; j < num_rows; ++j) {
             draw_grid_rectangle(window, i, j);
         }
     }
@@ -37,6 +36,8 @@ void Grid::initialize_grid()
     for (auto& row : grid_distribution) {
         row.fill(0);
     }
+
+    this->grid_colors = get_cell_colors();
 }
 
 Grid::distribution Grid::get_grid_distribution() {
@@ -68,5 +69,5 @@ int Grid::get_num_cols()
 
 bool Grid::validate_bounds(int row, int col)
 {
-    return (row >= 0 && row <= num_rows) && (col >= 0 && col <= num_cols);
+    return (row >= 0 && row < num_rows) && (col >= 0 && col < num_cols);
 }

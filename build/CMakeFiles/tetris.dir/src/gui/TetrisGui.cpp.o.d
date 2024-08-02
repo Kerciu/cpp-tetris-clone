@@ -263,5 +263,7 @@ CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o: \
  /usr/include/c++/14/bits/random.tcc /usr/include/c++/14/numeric \
  /usr/include/c++/14/bits/stl_numeric.h \
  /usr/include/c++/14/pstl/glue_numeric_defs.h \
+ /usr/include/c++/14/iostream /usr/include/c++/14/istream \
+ /usr/include/c++/14/bits/istream.tcc \
  /home/kerciu/Desktop/tetris-cpp/src/gui/../game/../blocks/Blocks.h \
  /home/kerciu/Desktop/tetris-cpp/src/gui/../game/../blocks/Block.h

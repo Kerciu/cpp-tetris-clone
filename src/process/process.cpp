@@ -14,7 +14,6 @@ void Process::game_loop()
             game.move_block_down();
         }
         tetris_gui->handle_events();
-        tetris_gui->update();
         tetris_gui->render(&game);
     }
 }

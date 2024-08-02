@@ -3,6 +3,7 @@
 #include <unordered_map>
 #include <chrono>
 #include <random>
+#include <iostream>
 #include <memory>
 #include "../grid/Grid.h"
 #include "../blocks/Blocks.h"
@@ -22,6 +23,7 @@ class Game
     void move_block_left();
     void move_block_right();
     void move_block_down();
+    void move_block_down(bool debug);
     void rotate_block();
     void handle_input();
 

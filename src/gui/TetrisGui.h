@@ -12,7 +12,6 @@ class TetrisGui {
 
     bool is_running();
     void handle_events();
-    void update();
     void render(Game* game);
 
     private:

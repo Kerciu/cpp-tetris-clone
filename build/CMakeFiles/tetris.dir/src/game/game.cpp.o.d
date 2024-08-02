@@ -246,7 +246,9 @@ CMakeFiles/tetris.dir/src/game/game.cpp.o: \
  /usr/include/c++/14/x86_64-redhat-linux/bits/opt_random.h \
  /usr/include/c++/14/bits/random.tcc /usr/include/c++/14/numeric \
  /usr/include/c++/14/bits/stl_numeric.h \
- /usr/include/c++/14/pstl/glue_numeric_defs.h /usr/include/c++/14/memory \
+ /usr/include/c++/14/pstl/glue_numeric_defs.h \
+ /usr/include/c++/14/iostream /usr/include/c++/14/istream \
+ /usr/include/c++/14/bits/istream.tcc /usr/include/c++/14/memory \
  /usr/include/c++/14/bits/stl_raw_storage_iter.h \
  /usr/include/c++/14/bits/align.h /usr/include/c++/14/bits/unique_ptr.h \
  /usr/include/c++/14/bits/shared_ptr.h \
