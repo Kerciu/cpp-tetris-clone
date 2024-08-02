@@ -33,26 +33,42 @@ void Game::set_blocks(block_vector new_blocks)
 
 void Game::move_block_left()
 {
-    current_block->move_block(-1, 0);
-    if (is_block_outside()) current_block->move_block(1, 0);
+    current_block->move_block(0, -1);
+    if (is_block_outside() || !block_fits()) current_block->move_block(0, 1);
 }
 
 void Game::move_block_right()
 {
-    current_block->move_block(1, 0);
-    if (is_block_outside()) current_block->move_block(-1, 0);
+    current_block->move_block(0, 1);
+    if (is_block_outside() || !block_fits()) current_block->move_block(0, -1);
 }
 
 void Game::move_block_down()
 {
-    current_block->move_block(0, 1);
-    if (is_block_outside()) current_block->move_block(0, -1);
+    current_block->move_block(1, 0);
+    if (is_block_outside() || !block_fits()) {
+        current_block->move_block(-1, 0);
+        lock_block();
+    }
 }
 
 void Game::rotate_block()
 {
     current_block->rotate();
-    if (is_block_outside()) current_block->undo_rotation();
+    if (is_block_outside() || !block_fits()) current_block->undo_rotation();
+}
+
+void Game::lock_block()
+{
+    Block::position_vector pos = current_block->get_occupied_cell_positions();
+
+    for (auto& coord : pos) {
+        (*grid.get_grid_distribution())[coord.get_x()][coord.get_y()] = current_block->get_block_id();
+    }
+
+    current_block = std::move(next_block);
+    next_block = get_random_block();
+    grid.clear_full_rows();
 }
 
 void Game::handle_input()
@@ -93,6 +109,21 @@ bool Game::is_block_outside()
     }
 
     return false;
+}
+
+bool Game::block_fits()
+{
+    Block::position_vector pos = current_block->get_occupied_cell_positions();
+
+    for (Coords& coord : pos)
+    {
+        if (!grid.is_cell_empty(coord.get_x(), coord.get_y()))
+        {
+            return false;
+        }
+    }
+
+    return true;
 }
 
 sf::Keyboard::Key Game::get_key_pressed()

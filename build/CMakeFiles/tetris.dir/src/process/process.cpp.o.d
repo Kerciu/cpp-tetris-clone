@@ -229,6 +229,8 @@ CMakeFiles/tetris.dir/src/process/process.cpp.o: \
  /home/kerciu/Desktop/tetris-cpp/src/process/../gui/TetrisGui.h \
  /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.h \
  /usr/include/c++/14/array /usr/include/c++/14/compare \
+ /usr/include/c++/14/iostream /usr/include/c++/14/istream \
+ /usr/include/c++/14/bits/istream.tcc \
  /home/kerciu/Desktop/tetris-cpp/src/grid/../utils/Coords.h \
  /home/kerciu/Desktop/tetris-cpp/src/grid/../utils/colors.h \
  /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../game/game.h \
@@ -264,7 +266,5 @@ CMakeFiles/tetris.dir/src/process/process.cpp.o: \
  /usr/include/c++/14/bits/random.tcc /usr/include/c++/14/numeric \
  /usr/include/c++/14/bits/stl_numeric.h \
  /usr/include/c++/14/pstl/glue_numeric_defs.h \
- /usr/include/c++/14/iostream /usr/include/c++/14/istream \
- /usr/include/c++/14/bits/istream.tcc \
  /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../game/../blocks/Blocks.h \
  /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../game/../blocks/Block.h

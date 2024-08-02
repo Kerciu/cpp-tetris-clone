@@ -23,6 +23,7 @@ class Game
     void move_block_left();
     void move_block_right();
     void move_block_down();
+    void lock_block();
     void rotate_block();
     void handle_input();
 
@@ -37,6 +38,7 @@ class Game
     block_ptr next_block;
 
     bool is_block_outside();
+    bool block_fits();
     sf::Keyboard::Key get_key_pressed();
     bool can_execute(sf::Keyboard::Key key, std::chrono::steady_clock::time_point now);
     block_vector generate_blocks();
