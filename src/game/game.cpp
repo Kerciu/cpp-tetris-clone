@@ -49,26 +49,6 @@ void Game::move_block_down()
     if (is_block_outside()) current_block->move_block(0, -1);
 }
 
-void Game::move_block_down(bool debug) {
-    auto original_position = current_block->get_occupied_cell_positions();
-    current_block->move_block(0, 1);
-    if (is_block_outside()) {
-        current_block->move_block(0, -1);
-        std::cout << "Block outside after move down. Reverting move." << std::endl;
-    } else {
-        auto new_position = current_block->get_occupied_cell_positions();
-        std::cout << "Moved block down. Original position: ";
-        for (const auto& pos : original_position) {
-            std::cout << "(" << pos.get_x() << ", " << pos.get_y() << ") ";
-        }
-        std::cout << ". New position: ";
-        for (const auto& pos : new_position) {
-            std::cout << "(" << pos.get_x() << ", " << pos.get_y() << ") ";
-        }
-        std::cout << std::endl;
-    }
-}
-
 void Game::rotate_block()
 {
     current_block->rotate();

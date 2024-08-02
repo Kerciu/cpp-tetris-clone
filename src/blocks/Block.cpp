@@ -53,8 +53,6 @@ void Block::draw_block(sf::RenderWindow* window) {
         int x_coord = coord.get_x() * cell_size + OFFSET;
         int y_coord = coord.get_y() * cell_size + OFFSET;
 
-        std::cout << "Drawing rectangle at (" << x_coord << ", " << y_coord << ")" << std::endl;
-
         int width, height;
         width = height = cell_size - OFFSET;
         sf::Color color = get_cell_colors()[this->get_block_id()];
@@ -79,18 +77,8 @@ void Block::undo_rotation()
 
 void Block::move_block(offset rows, offset cols)
 {
-    /*debug*/
-    std::cout << "Moving block by rows: " << rows << ", cols: " << cols << std::endl;
     this->row_offset += rows;
     this->col_offset += cols;
-
-    /*debug*/
-    auto new_positions = get_occupied_cell_positions();
-    std::cout << "New positions: ";
-    for (const auto& pos : new_positions) {
-        std::cout << "(" << pos.get_x() << ", " << pos.get_y() << ") ";
-    }
-    std::cout << std::endl;
 }
 
 Block::position_vector Block::get_occupied_cell_positions() {
