@@ -3,6 +3,7 @@
 #include "../src/gui/TetrisGui.h"
 #include "../src/grid/Grid.h"
 #include "../src/utils/Coords.h"
+#include "../src/utils/colors.h"
 
 class TetrisGuiTest : public ::testing::Test {
 protected:
@@ -95,4 +96,19 @@ TEST_F(TetrisGuiTest, GridCreationColorSetter) {
     grid.set_colors(new_colors);
     auto colors = grid.get_colors();
     EXPECT_EQ(colors, new_colors);
+}
+
+TEST_F(TetrisGuiTest, ColorCreationVector) {
+    Grid::color_vector vec = get_cell_colors();
+    sf::Color dark_grey = {26, 31, 40};
+    sf::Color orange = {226, 116, 17};
+
+    EXPECT_EQ(vec[0], dark_grey);
+    EXPECT_EQ(vec[1], sf::Color::Green);
+    EXPECT_EQ(vec[2], sf::Color::Red);
+    EXPECT_EQ(vec[3], orange);
+    EXPECT_EQ(vec[4], sf::Color::Yellow);
+    EXPECT_EQ(vec[5], sf::Color::Magenta);
+    EXPECT_EQ(vec[6], sf::Color::Cyan);
+    EXPECT_EQ(vec[7], sf::Color::Blue);
 }
