@@ -36,6 +36,7 @@ class Game
     block_vector blocks;
     block_ptr current_block;
     block_ptr next_block;
+    bool game_over;
 
     bool is_block_outside();
     bool block_fits();

@@ -10,7 +10,7 @@ void Process::game_loop()
 {
     while(tetris_gui->is_running()) {
         game.handle_input();
-        if (event_triggered(200)) {
+        if (event_triggered(20)) {
             game.move_block_down();
         }
         tetris_gui->handle_events();

@@ -1,6 +1,6 @@
 #include "game.h"
 
-Game::Game() : grid(Grid()), blocks(generate_blocks()), current_block(nullptr), next_block(nullptr)
+Game::Game() : grid(Grid()), blocks(generate_blocks()), current_block(nullptr), next_block(nullptr), game_over(false)
 {
     this->current_block = get_random_block();
     this->next_block = get_random_block();
@@ -33,29 +33,37 @@ void Game::set_blocks(block_vector new_blocks)
 
 void Game::move_block_left()
 {
-    current_block->move_block(0, -1);
-    if (is_block_outside() || !block_fits()) current_block->move_block(0, 1);
+    if (!game_over) {
+        current_block->move_block(0, -1);
+        if (is_block_outside() || !block_fits()) current_block->move_block(0, 1);
+    }
 }
 
 void Game::move_block_right()
 {
-    current_block->move_block(0, 1);
-    if (is_block_outside() || !block_fits()) current_block->move_block(0, -1);
+    if (!game_over) {
+        current_block->move_block(0, 1);
+        if (is_block_outside() || !block_fits()) current_block->move_block(0, -1);
+    }
 }
 
 void Game::move_block_down()
 {
-    current_block->move_block(1, 0);
-    if (is_block_outside() || !block_fits()) {
-        current_block->move_block(-1, 0);
-        lock_block();
+    if (!game_over) {
+        current_block->move_block(1, 0);
+        if (is_block_outside() || !block_fits()) {
+            current_block->move_block(-1, 0);
+            lock_block();
+        }
     }
 }
 
 void Game::rotate_block()
 {
-    current_block->rotate();
-    if (is_block_outside() || !block_fits()) current_block->undo_rotation();
+    if (!game_over) {
+        current_block->rotate();
+        if (is_block_outside() || !block_fits()) current_block->undo_rotation();
+    }
 }
 
 void Game::lock_block()
@@ -64,6 +72,11 @@ void Game::lock_block()
 
     for (auto& coord : pos) {
         (*grid.get_grid_distribution())[coord.get_x()][coord.get_y()] = current_block->get_block_id();
+    }
+
+    if (!block_fits()) 
+    {
+        game_over = true;
     }
 
     current_block = std::move(next_block);
