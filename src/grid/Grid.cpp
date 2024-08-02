@@ -7,8 +7,8 @@ Grid::Grid()
 
 void Grid::display(sf::RenderWindow* window)
 {
-    for (int i = 0; i < num_cols; ++i) {
-        for (int j = 0; j < num_rows; ++j) {
+    for (int i = 0; i < num_rows; ++i) {
+        for (int j = 0; j < num_cols; ++j) {
             draw_grid_rectangle(window, i, j);
         }
     }
@@ -63,8 +63,10 @@ sf::RectangleShape Grid::create_rectangle(int row, int col) {
 
 void Grid::initialize_grid()
 {
-    for (auto& row : grid_distribution) {
-        row.fill(0);
+    for (int row = 0; row < num_rows; ++row) {
+        for (int col = 0; col < num_cols; ++col) {
+            grid_distribution[row][col] = 0;
+        }
     }
 
     this->grid_colors = get_cell_colors();
@@ -86,8 +88,9 @@ Grid::distribution* Grid::get_grid_distribution() {
     return &grid_distribution;
 }
 
-void Grid::set_grid_distribution(distribution new_distribution) {
-    grid_distribution = new_distribution;
+void Grid::set_grid_distribution(distribution new_distribution)
+{
+    this->grid_distribution = new_distribution;
 }
 
 void Grid::set_colors(color_vector new_grid_colors) {
@@ -117,7 +120,7 @@ int Grid::clear_full_rows()
             move_row_down(row, completed);
         }
     }
-
+    
     return completed;
 }
 
@@ -131,7 +134,7 @@ int Grid::get_num_cols()
     return num_cols;
 }
 
-bool Grid::validate_bounds(int row, int col)
+bool Grid::validate_bounds(int x, int y)
 {
-    return (row >= 0 && row < num_rows) && (col >= 0 && col < num_cols);
+    return (x >= 0 && x <= num_cols) && (y >= 0 && y <= num_rows);
 }

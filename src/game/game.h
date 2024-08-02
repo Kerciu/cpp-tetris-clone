@@ -41,9 +41,13 @@ class Game
     bool is_block_outside();
     bool block_fits();
     sf::Keyboard::Key get_key_pressed();
+    void reset();
+    void initialize_blocks();
     bool can_execute(sf::Keyboard::Key key, std::chrono::steady_clock::time_point now);
     block_vector generate_blocks();
     block_ptr get_random_block();
     void fill_empty_vector();
     int get_random_index() const;
+    void display_block_coords();
 };
+

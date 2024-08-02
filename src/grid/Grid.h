@@ -24,7 +24,8 @@ class Grid {
     int get_num_rows();
     int get_num_cols();
 
-    bool validate_bounds(int row, int col);
+    bool validate_bounds(int x, int y);
+    void initialize_grid();
 
     private:
     
@@ -34,7 +35,6 @@ class Grid {
     static const int num_cols = 10;
     static const int cell_size = 30;
     
-    void initialize_grid();
     void draw_grid_rectangle(sf::RenderWindow *window, int row, int col);
     bool is_row_full(int row);
     void clear_row(int row);

@@ -2,8 +2,7 @@
 
 Game::Game() : grid(Grid()), blocks(generate_blocks()), current_block(nullptr), next_block(nullptr), game_over(false)
 {
-    this->current_block = get_random_block();
-    this->next_block = get_random_block();
+    initialize_blocks();
 }
 
 Grid Game::get_grid()
@@ -31,28 +30,42 @@ void Game::set_blocks(block_vector new_blocks)
     this->blocks = std::move(new_blocks);
 }
 
+void Game::display_block_coords()
+{
+    Block::position_vector vec = current_block->get_occupied_cell_positions();
+    for (auto& pos : vec) {
+        std::cout << "Block pos: x(" << pos.get_x() << ") y(" << pos.get_y() << ")\n";
+    }
+}
+
 void Game::move_block_left()
 {
     if (!game_over) {
-        current_block->move_block(0, -1);
-        if (is_block_outside() || !block_fits()) current_block->move_block(0, 1);
+        current_block->move_block(-1, 0);
+        display_block_coords();
+    
+        if (is_block_outside() || !block_fits()) current_block->move_block(1, 0);
     }
 }
 
 void Game::move_block_right()
 {
     if (!game_over) {
-        current_block->move_block(0, 1);
-        if (is_block_outside() || !block_fits()) current_block->move_block(0, -1);
+        current_block->move_block(1, 0);
+        display_block_coords();
+    
+        if (is_block_outside() || !block_fits()) current_block->move_block(-1, 0);
     }
 }
 
 void Game::move_block_down()
 {
     if (!game_over) {
-        current_block->move_block(1, 0);
+        current_block->move_block(0, 1);
+        display_block_coords();
+    
         if (is_block_outside() || !block_fits()) {
-            current_block->move_block(-1, 0);
+            current_block->move_block(0, -1);
             lock_block();
         }
     }
@@ -88,6 +101,14 @@ void Game::handle_input()
 {   
     auto now = std::chrono::steady_clock::now();
     sf::Keyboard::Key key_pressed = get_key_pressed();
+
+    if (game_over) {
+        if (key_pressed != sf::Keyboard::Unknown && can_execute(key_pressed, now)) {
+            game_over = false;
+            this->reset();
+        }
+        return;
+    }
     
     if (key_pressed != sf::Keyboard::Unknown && can_execute(key_pressed, now)) {
         switch(get_key_pressed()) {
@@ -162,13 +183,26 @@ sf::Keyboard::Key Game::get_key_pressed()
 }
 
 bool Game::can_execute(sf::Keyboard::Key key, std::chrono::steady_clock::time_point now) {
-        auto it = last_key_press_time.find(key);
-        if (it != last_key_press_time.end()) {
-            auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(now - it->second);
-            return elapsed >= debounce_time;
-        }
-        return true;
+    auto it = last_key_press_time.find(key);
+    if (it != last_key_press_time.end()) {
+        auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(now - it->second);
+        return elapsed >= debounce_time;
     }
+    return true;
+}
+
+void Game::reset()
+{
+    grid.initialize_grid();
+    blocks = generate_blocks();
+    initialize_blocks();
+}
+
+void Game::initialize_blocks()
+{
+    this->current_block = get_random_block();
+    this->next_block = get_random_block();
+}
 
 void Game::display(sf::RenderWindow* window)
 {
