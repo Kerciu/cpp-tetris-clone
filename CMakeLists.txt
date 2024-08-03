@@ -16,6 +16,7 @@ include_directories(${PROJECT_SOURCE_DIR}/src/main)
 add_executable(tetris 
     src/main/main.cpp
     src/gui/TetrisGui.cpp
+    src/gui/gradient.cpp
     src/grid/Grid.cpp
     src/utils/Coords.cpp
     src/utils/colors.cpp

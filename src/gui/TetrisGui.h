@@ -4,6 +4,7 @@
 #include <string>
 #include "Grid.h"
 #include "../game/game.h"
+#include "gradient.h"
 
 class TetrisGui {
     public:
@@ -14,11 +15,8 @@ class TetrisGui {
     void handle_events();
     void render(Game* game);
 
-    static sf::VertexArray create_gradient(std::pair<int, int> hex_colors, std::pair<int, int> size);
-
     private:
     sf::RenderWindow window;
 
     void draw_gradient_background();
-    static void distribute_gradient(sf::VertexArray* gradient, std::pair<sf::Color, sf::Color> colors, std::pair<int, int> selected_size);
 };

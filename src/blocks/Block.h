@@ -4,6 +4,7 @@
 #include <memory>
 #include "../utils/Coords.h"
 #include "../utils/colors.h"
+#include "../gui/gradient.h"
 
 class Block {
     public:

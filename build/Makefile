@@ -259,6 +259,30 @@ src/gui/TetrisGui.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.s
 .PHONY : src/gui/TetrisGui.cpp.s
 
+src/gui/gradient.o: src/gui/gradient.cpp.o
+.PHONY : src/gui/gradient.o
+
+# target to build an object file
+src/gui/gradient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/gradient.cpp.o
+.PHONY : src/gui/gradient.cpp.o
+
+src/gui/gradient.i: src/gui/gradient.cpp.i
+.PHONY : src/gui/gradient.i
+
+# target to preprocess a source file
+src/gui/gradient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/gradient.cpp.i
+.PHONY : src/gui/gradient.cpp.i
+
+src/gui/gradient.s: src/gui/gradient.cpp.s
+.PHONY : src/gui/gradient.s
+
+# target to generate assembly for a file
+src/gui/gradient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/gradient.cpp.s
+.PHONY : src/gui/gradient.cpp.s
+
 src/main/main.o: src/main/main.cpp.o
 .PHONY : src/main/main.o
 
@@ -380,6 +404,9 @@ help:
 	@echo "... src/gui/TetrisGui.o"
 	@echo "... src/gui/TetrisGui.i"
 	@echo "... src/gui/TetrisGui.s"
+	@echo "... src/gui/gradient.o"
+	@echo "... src/gui/gradient.i"
+	@echo "... src/gui/gradient.s"
 	@echo "... src/main/main.o"
 	@echo "... src/main/main.i"
 	@echo "... src/main/main.s"

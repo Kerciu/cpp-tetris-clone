@@ -15,3 +15,8 @@ std::vector<sf::Color> get_cell_colors()
 {
     return {dark_grey, green, red, orange, yellow, magenta, cyan, blue};
 }
+
+sf::Color get_appropriate_gradient_color(sf::Color top_color)
+{
+    return sf::Color();
+}

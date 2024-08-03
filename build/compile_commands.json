@@ -13,6 +13,12 @@
 },
 {
   "directory": "/home/kerciu/Desktop/tetris-cpp/build",
+  "command": "/usr/bin/g++  -I/home/kerciu/Desktop/tetris-cpp/src/gui -I/home/kerciu/Desktop/tetris-cpp/src/grid -I/home/kerciu/Desktop/tetris-cpp/src/main -g -std=gnu++17 -o CMakeFiles/tetris.dir/src/gui/gradient.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/gui/gradient.cpp",
+  "file": "/home/kerciu/Desktop/tetris-cpp/src/gui/gradient.cpp",
+  "output": "CMakeFiles/tetris.dir/src/gui/gradient.cpp.o"
+},
+{
+  "directory": "/home/kerciu/Desktop/tetris-cpp/build",
   "command": "/usr/bin/g++  -I/home/kerciu/Desktop/tetris-cpp/src/gui -I/home/kerciu/Desktop/tetris-cpp/src/grid -I/home/kerciu/Desktop/tetris-cpp/src/main -g -std=gnu++17 -o CMakeFiles/tetris.dir/src/grid/Grid.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.cpp",
   "file": "/home/kerciu/Desktop/tetris-cpp/src/grid/Grid.cpp",
   "output": "CMakeFiles/tetris.dir/src/grid/Grid.cpp.o"

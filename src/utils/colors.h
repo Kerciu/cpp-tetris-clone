@@ -13,3 +13,4 @@ extern const sf::Color blue;
 extern const int OFFSET;
 
 std::vector<sf::Color> get_cell_colors();
+sf::Color get_appropriate_gradient_color(sf::Color top_color);

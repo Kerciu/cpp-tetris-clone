@@ -229,4 +229,5 @@ CMakeFiles/tetris.dir/src/blocks/Blocks.cpp.o: \
  /usr/include/c++/14/backward/auto_ptr.h \
  /usr/include/c++/14/pstl/glue_memory_defs.h \
  /home/kerciu/Desktop/tetris-cpp/src/blocks/../utils/Coords.h \
- /home/kerciu/Desktop/tetris-cpp/src/blocks/../utils/colors.h
+ /home/kerciu/Desktop/tetris-cpp/src/blocks/../utils/colors.h \
+ /home/kerciu/Desktop/tetris-cpp/src/blocks/../gui/gradient.h

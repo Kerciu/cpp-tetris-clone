@@ -55,15 +55,18 @@ void Block::draw_block(sf::RenderWindow* window) {
         int x_coord = coord.get_x() * cell_size + OFFSET;
         int y_coord = coord.get_y() * cell_size + OFFSET;
 
-        int width, height;
-        width = height = cell_size - OFFSET;
-        sf::Color color = get_cell_colors()[this->get_block_id()];
+        sf::Color top_color = get_cell_colors()[this->get_block_id()];
+        sf::Color bottom_color = get_appropriate_gradient_color(top_color);
 
-        sf::RectangleShape rectangle(sf::Vector2f(width, height));
 
-        rectangle.setFillColor(color);
-        rectangle.setPosition(sf::Vector2f(x_coord, y_coord));
-        window->draw(rectangle);
+        sf::VertexArray gradient = GradientCreator::create_gradient(std::make_pair(top_color, bottom_color), std::make_pair(cell_size - OFFSET, cell_size - OFFSET));
+
+        for (size_t i = 0; i < gradient.getVertexCount(); ++i) {
+            gradient[i].position += sf::Vector2f(x_coord, y_coord);
+        }
+
+ 
+        window->draw(gradient);
     }
 }
 
