@@ -28,6 +28,7 @@ class Game
     void handle_input();
 
     void display(sf::RenderWindow* window);
+    bool is_game_over();
 
     private:
     std::unordered_map<sf::Keyboard::Key, std::chrono::steady_clock::time_point> last_key_press_time;

@@ -208,6 +208,11 @@ void Game::display(sf::RenderWindow* window)
     if (current_block) current_block->draw_block(window);
 }
 
+bool Game::is_game_over()
+{
+    return game_over;
+}
+
 std::unique_ptr<Block> Game::get_random_block() 
 {
     fill_empty_vector();

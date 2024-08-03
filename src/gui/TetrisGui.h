@@ -25,6 +25,7 @@ class TetrisGui {
     void draw_text(std::string text_to_draw, float x, float y);
     void draw_next_block();
     void draw_current_score();
+    void draw_game_over(bool game_over);
     void draw_next_block_rounded_rectangle();
     void draw_score_rounded_rectangle();
 };

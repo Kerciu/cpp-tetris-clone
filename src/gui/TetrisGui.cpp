@@ -26,10 +26,9 @@ void TetrisGui::render(Game* game)
 {
     window.clear();
     draw_gradient_background();
-    draw_text("Next Block", 335, 15);
-    draw_next_block_rounded_rectangle();
-    draw_text("SCORE", 370, 235);
-    draw_score_rounded_rectangle();
+    draw_next_block();
+    draw_current_score();
+    draw_game_over(game->is_game_over());
     game->display(&window);
     window.display();
 }
@@ -57,22 +56,33 @@ void TetrisGui::draw_text(std::string text_to_draw, float x, float y)
 
 void TetrisGui::draw_next_block()
 {
+    draw_text("Next Block", 335, 15);
+    draw_next_block_rounded_rectangle();
 }
 
 void TetrisGui::draw_current_score()
 {
+    draw_text("SCORE", 370, 235);
+    draw_score_rounded_rectangle();
+}
+
+void TetrisGui::draw_game_over(bool game_over)
+{
+    if (game_over) {
+        draw_text("Game Over", 335, 405);
+    }
 }
 
 void TetrisGui::draw_next_block_rounded_rectangle()
 {
     RoundedRectangleDrawer::draw_rounded_rectangle(
-        &window, 335, 75, 220, 120, 20, sf::Color(0xE2DAD6ff)
+        &window, 335, 75, 220, 120, 20, sf::Color(0xD95F59ff)
     );
 }
 
 void TetrisGui::draw_score_rounded_rectangle()
 {
     RoundedRectangleDrawer::draw_rounded_rectangle(
-        &window, 335, 290, 220, 70, 20, sf::Color(0xE2DAD6FF)
+        &window, 335, 290, 220, 70, 20, sf::Color(0xD95F59ff)
     );
 }
