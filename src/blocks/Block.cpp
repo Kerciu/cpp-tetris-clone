@@ -52,8 +52,8 @@ void Block::draw_block(sf::RenderWindow* window) {
     int cell_size = this->get_cell_size();
 
     for (Coords& coord : tiles) {
-        int x_coord = coord.get_x() * cell_size + OFFSET;
-        int y_coord = coord.get_y() * cell_size + OFFSET;
+        int x_coord = coord.get_x() * cell_size + OFFSET + PX_OFFSET;
+        int y_coord = coord.get_y() * cell_size + OFFSET+ PX_OFFSET;
 
         sf::Color top_color = get_cell_colors()[this->get_block_id()];
         sf::Color bottom_color = get_appropriate_gradient_color(top_color);

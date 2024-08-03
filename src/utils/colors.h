@@ -11,6 +11,7 @@ extern const sf::Color magenta;
 extern const sf::Color cyan;
 extern const sf::Color blue;
 extern const int OFFSET;
+extern const int PX_OFFSET;
 
 std::vector<sf::Color> get_cell_colors();
 sf::Color get_appropriate_gradient_color(sf::Color top_color);
