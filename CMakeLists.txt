@@ -24,6 +24,7 @@ add_executable(tetris
     src/blocks/Blocks.cpp
     src/game/game.cpp
     src/process/process.cpp
+    src/media/FontLoader.cpp
 )
 
 target_link_libraries(tetris sfml-graphics sfml-window sfml-system)

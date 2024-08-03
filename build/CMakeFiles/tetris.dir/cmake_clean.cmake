@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/tetris.dir/src/gui/gradient.cpp.o.d"
   "CMakeFiles/tetris.dir/src/main/main.cpp.o"
   "CMakeFiles/tetris.dir/src/main/main.cpp.o.d"
+  "CMakeFiles/tetris.dir/src/media/FontLoader.cpp.o"
+  "CMakeFiles/tetris.dir/src/media/FontLoader.cpp.o.d"
   "CMakeFiles/tetris.dir/src/process/process.cpp.o"
   "CMakeFiles/tetris.dir/src/process/process.cpp.o.d"
   "CMakeFiles/tetris.dir/src/utils/Coords.cpp.o"

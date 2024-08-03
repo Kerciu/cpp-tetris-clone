@@ -4,6 +4,7 @@
 #include <string>
 #include "Grid.h"
 #include "../game/game.h"
+#include "../media/FontLoader.h"
 #include "gradient.h"
 
 class TetrisGui {
@@ -17,6 +18,10 @@ class TetrisGui {
 
     private:
     sf::RenderWindow window;
+    FontLoader font_loader;
 
     void draw_gradient_background();
+    void draw_text(std::string text_to_draw, float x, float y);
+    void draw_next_block();
+    void draw_current_score();
 };

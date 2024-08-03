@@ -1,6 +1,8 @@
-CMakeFiles/tetris.dir/src/main/main.cpp.o: \
- /home/kerciu/Desktop/tetris-cpp/src/main/main.cpp \
- /usr/include/stdc-predef.h /usr/include/SFML/Window.hpp \
+CMakeFiles/tetris.dir/src/media/FontLoader.cpp.o: \
+ /home/kerciu/Desktop/tetris-cpp/src/media/FontLoader.cpp \
+ /usr/include/stdc-predef.h \
+ /home/kerciu/Desktop/tetris-cpp/src/media/FontLoader.h \
+ /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
  /usr/include/SFML/System/Time.hpp /usr/include/SFML/System/Err.hpp \
@@ -179,21 +181,8 @@ CMakeFiles/tetris.dir/src/main/main.cpp.o: \
  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h \
- /usr/include/SFML/Window/WindowStyle.hpp /usr/include/c++/14/memory \
- /usr/include/c++/14/bits/stl_raw_storage_iter.h \
- /usr/include/c++/14/bits/align.h /usr/include/c++/14/bits/unique_ptr.h \
- /usr/include/c++/14/bits/shared_ptr.h \
- /usr/include/c++/14/bits/shared_ptr_base.h \
- /usr/include/c++/14/bits/allocated_ptr.h \
- /usr/include/c++/14/ext/aligned_buffer.h \
- /usr/include/c++/14/ext/concurrence.h \
- /usr/include/c++/14/bits/shared_ptr_atomic.h \
- /usr/include/c++/14/bits/atomic_base.h \
- /usr/include/c++/14/bits/atomic_lockfree_defines.h \
- /usr/include/c++/14/backward/auto_ptr.h \
- /usr/include/c++/14/pstl/glue_memory_defs.h \
- /home/kerciu/Desktop/tetris-cpp/src/main/../process/process.h \
- /usr/include/SFML/Graphics.hpp /usr/include/SFML/Graphics/BlendMode.hpp \
+ /usr/include/SFML/Window/WindowStyle.hpp \
+ /usr/include/SFML/Graphics/BlendMode.hpp \
  /usr/include/SFML/Graphics/Export.hpp \
  /usr/include/SFML/Graphics/CircleShape.hpp \
  /usr/include/SFML/Graphics/Shape.hpp \
@@ -211,6 +200,7 @@ CMakeFiles/tetris.dir/src/main/main.cpp.o: \
  /usr/include/SFML/Graphics/Texture.hpp \
  /usr/include/SFML/Graphics/Image.hpp /usr/include/c++/14/map \
  /usr/include/c++/14/bits/stl_tree.h \
+ /usr/include/c++/14/ext/aligned_buffer.h \
  /usr/include/c++/14/bits/node_handle.h \
  /usr/include/c++/14/bits/stl_map.h \
  /usr/include/c++/14/bits/stl_multimap.h \
@@ -224,48 +214,4 @@ CMakeFiles/tetris.dir/src/main/main.cpp.o: \
  /usr/include/SFML/Graphics/Glsl.hpp /usr/include/SFML/Graphics/Glsl.inl \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
- /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/TetrisGui.h \
- /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.h \
- /usr/include/c++/14/array /usr/include/c++/14/compare \
- /usr/include/c++/14/iostream /usr/include/c++/14/istream \
- /usr/include/c++/14/bits/istream.tcc \
- /home/kerciu/Desktop/tetris-cpp/src/grid/../utils/Coords.h \
- /home/kerciu/Desktop/tetris-cpp/src/grid/../utils/colors.h \
- /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../game/game.h \
- /usr/include/c++/14/unordered_map \
- /usr/include/c++/14/bits/unordered_map.h \
- /usr/include/c++/14/bits/hashtable.h \
- /usr/include/c++/14/bits/hashtable_policy.h \
- /usr/include/c++/14/bits/enable_special_members.h \
- /usr/include/c++/14/chrono /usr/include/c++/14/bits/chrono.h \
- /usr/include/c++/14/ratio /usr/include/c++/14/cstdint \
- /usr/include/c++/14/limits /usr/include/c++/14/bits/parse_numbers.h \
- /usr/include/c++/14/random /usr/include/c++/14/cmath /usr/include/math.h \
- /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
- /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
- /usr/include/bits/fp-fast.h \
- /usr/include/bits/mathcalls-helper-functions.h \
- /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
- /usr/include/bits/iscanonical.h /usr/include/c++/14/bits/specfun.h \
- /usr/include/c++/14/tr1/gamma.tcc \
- /usr/include/c++/14/tr1/special_function_util.h \
- /usr/include/c++/14/tr1/bessel_function.tcc \
- /usr/include/c++/14/tr1/beta_function.tcc \
- /usr/include/c++/14/tr1/ell_integral.tcc \
- /usr/include/c++/14/tr1/exp_integral.tcc \
- /usr/include/c++/14/tr1/hypergeometric.tcc \
- /usr/include/c++/14/tr1/legendre_function.tcc \
- /usr/include/c++/14/tr1/modified_bessel_func.tcc \
- /usr/include/c++/14/tr1/poly_hermite.tcc \
- /usr/include/c++/14/tr1/poly_laguerre.tcc \
- /usr/include/c++/14/tr1/riemann_zeta.tcc \
- /usr/include/c++/14/bits/random.h \
- /usr/include/c++/14/x86_64-redhat-linux/bits/opt_random.h \
- /usr/include/c++/14/bits/random.tcc /usr/include/c++/14/numeric \
- /usr/include/c++/14/bits/stl_numeric.h \
- /usr/include/c++/14/pstl/glue_numeric_defs.h \
- /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../game/../blocks/Blocks.h \
- /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../game/../blocks/Block.h \
- /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../game/../blocks/../gui/gradient.h \
- /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../media/FontLoader.h
+ /usr/include/SFML/Graphics/VertexBuffer.hpp

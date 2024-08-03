@@ -58,5 +58,11 @@
   "command": "/usr/bin/g++  -I/home/kerciu/Desktop/tetris-cpp/src/gui -I/home/kerciu/Desktop/tetris-cpp/src/grid -I/home/kerciu/Desktop/tetris-cpp/src/main -g -std=gnu++17 -o CMakeFiles/tetris.dir/src/process/process.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/process/process.cpp",
   "file": "/home/kerciu/Desktop/tetris-cpp/src/process/process.cpp",
   "output": "CMakeFiles/tetris.dir/src/process/process.cpp.o"
+},
+{
+  "directory": "/home/kerciu/Desktop/tetris-cpp/build",
+  "command": "/usr/bin/g++  -I/home/kerciu/Desktop/tetris-cpp/src/gui -I/home/kerciu/Desktop/tetris-cpp/src/grid -I/home/kerciu/Desktop/tetris-cpp/src/main -g -std=gnu++17 -o CMakeFiles/tetris.dir/src/media/FontLoader.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/media/FontLoader.cpp",
+  "file": "/home/kerciu/Desktop/tetris-cpp/src/media/FontLoader.cpp",
+  "output": "CMakeFiles/tetris.dir/src/media/FontLoader.cpp.o"
 }
 ]

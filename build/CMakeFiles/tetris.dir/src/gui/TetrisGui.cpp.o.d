@@ -267,4 +267,5 @@ CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o: \
  /usr/include/c++/14/pstl/glue_numeric_defs.h \
  /home/kerciu/Desktop/tetris-cpp/src/gui/../game/../blocks/Blocks.h \
  /home/kerciu/Desktop/tetris-cpp/src/gui/../game/../blocks/Block.h \
- /home/kerciu/Desktop/tetris-cpp/src/gui/../game/../blocks/../gui/gradient.h
+ /home/kerciu/Desktop/tetris-cpp/src/gui/../game/../blocks/../gui/gradient.h \
+ /home/kerciu/Desktop/tetris-cpp/src/gui/../media/FontLoader.h

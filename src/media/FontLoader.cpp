@@ -8,6 +8,11 @@ FontLoader::FontLoader(std::string file_handle)
     this->load_font();
 }
 
+sf::Font FontLoader::get_font()
+{
+    return font;
+}
+
 void FontLoader::load_font()
 {
     bool success = font.loadFromFile(file_handle);

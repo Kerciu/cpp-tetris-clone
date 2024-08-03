@@ -307,6 +307,30 @@ src/main/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/main/main.cpp.s
 .PHONY : src/main/main.cpp.s
 
+src/media/FontLoader.o: src/media/FontLoader.cpp.o
+.PHONY : src/media/FontLoader.o
+
+# target to build an object file
+src/media/FontLoader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/media/FontLoader.cpp.o
+.PHONY : src/media/FontLoader.cpp.o
+
+src/media/FontLoader.i: src/media/FontLoader.cpp.i
+.PHONY : src/media/FontLoader.i
+
+# target to preprocess a source file
+src/media/FontLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/media/FontLoader.cpp.i
+.PHONY : src/media/FontLoader.cpp.i
+
+src/media/FontLoader.s: src/media/FontLoader.cpp.s
+.PHONY : src/media/FontLoader.s
+
+# target to generate assembly for a file
+src/media/FontLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/media/FontLoader.cpp.s
+.PHONY : src/media/FontLoader.cpp.s
+
 src/process/process.o: src/process/process.cpp.o
 .PHONY : src/process/process.o
 
@@ -410,6 +434,9 @@ help:
 	@echo "... src/main/main.o"
 	@echo "... src/main/main.i"
 	@echo "... src/main/main.s"
+	@echo "... src/media/FontLoader.o"
+	@echo "... src/media/FontLoader.i"
+	@echo "... src/media/FontLoader.s"
 	@echo "... src/process/process.o"
 	@echo "... src/process/process.i"
 	@echo "... src/process/process.s"

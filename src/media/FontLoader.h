@@ -6,7 +6,9 @@ class FontLoader
     public:
     FontLoader(std::string file_handle);
 
-    private:
+    sf::Font get_font();
+
+private:
     std::string file_handle;
     sf::Font font;
 
