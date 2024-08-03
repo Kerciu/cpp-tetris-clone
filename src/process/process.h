@@ -12,8 +12,8 @@ class Process {
 private:
     std::unique_ptr<TetrisGui> tetris_gui;
     Game game;
-    double last_update_time;
+    sf::Time last_update_time;
     sf::Clock clock;
 
-    bool event_triggered(double interval);
+    bool event_triggered(sf::Time interval);
 };

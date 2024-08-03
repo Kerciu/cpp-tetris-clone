@@ -1,6 +1,6 @@
 #include "process.h"
 
-Process::Process() : last_update_time(0)
+Process::Process() : last_update_time(sf::Time::Zero)
 {
     this->tetris_gui = std::make_unique<TetrisGui>("Tetris", 300, 600);
     this->game = Game();
@@ -8,9 +8,12 @@ Process::Process() : last_update_time(0)
 
 void Process::game_loop()
 {
+    sf::Time fall_interval = sf::milliseconds(200);
+
     while(tetris_gui->is_running()) {
         game.handle_input();
-        if (event_triggered(20)) {
+
+        if (event_triggered(fall_interval)) {
             game.move_block_down();
         }
         tetris_gui->handle_events();
@@ -18,14 +21,12 @@ void Process::game_loop()
     }
 }
 
-bool Process::event_triggered(double interval)
+bool Process::event_triggered(sf::Time interval)
 {
     sf::Time elapsed = clock.getElapsedTime();
-    double current_time = elapsed.asMilliseconds();
 
-    if (current_time - last_update_time >= interval) {
-        last_update_time = current_time;
-        clock.restart();
+    if (elapsed - last_update_time >= interval) {
+        last_update_time = elapsed;
         return true;
     }
     return false;
