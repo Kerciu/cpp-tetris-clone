@@ -2,7 +2,7 @@
 
 Process::Process() : last_update_time(sf::Time::Zero)
 {
-    this->tetris_gui = std::make_unique<TetrisGui>("Tetris", 300, 600);
+    this->tetris_gui = std::make_unique<TetrisGui>("Tetris", 500, 620);
     this->game = Game();
 }
 
