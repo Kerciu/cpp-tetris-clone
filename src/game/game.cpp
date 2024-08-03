@@ -42,7 +42,6 @@ void Game::move_block_left()
 {
     if (!game_over) {
         current_block->move_block(0, -1);
-        display_block_coords();
     
         if (is_block_outside() || !block_fits()) current_block->move_block(0, 1);
     }
@@ -52,7 +51,6 @@ void Game::move_block_right()
 {
     if (!game_over) {
         current_block->move_block(0, 1);
-        display_block_coords();
     
         if (is_block_outside() || !block_fits()) current_block->move_block(0, -1);
     }
@@ -62,7 +60,6 @@ void Game::move_block_down()
 {
     if (!game_over) {
         current_block->move_block(1, 0);
-        display_block_coords();
     
         if (is_block_outside() || !block_fits()) {
             current_block->move_block(-1, 0);
@@ -81,19 +78,19 @@ void Game::rotate_block()
 
 void Game::lock_block()
 {
-    std::cout << "inside lock_block()\n";
     Block::position_vector pos = current_block->get_occupied_cell_positions();
 
     for (auto& coord : pos) {
         (*grid.get_grid_distribution())[coord.get_row()][coord.get_col()] = current_block->get_block_id();
     }
 
+    current_block = std::move(next_block);
+
     if (!block_fits()) 
     {
         game_over = true;
     }
 
-    current_block = std::move(next_block);
     next_block = get_random_block();
     grid.clear_full_rows();
 }
@@ -139,7 +136,6 @@ bool Game::is_block_outside()
     for (Coords& v : tiles) {
         if (!grid.validate_bounds(v.get_row(), v.get_col()))
         {
-            std::cout << "Block is outside at x(" << v.get_x() << ") y(" << v.get_y() << ")\n";
             return true;
         }
     }
@@ -155,7 +151,6 @@ bool Game::block_fits()
     {
         if (!grid.is_cell_empty(coord.get_row(), coord.get_col()))
         {
-            std::cout << "Block does not fit at x(" << coord.get_x() << ") y(" << coord.get_y() << ")\n";
             return false;
         }
     }

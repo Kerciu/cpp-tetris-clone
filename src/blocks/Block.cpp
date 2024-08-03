@@ -102,10 +102,9 @@ void Block::spawn_in_the_middle(BlockType type) {
             break;
         case BlockType::I_BLOCK:
             this->move_block(-1, 3);
-            this->rotate();
             break;
         default:
-            this->move_block(0, 4);
+            this->move_block(0, 3);
             break;
     }
 }
