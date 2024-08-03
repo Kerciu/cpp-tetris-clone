@@ -283,6 +283,30 @@ src/gui/gradient.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/gradient.cpp.s
 .PHONY : src/gui/gradient.cpp.s
 
+src/gui/rounded_rectangle.o: src/gui/rounded_rectangle.cpp.o
+.PHONY : src/gui/rounded_rectangle.o
+
+# target to build an object file
+src/gui/rounded_rectangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/rounded_rectangle.cpp.o
+.PHONY : src/gui/rounded_rectangle.cpp.o
+
+src/gui/rounded_rectangle.i: src/gui/rounded_rectangle.cpp.i
+.PHONY : src/gui/rounded_rectangle.i
+
+# target to preprocess a source file
+src/gui/rounded_rectangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/rounded_rectangle.cpp.i
+.PHONY : src/gui/rounded_rectangle.cpp.i
+
+src/gui/rounded_rectangle.s: src/gui/rounded_rectangle.cpp.s
+.PHONY : src/gui/rounded_rectangle.s
+
+# target to generate assembly for a file
+src/gui/rounded_rectangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/rounded_rectangle.cpp.s
+.PHONY : src/gui/rounded_rectangle.cpp.s
+
 src/main/main.o: src/main/main.cpp.o
 .PHONY : src/main/main.o
 
@@ -431,6 +455,9 @@ help:
 	@echo "... src/gui/gradient.o"
 	@echo "... src/gui/gradient.i"
 	@echo "... src/gui/gradient.s"
+	@echo "... src/gui/rounded_rectangle.o"
+	@echo "... src/gui/rounded_rectangle.i"
+	@echo "... src/gui/rounded_rectangle.s"
 	@echo "... src/main/main.o"
 	@echo "... src/main/main.i"
 	@echo "... src/main/main.s"

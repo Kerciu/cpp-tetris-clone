@@ -269,4 +269,5 @@ CMakeFiles/tetris.dir/src/process/process.cpp.o: \
  /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../game/../blocks/Blocks.h \
  /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../game/../blocks/Block.h \
  /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../game/../blocks/../gui/gradient.h \
- /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../media/FontLoader.h
+ /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../media/FontLoader.h \
+ /home/kerciu/Desktop/tetris-cpp/src/process/../gui/rounded_rectangle.h

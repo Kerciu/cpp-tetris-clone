@@ -19,6 +19,12 @@
 },
 {
   "directory": "/home/kerciu/Desktop/tetris-cpp/build",
+  "command": "/usr/bin/g++  -I/home/kerciu/Desktop/tetris-cpp/src/gui -I/home/kerciu/Desktop/tetris-cpp/src/grid -I/home/kerciu/Desktop/tetris-cpp/src/main -g -std=gnu++17 -o CMakeFiles/tetris.dir/src/gui/rounded_rectangle.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/gui/rounded_rectangle.cpp",
+  "file": "/home/kerciu/Desktop/tetris-cpp/src/gui/rounded_rectangle.cpp",
+  "output": "CMakeFiles/tetris.dir/src/gui/rounded_rectangle.cpp.o"
+},
+{
+  "directory": "/home/kerciu/Desktop/tetris-cpp/build",
   "command": "/usr/bin/g++  -I/home/kerciu/Desktop/tetris-cpp/src/gui -I/home/kerciu/Desktop/tetris-cpp/src/grid -I/home/kerciu/Desktop/tetris-cpp/src/main -g -std=gnu++17 -o CMakeFiles/tetris.dir/src/grid/Grid.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.cpp",
   "file": "/home/kerciu/Desktop/tetris-cpp/src/grid/Grid.cpp",
   "output": "CMakeFiles/tetris.dir/src/grid/Grid.cpp.o"

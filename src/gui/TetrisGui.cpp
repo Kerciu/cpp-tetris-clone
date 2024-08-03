@@ -27,7 +27,9 @@ void TetrisGui::render(Game* game)
     window.clear();
     draw_gradient_background();
     draw_text("Next Block", 335, 15);
-    draw_text("SCORE", 365, 255);
+    draw_next_block_rounded_rectangle();
+    draw_text("SCORE", 370, 235);
+    draw_score_rounded_rectangle();
     game->display(&window);
     window.display();
 }
@@ -59,4 +61,18 @@ void TetrisGui::draw_next_block()
 
 void TetrisGui::draw_current_score()
 {
+}
+
+void TetrisGui::draw_next_block_rounded_rectangle()
+{
+    RoundedRectangleDrawer::draw_rounded_rectangle(
+        &window, 335, 75, 220, 120, 20, sf::Color(0xE2DAD6ff)
+    );
+}
+
+void TetrisGui::draw_score_rounded_rectangle()
+{
+    RoundedRectangleDrawer::draw_rounded_rectangle(
+        &window, 335, 290, 220, 70, 20, sf::Color(0xE2DAD6FF)
+    );
 }

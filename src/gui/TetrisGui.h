@@ -5,6 +5,7 @@
 #include "Grid.h"
 #include "../game/game.h"
 #include "../media/FontLoader.h"
+#include "rounded_rectangle.h"
 #include "gradient.h"
 
 class TetrisGui {
@@ -24,4 +25,6 @@ class TetrisGui {
     void draw_text(std::string text_to_draw, float x, float y);
     void draw_next_block();
     void draw_current_score();
+    void draw_next_block_rounded_rectangle();
+    void draw_score_rounded_rectangle();
 };
