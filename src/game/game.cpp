@@ -41,31 +41,31 @@ void Game::display_block_coords()
 void Game::move_block_left()
 {
     if (!game_over) {
-        current_block->move_block(-1, 0);
+        current_block->move_block(0, -1);
         display_block_coords();
     
-        if (is_block_outside() || !block_fits()) current_block->move_block(1, 0);
+        if (is_block_outside() || !block_fits()) current_block->move_block(0, 1);
     }
 }
 
 void Game::move_block_right()
 {
     if (!game_over) {
-        current_block->move_block(1, 0);
+        current_block->move_block(0, 1);
         display_block_coords();
     
-        if (is_block_outside() || !block_fits()) current_block->move_block(-1, 0);
+        if (is_block_outside() || !block_fits()) current_block->move_block(0, -1);
     }
 }
 
 void Game::move_block_down()
 {
     if (!game_over) {
-        current_block->move_block(0, 1);
+        current_block->move_block(1, 0);
         display_block_coords();
     
         if (is_block_outside() || !block_fits()) {
-            current_block->move_block(0, -1);
+            current_block->move_block(-1, 0);
             lock_block();
         }
     }
@@ -81,10 +81,11 @@ void Game::rotate_block()
 
 void Game::lock_block()
 {
+    std::cout << "inside lock_block()\n";
     Block::position_vector pos = current_block->get_occupied_cell_positions();
 
     for (auto& coord : pos) {
-        (*grid.get_grid_distribution())[coord.get_x()][coord.get_y()] = current_block->get_block_id();
+        (*grid.get_grid_distribution())[coord.get_row()][coord.get_col()] = current_block->get_block_id();
     }
 
     if (!block_fits()) 
@@ -136,8 +137,9 @@ bool Game::is_block_outside()
     Block::position_vector tiles = current_block->get_occupied_cell_positions();
 
     for (Coords& v : tiles) {
-        if (!grid.validate_bounds(v.get_x(), v.get_y()))
+        if (!grid.validate_bounds(v.get_row(), v.get_col()))
         {
+            std::cout << "Block is outside at x(" << v.get_x() << ") y(" << v.get_y() << ")\n";
             return true;
         }
     }
@@ -151,8 +153,9 @@ bool Game::block_fits()
 
     for (Coords& coord : pos)
     {
-        if (!grid.is_cell_empty(coord.get_x(), coord.get_y()))
+        if (!grid.is_cell_empty(coord.get_row(), coord.get_col()))
         {
+            std::cout << "Block does not fit at x(" << coord.get_x() << ") y(" << coord.get_y() << ")\n";
             return false;
         }
     }

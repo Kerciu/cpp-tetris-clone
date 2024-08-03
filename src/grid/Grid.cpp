@@ -52,7 +52,7 @@ void Grid::move_row_down(int row, int rows_num)
 sf::RectangleShape Grid::create_rectangle(int row, int col) {
     int cell_val = grid_distribution[row][col];
     sf::Color current_color = grid_colors[cell_val];
-    Coords coords(col * cell_size + OFFSET, row * cell_size + OFFSET);
+    Coords coords(row * cell_size + OFFSET, col * cell_size + OFFSET);
 
     sf::RectangleShape rectangle(sf::Vector2f(cell_size - OFFSET, cell_size - OFFSET));
 
@@ -134,7 +134,7 @@ int Grid::get_num_cols()
     return num_cols;
 }
 
-bool Grid::validate_bounds(int x, int y)
+bool Grid::validate_bounds(int row, int col)
 {
-    return (x >= 0 && x <= num_cols) && (y >= 0 && y <= num_rows);
+    return (col >= 0 && col < num_cols) && (row >= 0 && row < num_rows);
 }

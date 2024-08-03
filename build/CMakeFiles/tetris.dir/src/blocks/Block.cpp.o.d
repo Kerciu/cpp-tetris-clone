@@ -109,13 +109,20 @@ CMakeFiles/tetris.dir/src/blocks/Block.cpp.o: \
  /usr/include/c++/14/pstl/glue_memory_defs.h \
  /usr/include/c++/14/pstl/execution_defs.h \
  /home/kerciu/Desktop/tetris-cpp/src/blocks/../utils/Coords.h \
- /usr/include/c++/14/stdexcept /usr/include/c++/14/string \
+ /home/kerciu/Desktop/tetris-cpp/src/blocks/../utils/colors.h \
+ /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
+ /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
+ /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
+ /usr/include/SFML/System/Time.hpp /usr/include/SFML/System/Err.hpp \
+ /usr/include/c++/14/ostream /usr/include/c++/14/ios \
  /usr/include/c++/14/bits/char_traits.h \
  /usr/include/c++/14/bits/localefwd.h \
  /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
  /usr/include/c++/14/clocale /usr/include/locale.h \
  /usr/include/bits/locale.h /usr/include/c++/14/cctype \
- /usr/include/ctype.h /usr/include/c++/14/bits/ostream_insert.h \
+ /usr/include/ctype.h /usr/include/c++/14/bits/ios_base.h \
+ /usr/include/c++/14/bits/locale_classes.h /usr/include/c++/14/string \
+ /usr/include/c++/14/bits/ostream_insert.h \
  /usr/include/c++/14/bits/cxxabi_forced.h \
  /usr/include/c++/14/bits/basic_string.h /usr/include/c++/14/string_view \
  /usr/include/c++/14/bits/string_view.tcc \
@@ -137,18 +144,11 @@ CMakeFiles/tetris.dir/src/blocks/Block.cpp.o: \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/bits/types/error_t.h /usr/include/c++/14/bits/charconv.h \
  /usr/include/c++/14/bits/basic_string.tcc \
- /home/kerciu/Desktop/tetris-cpp/src/blocks/../utils/colors.h \
- /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
- /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
- /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
- /usr/include/SFML/System/Time.hpp /usr/include/SFML/System/Err.hpp \
- /usr/include/c++/14/ostream /usr/include/c++/14/ios \
- /usr/include/c++/14/bits/ios_base.h \
- /usr/include/c++/14/bits/locale_classes.h \
  /usr/include/c++/14/bits/locale_classes.tcc \
  /usr/include/c++/14/system_error \
  /usr/include/c++/14/x86_64-redhat-linux/bits/error_constants.h \
- /usr/include/c++/14/streambuf /usr/include/c++/14/bits/streambuf.tcc \
+ /usr/include/c++/14/stdexcept /usr/include/c++/14/streambuf \
+ /usr/include/c++/14/bits/streambuf.tcc \
  /usr/include/c++/14/bits/basic_ios.h \
  /usr/include/c++/14/bits/locale_facets.h /usr/include/c++/14/cwctype \
  /usr/include/wctype.h /usr/include/bits/wctype-wchar.h \

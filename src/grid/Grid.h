@@ -24,7 +24,7 @@ class Grid {
     int get_num_rows();
     int get_num_cols();
 
-    bool validate_bounds(int x, int y);
+    bool validate_bounds(int row, int col);
     void initialize_grid();
 
     private:

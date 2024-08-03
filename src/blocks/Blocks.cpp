@@ -85,8 +85,8 @@ std::vector<Block::position_vector> SBlock::create_position_vec() {
     return {
     {Coords(0, 1), Coords(0, 2), Coords(1, 0), Coords(1, 1)},
     {Coords(0, 1), Coords(1, 1), Coords(1, 2), Coords(2, 2)},
-    {Coords(1, 0), Coords(1, 2), Coords(2, 0), Coords(2, 1)},
-    {Coords(0, 0), Coords(1, 0), Coords(1, 1), Coords(2, 1)}
+    {Coords(1, 0), Coords(1, 1), Coords(2, 1), Coords(2, 2)},
+    {Coords(0, 1), Coords(1, 0), Coords(1, 1), Coords(2, 0)}
     };
 }
 
@@ -120,8 +120,8 @@ std::unique_ptr<Block> ZBlock::clone() const {
 std::vector<Block::position_vector> ZBlock::create_position_vec() {
     return {
     {Coords(0, 0), Coords(0, 1), Coords(1, 1), Coords(1, 2)},
-    {Coords(0, 2), Coords(1, 1), Coords(1, 2), Coords(2, 1)},
+    {Coords(0, 1), Coords(1, 0), Coords(1, 1), Coords(2, 0)},
     {Coords(1, 0), Coords(1, 1), Coords(2, 1), Coords(2, 2)},
-    {Coords(0, 1), Coords(1, 0), Coords(1, 1), Coords(2, 0)}
+    {Coords(0, 1), Coords(1, 1), Coords(1, 2), Coords(2, 1)}
     };
 }

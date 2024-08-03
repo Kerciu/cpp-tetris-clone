@@ -38,9 +38,11 @@ std::map<Block::rotation_state, Block::position_vector> *Block::get_cells_ptr()
 
 void Block::initialize_position_states(BlockType type) {
     std::vector<position_vector> position_vec = create_position_vec();
+
     for (int i = 0; i < 4; ++i) {
-        (*this->get_cells_ptr())[i] = position_vec[i];
+        cells[i] = position_vec[i];
     }
+
     spawn_in_the_middle(type);
         
 }
@@ -75,10 +77,10 @@ void Block::undo_rotation()
     rotation = (rotation - 1 + cells.size()) % cells.size();
 }
 
-void Block::move_block(offset rows, offset cols)
+void Block::move_block(offset row, offset col)
 {
-    this->row_offset += rows;
-    this->col_offset += cols;
+    this->row_offset += row;
+    this->col_offset += col;
 }
 
 Block::position_vector Block::get_occupied_cell_positions() {
@@ -86,7 +88,7 @@ Block::position_vector Block::get_occupied_cell_positions() {
     position_vector moved_tiles;
 
     for (Coords& coord : tiles) {
-        Coords new_coord = Coords(coord.get_x() + row_offset, coord.get_y() + col_offset);
+        Coords new_coord = Coords(coord.get_row() + row_offset, coord.get_col() + col_offset);
         moved_tiles.push_back(new_coord);
     }
 
@@ -96,13 +98,14 @@ Block::position_vector Block::get_occupied_cell_positions() {
 void Block::spawn_in_the_middle(BlockType type) {
     switch (type) {
         case BlockType::O_BLOCK:
-            this->move_block(4, 0);
+            this->move_block(0, 4);
             break;
         case BlockType::I_BLOCK:
-            this->move_block(4, -1);
+            this->move_block(-1, 3);
+            this->rotate();
             break;
         default:
-            this->move_block(3, 0);
+            this->move_block(0, 4);
             break;
     }
 }

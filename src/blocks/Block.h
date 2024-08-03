@@ -25,7 +25,7 @@ class Block {
 
     void rotate();
     void undo_rotation();
-    void move_block(offset rows, offset cols);
+    void move_block(offset row, offset col);
     void spawn_in_the_middle(BlockType type);
 
     Block::position_vector get_occupied_cell_positions();
