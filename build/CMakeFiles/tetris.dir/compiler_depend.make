@@ -634,9 +634,9 @@ CMakeFiles/tetris.dir/src/blocks/Blocks.cpp.o: /home/kerciu/Desktop/tetris-cpp/s
   /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h
 
 CMakeFiles/tetris.dir/src/game/game.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/game/game.cpp \
-  /home/kerciu/Desktop/tetris-cpp/src/gui/gradient.h \
   /home/kerciu/Desktop/tetris-cpp/src/blocks/Block.h \
   /home/kerciu/Desktop/tetris-cpp/src/blocks/Blocks.h \
+  /home/kerciu/Desktop/tetris-cpp/src/gui/gradient.h \
   /home/kerciu/Desktop/tetris-cpp/src/utils/Coords.h \
   /home/kerciu/Desktop/tetris-cpp/src/utils/colors.h \
   /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.h \
@@ -1025,6 +1025,7 @@ CMakeFiles/tetris.dir/src/game/score.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/
   /usr/include/stdc-predef.h
 
 CMakeFiles/tetris.dir/src/grid/Grid.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.cpp \
+  /home/kerciu/Desktop/tetris-cpp/src/gui/gradient.h \
   /home/kerciu/Desktop/tetris-cpp/src/utils/Coords.h \
   /home/kerciu/Desktop/tetris-cpp/src/utils/colors.h \
   /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.h \
@@ -1330,10 +1331,10 @@ CMakeFiles/tetris.dir/src/grid/Grid.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/g
   /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h
 
 CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.cpp \
+  /home/kerciu/Desktop/tetris-cpp/src/gui/gradient.h \
   /home/kerciu/Desktop/tetris-cpp/src/utils/Coords.h \
   /home/kerciu/Desktop/tetris-cpp/src/utils/colors.h \
   /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.h \
-  /home/kerciu/Desktop/tetris-cpp/src/gui/gradient.h \
   /home/kerciu/Desktop/tetris-cpp/src/blocks/Block.h \
   /home/kerciu/Desktop/tetris-cpp/src/blocks/Blocks.h \
   /home/kerciu/Desktop/tetris-cpp/src/utils/exceptions.h \
@@ -2319,10 +2320,10 @@ CMakeFiles/tetris.dir/src/gui/rounded_rectangle.cpp.o: /home/kerciu/Desktop/tetr
   /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h
 
 CMakeFiles/tetris.dir/src/main/main.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/main/main.cpp \
+  /home/kerciu/Desktop/tetris-cpp/src/gui/gradient.h \
   /home/kerciu/Desktop/tetris-cpp/src/utils/Coords.h \
   /home/kerciu/Desktop/tetris-cpp/src/utils/colors.h \
   /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.h \
-  /home/kerciu/Desktop/tetris-cpp/src/gui/gradient.h \
   /home/kerciu/Desktop/tetris-cpp/src/blocks/Block.h \
   /home/kerciu/Desktop/tetris-cpp/src/blocks/Blocks.h \
   /home/kerciu/Desktop/tetris-cpp/src/utils/exceptions.h \
@@ -2977,6 +2978,7 @@ CMakeFiles/tetris.dir/src/media/AudioPlayer.cpp.o: /home/kerciu/Desktop/tetris-c
   /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h
 
 CMakeFiles/tetris.dir/src/media/FontLoader.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/media/FontLoader.cpp \
+  /home/kerciu/Desktop/tetris-cpp/src/utils/exceptions.h \
   /home/kerciu/Desktop/tetris-cpp/src/media/FontLoader.h \
   /usr/include/SFML/Config.hpp \
   /usr/include/SFML/Graphics.hpp \
@@ -3145,6 +3147,7 @@ CMakeFiles/tetris.dir/src/media/FontLoader.cpp.o: /home/kerciu/Desktop/tetris-cp
   /usr/include/c++/14/bits/hash_bytes.h \
   /usr/include/c++/14/bits/invoke.h \
   /usr/include/c++/14/bits/ios_base.h \
+  /usr/include/c++/14/bits/istream.tcc \
   /usr/include/c++/14/bits/locale_classes.h \
   /usr/include/c++/14/bits/locale_classes.tcc \
   /usr/include/c++/14/bits/locale_conv.h \
@@ -3217,6 +3220,8 @@ CMakeFiles/tetris.dir/src/media/FontLoader.cpp.o: /home/kerciu/Desktop/tetris-cp
   /usr/include/c++/14/initializer_list \
   /usr/include/c++/14/ios \
   /usr/include/c++/14/iosfwd \
+  /usr/include/c++/14/iostream \
+  /usr/include/c++/14/istream \
   /usr/include/c++/14/iterator \
   /usr/include/c++/14/locale \
   /usr/include/c++/14/map \
@@ -3275,10 +3280,10 @@ CMakeFiles/tetris.dir/src/media/FontLoader.cpp.o: /home/kerciu/Desktop/tetris-cp
   /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h
 
 CMakeFiles/tetris.dir/src/process/process.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/process/process.cpp \
+  /home/kerciu/Desktop/tetris-cpp/src/gui/gradient.h \
   /home/kerciu/Desktop/tetris-cpp/src/utils/Coords.h \
   /home/kerciu/Desktop/tetris-cpp/src/utils/colors.h \
   /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.h \
-  /home/kerciu/Desktop/tetris-cpp/src/gui/gradient.h \
   /home/kerciu/Desktop/tetris-cpp/src/blocks/Block.h \
   /home/kerciu/Desktop/tetris-cpp/src/blocks/Blocks.h \
   /home/kerciu/Desktop/tetris-cpp/src/utils/exceptions.h \

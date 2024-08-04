@@ -15,8 +15,31 @@ void Grid::display(sf::RenderWindow* window)
 }
 
 void Grid::draw_grid_rectangle(sf::RenderWindow* window, int row, int col) {
-    sf::RectangleShape rectangle = create_rectangle(row, col);
-    window->draw(rectangle);
+    if (grid_distribution[row][col] != 0)
+    {
+        draw_rectangle_if_gradient(window, row, col);
+    }
+    else {
+        sf::RectangleShape rectangle = create_rectangle(row, col);
+        window->draw(rectangle);
+    }
+}
+
+void Grid::draw_rectangle_if_gradient(sf::RenderWindow* window, int row, int col) {
+    int cell_val = grid_distribution[row][col];
+    sf::Color top_color = grid_colors[cell_val];
+    sf::Color bottom_color = get_appropriate_gradient_color(top_color);
+
+    Coords coords(row * cell_size + OFFSET + PX_OFFSET, col * cell_size + OFFSET + PX_OFFSET);
+
+
+    sf::VertexArray gradient = GradientCreator::create_gradient(std::make_pair(top_color, bottom_color), std::make_pair(cell_size - OFFSET, cell_size - OFFSET));
+
+    for (size_t i = 0; i < gradient.getVertexCount(); ++i) {
+        gradient[i].position += sf::Vector2f(coords.get_x(), coords.get_y());
+    }
+
+    window->draw(gradient);
 }
 
 bool Grid::is_row_full(int row)

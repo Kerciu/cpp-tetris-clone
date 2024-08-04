@@ -265,9 +265,9 @@ CMakeFiles/tetris.dir/src/game/game.cpp.o: \
  /usr/include/c++/14/array /usr/include/c++/14/compare \
  /home/kerciu/Desktop/tetris-cpp/src/game/../grid/../utils/Coords.h \
  /home/kerciu/Desktop/tetris-cpp/src/game/../grid/../utils/colors.h \
+ /home/kerciu/Desktop/tetris-cpp/src/game/../grid/../gui/gradient.h \
  /home/kerciu/Desktop/tetris-cpp/src/game/../blocks/Blocks.h \
  /home/kerciu/Desktop/tetris-cpp/src/game/../blocks/Block.h \
- /home/kerciu/Desktop/tetris-cpp/src/game/../blocks/../gui/gradient.h \
  /home/kerciu/Desktop/tetris-cpp/src/game/../media/AudioPlayer.h \
  /usr/include/SFML/Audio.hpp /usr/include/SFML/Audio/InputSoundFile.hpp \
  /usr/include/SFML/Audio/Export.hpp /usr/include/SFML/Audio/Listener.hpp \

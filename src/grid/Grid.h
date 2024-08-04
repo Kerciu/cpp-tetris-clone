@@ -4,6 +4,7 @@
 #include <iostream>
 #include "../utils/Coords.h"
 #include "../utils/colors.h"
+#include "../gui/gradient.h"
 
 class Grid {
     public:
@@ -36,6 +37,7 @@ class Grid {
     static const int cell_size = 30;
     
     void draw_grid_rectangle(sf::RenderWindow *window, int row, int col);
+    void draw_rectangle_if_gradient(sf::RenderWindow *window, int row, int col);
     bool is_row_full(int row);
     void clear_row(int row);
     void move_row_down(int row, int rows_num);
