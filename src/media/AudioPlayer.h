@@ -6,15 +6,17 @@
 class AudioPlayer
 {
     public:
-    AudioPlayer(const std::string& file_handle);
+    AudioPlayer(const std::string& path_to_audio_files);
     ~AudioPlayer();
 
     bool load_music();
     void play_music();
+    void play_music_from(sf::Time offset);
     void set_music();
     void set_volume(float volume);
+    void set_loop(bool loop);
 
     private:
-    std::string file_handle;
+    std::string files_path;
     sf::Music soundtrack;
 };

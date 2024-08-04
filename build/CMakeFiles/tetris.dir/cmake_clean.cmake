@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/tetris.dir/src/gui/rounded_rectangle.cpp.o.d"
   "CMakeFiles/tetris.dir/src/main/main.cpp.o"
   "CMakeFiles/tetris.dir/src/main/main.cpp.o.d"
+  "CMakeFiles/tetris.dir/src/media/AudioPlayer.cpp.o"
+  "CMakeFiles/tetris.dir/src/media/AudioPlayer.cpp.o.d"
   "CMakeFiles/tetris.dir/src/media/FontLoader.cpp.o"
   "CMakeFiles/tetris.dir/src/media/FontLoader.cpp.o.d"
   "CMakeFiles/tetris.dir/src/process/process.cpp.o"
@@ -25,6 +27,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/tetris.dir/src/utils/Coords.cpp.o.d"
   "CMakeFiles/tetris.dir/src/utils/colors.cpp.o"
   "CMakeFiles/tetris.dir/src/utils/colors.cpp.o.d"
+  "CMakeFiles/tetris.dir/src/utils/exceptions.cpp.o"
+  "CMakeFiles/tetris.dir/src/utils/exceptions.cpp.o.d"
   "tetris"
   "tetris.pdb"
 )

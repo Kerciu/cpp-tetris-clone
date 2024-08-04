@@ -3,15 +3,18 @@
 #include <memory>
 #include "../gui/TetrisGui.h"
 #include "../game/game.h"
+#include "../media/AudioPlayer.h"
 
 class Process {
     public:
     Process();
     void game_loop();
+    void play_music();
 
 private:
     std::unique_ptr<TetrisGui> tetris_gui;
     Game game;
+    AudioPlayer audio_player;
     sf::Time last_update_time;
     sf::Clock clock;
 

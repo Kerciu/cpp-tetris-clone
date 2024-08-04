@@ -43,6 +43,12 @@
 },
 {
   "directory": "/home/kerciu/Desktop/tetris-cpp/build",
+  "command": "/usr/bin/g++  -I/home/kerciu/Desktop/tetris-cpp/src/gui -I/home/kerciu/Desktop/tetris-cpp/src/grid -I/home/kerciu/Desktop/tetris-cpp/src/main -g -std=gnu++17 -o CMakeFiles/tetris.dir/src/utils/exceptions.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/utils/exceptions.cpp",
+  "file": "/home/kerciu/Desktop/tetris-cpp/src/utils/exceptions.cpp",
+  "output": "CMakeFiles/tetris.dir/src/utils/exceptions.cpp.o"
+},
+{
+  "directory": "/home/kerciu/Desktop/tetris-cpp/build",
   "command": "/usr/bin/g++  -I/home/kerciu/Desktop/tetris-cpp/src/gui -I/home/kerciu/Desktop/tetris-cpp/src/grid -I/home/kerciu/Desktop/tetris-cpp/src/main -g -std=gnu++17 -o CMakeFiles/tetris.dir/src/blocks/Block.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/blocks/Block.cpp",
   "file": "/home/kerciu/Desktop/tetris-cpp/src/blocks/Block.cpp",
   "output": "CMakeFiles/tetris.dir/src/blocks/Block.cpp.o"
@@ -76,5 +82,11 @@
   "command": "/usr/bin/g++  -I/home/kerciu/Desktop/tetris-cpp/src/gui -I/home/kerciu/Desktop/tetris-cpp/src/grid -I/home/kerciu/Desktop/tetris-cpp/src/main -g -std=gnu++17 -o CMakeFiles/tetris.dir/src/media/FontLoader.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/media/FontLoader.cpp",
   "file": "/home/kerciu/Desktop/tetris-cpp/src/media/FontLoader.cpp",
   "output": "CMakeFiles/tetris.dir/src/media/FontLoader.cpp.o"
+},
+{
+  "directory": "/home/kerciu/Desktop/tetris-cpp/build",
+  "command": "/usr/bin/g++  -I/home/kerciu/Desktop/tetris-cpp/src/gui -I/home/kerciu/Desktop/tetris-cpp/src/grid -I/home/kerciu/Desktop/tetris-cpp/src/main -g -std=gnu++17 -o CMakeFiles/tetris.dir/src/media/AudioPlayer.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/media/AudioPlayer.cpp",
+  "file": "/home/kerciu/Desktop/tetris-cpp/src/media/AudioPlayer.cpp",
+  "output": "CMakeFiles/tetris.dir/src/media/AudioPlayer.cpp.o"
 }
 ]

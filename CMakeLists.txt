@@ -5,7 +5,7 @@ project(Tetris)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
+find_package(SFML 2.5 COMPONENTS graphics window system audio REQUIRED)
 
 include_directories(${PROJECT_SOURCE_DIR}/src/gui)
 
@@ -21,14 +21,16 @@ add_executable(tetris
     src/grid/Grid.cpp
     src/utils/Coords.cpp
     src/utils/colors.cpp
+    src/utils/exceptions.cpp
     src/blocks/Block.cpp
     src/blocks/Blocks.cpp
     src/game/game.cpp
     src/game/score.cpp
     src/process/process.cpp
     src/media/FontLoader.cpp
+    src/media/AudioPlayer.cpp
 )
 
-target_link_libraries(tetris sfml-graphics sfml-window sfml-system)
+target_link_libraries(tetris sfml-graphics sfml-window sfml-system sfml-audio)
 
 enable_testing()

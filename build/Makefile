@@ -355,6 +355,30 @@ src/main/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/main/main.cpp.s
 .PHONY : src/main/main.cpp.s
 
+src/media/AudioPlayer.o: src/media/AudioPlayer.cpp.o
+.PHONY : src/media/AudioPlayer.o
+
+# target to build an object file
+src/media/AudioPlayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/media/AudioPlayer.cpp.o
+.PHONY : src/media/AudioPlayer.cpp.o
+
+src/media/AudioPlayer.i: src/media/AudioPlayer.cpp.i
+.PHONY : src/media/AudioPlayer.i
+
+# target to preprocess a source file
+src/media/AudioPlayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/media/AudioPlayer.cpp.i
+.PHONY : src/media/AudioPlayer.cpp.i
+
+src/media/AudioPlayer.s: src/media/AudioPlayer.cpp.s
+.PHONY : src/media/AudioPlayer.s
+
+# target to generate assembly for a file
+src/media/AudioPlayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/media/AudioPlayer.cpp.s
+.PHONY : src/media/AudioPlayer.cpp.s
+
 src/media/FontLoader.o: src/media/FontLoader.cpp.o
 .PHONY : src/media/FontLoader.o
 
@@ -451,6 +475,30 @@ src/utils/colors.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/colors.cpp.s
 .PHONY : src/utils/colors.cpp.s
 
+src/utils/exceptions.o: src/utils/exceptions.cpp.o
+.PHONY : src/utils/exceptions.o
+
+# target to build an object file
+src/utils/exceptions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/exceptions.cpp.o
+.PHONY : src/utils/exceptions.cpp.o
+
+src/utils/exceptions.i: src/utils/exceptions.cpp.i
+.PHONY : src/utils/exceptions.i
+
+# target to preprocess a source file
+src/utils/exceptions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/exceptions.cpp.i
+.PHONY : src/utils/exceptions.cpp.i
+
+src/utils/exceptions.s: src/utils/exceptions.cpp.s
+.PHONY : src/utils/exceptions.s
+
+# target to generate assembly for a file
+src/utils/exceptions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/exceptions.cpp.s
+.PHONY : src/utils/exceptions.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -488,6 +536,9 @@ help:
 	@echo "... src/main/main.o"
 	@echo "... src/main/main.i"
 	@echo "... src/main/main.s"
+	@echo "... src/media/AudioPlayer.o"
+	@echo "... src/media/AudioPlayer.i"
+	@echo "... src/media/AudioPlayer.s"
 	@echo "... src/media/FontLoader.o"
 	@echo "... src/media/FontLoader.i"
 	@echo "... src/media/FontLoader.s"
@@ -500,6 +551,9 @@ help:
 	@echo "... src/utils/colors.o"
 	@echo "... src/utils/colors.i"
 	@echo "... src/utils/colors.s"
+	@echo "... src/utils/exceptions.o"
+	@echo "... src/utils/exceptions.i"
+	@echo "... src/utils/exceptions.s"
 .PHONY : help
 
 
