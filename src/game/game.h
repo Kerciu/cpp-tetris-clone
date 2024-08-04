@@ -31,9 +31,10 @@ class Game
     void handle_input();
 
     void display(sf::RenderWindow* window);
+    void display_next_block(sf::RenderWindow *window);
     bool is_game_over();
 
-    private:
+private:
     std::unordered_map<sf::Keyboard::Key, std::chrono::steady_clock::time_point> last_key_press_time;
     std::chrono::milliseconds debounce_time{100};
     Grid grid;
@@ -48,6 +49,7 @@ class Game
     sf::Keyboard::Key get_key_pressed();
     void reset();
     void initialize_blocks();
+    Block::BlockType get_block_type(int block_id);
     bool can_execute(sf::Keyboard::Key key, std::chrono::steady_clock::time_point now);
     block_vector generate_blocks();
     block_ptr get_random_block();

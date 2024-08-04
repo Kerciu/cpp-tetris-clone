@@ -221,6 +221,37 @@ void Game::display(sf::RenderWindow* window)
 {
     grid.display(window);
     if (current_block) current_block->draw_block(window);
+    if (next_block) display_next_block(window);
+}
+
+void Game::display_next_block(sf::RenderWindow* window)
+{
+    switch(get_block_type(next_block->get_block_id()))
+    {
+        case Block::BlockType::I_BLOCK:
+            next_block->draw_block(window, 298, 117);
+            break;
+        case Block::BlockType::O_BLOCK:
+            next_block->draw_block(window, 298, 107);
+            break;
+        default:
+            next_block->draw_block(window, 313, 97);
+            break;
+    }
+}
+
+Block::BlockType Game::get_block_type(int block_id)
+{
+    Block::BlockType type;
+
+    if (block_id == 3)
+        type = Block::BlockType::I_BLOCK;
+    else if (block_id == 4)
+        type = Block::BlockType::O_BLOCK;
+    else
+        type = Block::BlockType::OTHER_BLOCK;
+
+    return type;
 }
 
 bool Game::is_game_over()

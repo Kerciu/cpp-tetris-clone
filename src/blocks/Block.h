@@ -22,7 +22,7 @@ class Block {
     virtual std::unique_ptr<Block> clone() const = 0;
 
     virtual std::vector<position_vector> create_position_vec() = 0;
-    void draw_block(sf::RenderWindow* window);
+    void draw_block(sf::RenderWindow* window, int offset_x=0, int offset_y=0);
 
     void rotate();
     void undo_rotation();

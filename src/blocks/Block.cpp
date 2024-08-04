@@ -47,13 +47,19 @@ void Block::initialize_position_states(BlockType type) {
         
 }
 
-void Block::draw_block(sf::RenderWindow* window) {
+void Block::draw_block(sf::RenderWindow* window, int offset_x, int offset_y) {
     position_vector tiles = get_occupied_cell_positions();
     int cell_size = this->get_cell_size();
 
+    if (offset_x == 0 || offset_y == 0)
+    {
+        if (!offset_x)offset_x = OFFSET + PX_OFFSET;
+        if (!offset_y)offset_y = OFFSET + PX_OFFSET;
+    }
+
     for (Coords& coord : tiles) {
-        int x_coord = coord.get_x() * cell_size + OFFSET + PX_OFFSET;
-        int y_coord = coord.get_y() * cell_size + OFFSET+ PX_OFFSET;
+        int x_coord = coord.get_x() * cell_size + offset_x;
+        int y_coord = coord.get_y() * cell_size + offset_y;
 
         sf::Color top_color = get_cell_colors()[this->get_block_id()];
         sf::Color bottom_color = get_appropriate_gradient_color(top_color);
