@@ -16,5 +16,5 @@ sf::Font FontLoader::get_font()
 void FontLoader::load_font()
 {
     bool success = font.loadFromFile(file_handle);
-    if (!success) throw std::out_of_range("Error: font did not load properly");
+    if (!success) throw FontLoadingFailure();
 }

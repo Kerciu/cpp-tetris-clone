@@ -26,6 +26,9 @@ class Game
 
     void handle_input();
     void move_block_down();
+    void move_block_left();
+    void move_block_right();
+    void rotate_block();
     
     void display(sf::RenderWindow* window);
     void display_next_block(sf::RenderWindow *window);
@@ -44,10 +47,7 @@ private:
 
     void lock_block();
     void play_clear_row_sound();
-    void rotate_block();
     void play_rotation_sound();
-    void move_block_left();
-    void move_block_right();
 
     bool is_block_outside();
     bool block_fits();
