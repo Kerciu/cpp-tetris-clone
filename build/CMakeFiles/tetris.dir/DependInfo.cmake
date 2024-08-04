@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/kerciu/Desktop/tetris-cpp/src/blocks/Block.cpp" "CMakeFiles/tetris.dir/src/blocks/Block.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/blocks/Block.cpp.o.d"
   "/home/kerciu/Desktop/tetris-cpp/src/blocks/Blocks.cpp" "CMakeFiles/tetris.dir/src/blocks/Blocks.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/blocks/Blocks.cpp.o.d"
   "/home/kerciu/Desktop/tetris-cpp/src/game/game.cpp" "CMakeFiles/tetris.dir/src/game/game.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/game/game.cpp.o.d"
+  "/home/kerciu/Desktop/tetris-cpp/src/game/score.cpp" "CMakeFiles/tetris.dir/src/game/score.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/game/score.cpp.o.d"
   "/home/kerciu/Desktop/tetris-cpp/src/grid/Grid.cpp" "CMakeFiles/tetris.dir/src/grid/Grid.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/grid/Grid.cpp.o.d"
   "/home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.cpp" "CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o.d"
   "/home/kerciu/Desktop/tetris-cpp/src/gui/gradient.cpp" "CMakeFiles/tetris.dir/src/gui/gradient.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/gui/gradient.cpp.o.d"

@@ -260,6 +260,7 @@ CMakeFiles/tetris.dir/src/game/game.cpp.o: \
  /usr/include/c++/14/bits/atomic_lockfree_defines.h \
  /usr/include/c++/14/backward/auto_ptr.h \
  /usr/include/c++/14/pstl/glue_memory_defs.h \
+ /home/kerciu/Desktop/tetris-cpp/src/game/score.h \
  /home/kerciu/Desktop/tetris-cpp/src/game/../grid/Grid.h \
  /usr/include/c++/14/array /usr/include/c++/14/compare \
  /home/kerciu/Desktop/tetris-cpp/src/game/../grid/../utils/Coords.h \

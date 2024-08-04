@@ -24,6 +24,7 @@ add_executable(tetris
     src/blocks/Block.cpp
     src/blocks/Blocks.cpp
     src/game/game.cpp
+    src/game/score.cpp
     src/process/process.cpp
     src/media/FontLoader.cpp
 )

@@ -5,6 +5,7 @@
 #include <random>
 #include <iostream>
 #include <memory>
+#include "score.h"
 #include "../grid/Grid.h"
 #include "../blocks/Blocks.h"
 
@@ -17,8 +18,10 @@ class Game
 
     Grid get_grid();
     block_vector get_blocks();
+    Score get_score();
     void set_grid(Grid new_grid);
     void set_blocks(block_vector new_blocks);
+    void set_score(const Score& new_score);
 
     void move_block_left();
     void move_block_right();
@@ -37,6 +40,7 @@ class Game
     block_vector blocks;
     block_ptr current_block;
     block_ptr next_block;
+    Score score;
     bool game_over;
 
     bool is_block_outside();

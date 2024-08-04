@@ -641,6 +641,7 @@ CMakeFiles/tetris.dir/src/game/game.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/g
   /home/kerciu/Desktop/tetris-cpp/src/utils/colors.h \
   /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.h \
   /home/kerciu/Desktop/tetris-cpp/src/game/game.h \
+  /home/kerciu/Desktop/tetris-cpp/src/game/score.h \
   /usr/include/SFML/Config.hpp \
   /usr/include/SFML/Graphics.hpp \
   /usr/include/SFML/Graphics/BlendMode.hpp \
@@ -997,6 +998,10 @@ CMakeFiles/tetris.dir/src/game/game.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/g
   /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
   /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h
 
+CMakeFiles/tetris.dir/src/game/score.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/game/score.cpp \
+  /home/kerciu/Desktop/tetris-cpp/src/game/score.h \
+  /usr/include/stdc-predef.h
+
 CMakeFiles/tetris.dir/src/grid/Grid.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.cpp \
   /home/kerciu/Desktop/tetris-cpp/src/utils/Coords.h \
   /home/kerciu/Desktop/tetris-cpp/src/utils/colors.h \
@@ -1310,6 +1315,7 @@ CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o: /home/kerciu/Desktop/tetris-cpp/s
   /home/kerciu/Desktop/tetris-cpp/src/blocks/Block.h \
   /home/kerciu/Desktop/tetris-cpp/src/blocks/Blocks.h \
   /home/kerciu/Desktop/tetris-cpp/src/game/game.h \
+  /home/kerciu/Desktop/tetris-cpp/src/game/score.h \
   /home/kerciu/Desktop/tetris-cpp/src/media/FontLoader.h \
   /home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.h \
   /home/kerciu/Desktop/tetris-cpp/src/gui/rounded_rectangle.h \
@@ -2274,6 +2280,7 @@ CMakeFiles/tetris.dir/src/main/main.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/m
   /home/kerciu/Desktop/tetris-cpp/src/blocks/Block.h \
   /home/kerciu/Desktop/tetris-cpp/src/blocks/Blocks.h \
   /home/kerciu/Desktop/tetris-cpp/src/game/game.h \
+  /home/kerciu/Desktop/tetris-cpp/src/game/score.h \
   /home/kerciu/Desktop/tetris-cpp/src/media/FontLoader.h \
   /home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.h \
   /home/kerciu/Desktop/tetris-cpp/src/gui/rounded_rectangle.h \
@@ -2940,6 +2947,7 @@ CMakeFiles/tetris.dir/src/process/process.cpp.o: /home/kerciu/Desktop/tetris-cpp
   /home/kerciu/Desktop/tetris-cpp/src/blocks/Block.h \
   /home/kerciu/Desktop/tetris-cpp/src/blocks/Blocks.h \
   /home/kerciu/Desktop/tetris-cpp/src/game/game.h \
+  /home/kerciu/Desktop/tetris-cpp/src/game/score.h \
   /home/kerciu/Desktop/tetris-cpp/src/media/FontLoader.h \
   /home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.h \
   /home/kerciu/Desktop/tetris-cpp/src/gui/rounded_rectangle.h \
@@ -3657,6 +3665,8 @@ CMakeFiles/tetris.dir/src/utils/colors.cpp.o: /home/kerciu/Desktop/tetris-cpp/sr
 
 /usr/include/bits/flt-eval-method.h:
 
+/home/kerciu/Desktop/tetris-cpp/src/game/score.h:
+
 /home/kerciu/Desktop/tetris-cpp/src/blocks/Blocks.cpp:
 
 /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h:
@@ -3884,6 +3894,8 @@ CMakeFiles/tetris.dir/src/utils/colors.cpp.o: /home/kerciu/Desktop/tetris-cpp/sr
 /usr/include/SFML/Window/Event.hpp:
 
 /usr/include/SFML/System/String.inl:
+
+/home/kerciu/Desktop/tetris-cpp/src/game/score.cpp:
 
 /usr/include/c++/14/bits/codecvt.h:
 

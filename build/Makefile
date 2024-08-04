@@ -211,6 +211,30 @@ src/game/game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/game.cpp.s
 .PHONY : src/game/game.cpp.s
 
+src/game/score.o: src/game/score.cpp.o
+.PHONY : src/game/score.o
+
+# target to build an object file
+src/game/score.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/score.cpp.o
+.PHONY : src/game/score.cpp.o
+
+src/game/score.i: src/game/score.cpp.i
+.PHONY : src/game/score.i
+
+# target to preprocess a source file
+src/game/score.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/score.cpp.i
+.PHONY : src/game/score.cpp.i
+
+src/game/score.s: src/game/score.cpp.s
+.PHONY : src/game/score.s
+
+# target to generate assembly for a file
+src/game/score.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/score.cpp.s
+.PHONY : src/game/score.cpp.s
+
 src/grid/Grid.o: src/grid/Grid.cpp.o
 .PHONY : src/grid/Grid.o
 
@@ -446,6 +470,9 @@ help:
 	@echo "... src/game/game.o"
 	@echo "... src/game/game.i"
 	@echo "... src/game/game.s"
+	@echo "... src/game/score.o"
+	@echo "... src/game/score.i"
+	@echo "... src/game/score.s"
 	@echo "... src/grid/Grid.o"
 	@echo "... src/grid/Grid.i"
 	@echo "... src/grid/Grid.s"

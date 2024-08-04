@@ -18,7 +18,7 @@ void Score::set_score(int score)
     this->score = score;
 }
 
-void Score::update_score(int rows_cleared, int move_down_points)
+void Score::update_score_rows_cleared(int rows_cleared)
 {
     switch(rows_cleared) {
         case 1:
@@ -33,6 +33,9 @@ void Score::update_score(int rows_cleared, int move_down_points)
         default:
             break;
     }
+}
 
+void Score::update_score_on_lock(int move_down_points)
+{
     score += move_down_points;
 }

@@ -1,6 +1,6 @@
 #include "game.h"
 
-Game::Game() : grid(Grid()), blocks(generate_blocks()), current_block(nullptr), next_block(nullptr), game_over(false)
+Game::Game() : grid(Grid()), blocks(generate_blocks()), current_block(nullptr), next_block(nullptr), game_over(false), score(Score())
 {
     initialize_blocks();
 }
@@ -20,6 +20,11 @@ Game::block_vector Game::get_blocks()
     return dummy;
 }
 
+Score Game::get_score()
+{
+    return score;
+}
+
 void Game::set_grid(Grid new_grid)
 {
     this->grid = new_grid;
@@ -28,6 +33,11 @@ void Game::set_grid(Grid new_grid)
 void Game::set_blocks(block_vector new_blocks)
 {
     this->blocks = std::move(new_blocks);
+}
+
+void Game::set_score(const Score &new_score)
+{
+    this->score = new_score;
 }
 
 void Game::display_block_coords()
@@ -91,8 +101,12 @@ void Game::lock_block()
         game_over = true;
     }
 
+    score.update_score_on_lock(10);
     next_block = get_random_block();
-    grid.clear_full_rows();
+    score.update_score_rows_cleared(
+        grid.clear_full_rows()
+    );
+
 }
 
 void Game::handle_input()
@@ -194,6 +208,7 @@ void Game::reset()
     grid.initialize_grid();
     blocks = generate_blocks();
     initialize_blocks();
+    score.set_score(0);
 }
 
 void Game::initialize_blocks()
