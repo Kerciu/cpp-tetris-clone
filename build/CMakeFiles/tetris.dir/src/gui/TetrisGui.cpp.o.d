@@ -270,5 +270,24 @@ CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o: \
  /home/kerciu/Desktop/tetris-cpp/src/gui/../game/../blocks/Blocks.h \
  /home/kerciu/Desktop/tetris-cpp/src/gui/../game/../blocks/Block.h \
  /home/kerciu/Desktop/tetris-cpp/src/gui/../game/../blocks/../gui/gradient.h \
+ /home/kerciu/Desktop/tetris-cpp/src/gui/../game/../media/AudioPlayer.h \
+ /usr/include/SFML/Audio.hpp /usr/include/SFML/Audio/InputSoundFile.hpp \
+ /usr/include/SFML/Audio/Export.hpp /usr/include/SFML/Audio/Listener.hpp \
+ /usr/include/SFML/Audio/Music.hpp \
+ /usr/include/SFML/Audio/SoundStream.hpp \
+ /usr/include/SFML/Audio/SoundSource.hpp \
+ /usr/include/SFML/Audio/AlResource.hpp \
+ /usr/include/SFML/Audio/OutputSoundFile.hpp \
+ /usr/include/SFML/Audio/Sound.hpp \
+ /usr/include/SFML/Audio/SoundBuffer.hpp /usr/include/c++/14/set \
+ /usr/include/c++/14/bits/stl_set.h \
+ /usr/include/c++/14/bits/stl_multiset.h \
+ /usr/include/SFML/Audio/SoundBufferRecorder.hpp \
+ /usr/include/SFML/Audio/SoundRecorder.hpp \
+ /usr/include/SFML/Audio/SoundFileFactory.hpp \
+ /usr/include/SFML/Audio/SoundFileFactory.inl \
+ /usr/include/SFML/Audio/SoundFileReader.hpp \
+ /usr/include/SFML/Audio/SoundFileWriter.hpp \
+ /home/kerciu/Desktop/tetris-cpp/src/gui/../game/../media/../utils/exceptions.h \
  /home/kerciu/Desktop/tetris-cpp/src/gui/../media/FontLoader.h \
  /home/kerciu/Desktop/tetris-cpp/src/gui/rounded_rectangle.h

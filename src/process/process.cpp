@@ -1,22 +1,31 @@
 #include "process.h"
 
-Process::Process() : last_update_time(sf::Time::Zero), audio_player(AudioPlayer("/home/kerciu/Desktop/tetris-cpp/assets/sound/"))
+Process::Process() : last_update_time(sf::Time::Zero), audio_player(AudioPlayer("/home/kerciu/Desktop/tetris-cpp/assets/sound/")), game(Game())
 {
     this->tetris_gui = std::make_unique<TetrisGui>("Tetris", 580, 620);
-    this->game = Game();
 }
 
 void Process::play_music()
 {
     try {
-        audio_player.load_music();
+        audio_player.load_music("Tetris Theme [NO COPYRIGHT].mp3");
         audio_player.set_volume(50);
 
-        audio_player.play_music(sf::seconds(30));
+        audio_player.play_music_from(sf::seconds(5));
         audio_player.set_loop(true);
     } catch (const AudioLoadingFailure& e) {
         std::cerr << e.what() << std::endl;
         exit(EXIT_FAILURE);
+    }
+}
+
+void Process::play_start_sound()
+{
+    if (!audio_player.load_sound("game-start.mp3")) {
+        std::cerr << "Failed to load game start sound" << std::endl;
+    } else {
+        audio_player.set_sound_volume(15);
+        audio_player.play_specific_sound();
     }
 }
 

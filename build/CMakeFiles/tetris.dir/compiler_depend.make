@@ -640,8 +640,27 @@ CMakeFiles/tetris.dir/src/game/game.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/g
   /home/kerciu/Desktop/tetris-cpp/src/utils/Coords.h \
   /home/kerciu/Desktop/tetris-cpp/src/utils/colors.h \
   /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.h \
+  /home/kerciu/Desktop/tetris-cpp/src/utils/exceptions.h \
+  /home/kerciu/Desktop/tetris-cpp/src/media/AudioPlayer.h \
   /home/kerciu/Desktop/tetris-cpp/src/game/game.h \
   /home/kerciu/Desktop/tetris-cpp/src/game/score.h \
+  /usr/include/SFML/Audio.hpp \
+  /usr/include/SFML/Audio/AlResource.hpp \
+  /usr/include/SFML/Audio/Export.hpp \
+  /usr/include/SFML/Audio/InputSoundFile.hpp \
+  /usr/include/SFML/Audio/Listener.hpp \
+  /usr/include/SFML/Audio/Music.hpp \
+  /usr/include/SFML/Audio/OutputSoundFile.hpp \
+  /usr/include/SFML/Audio/Sound.hpp \
+  /usr/include/SFML/Audio/SoundBuffer.hpp \
+  /usr/include/SFML/Audio/SoundBufferRecorder.hpp \
+  /usr/include/SFML/Audio/SoundFileFactory.hpp \
+  /usr/include/SFML/Audio/SoundFileFactory.inl \
+  /usr/include/SFML/Audio/SoundFileReader.hpp \
+  /usr/include/SFML/Audio/SoundFileWriter.hpp \
+  /usr/include/SFML/Audio/SoundRecorder.hpp \
+  /usr/include/SFML/Audio/SoundSource.hpp \
+  /usr/include/SFML/Audio/SoundStream.hpp \
   /usr/include/SFML/Config.hpp \
   /usr/include/SFML/Graphics.hpp \
   /usr/include/SFML/Graphics/BlendMode.hpp \
@@ -870,9 +889,11 @@ CMakeFiles/tetris.dir/src/game/game.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/g
   /usr/include/c++/14/bits/stl_iterator_base_types.h \
   /usr/include/c++/14/bits/stl_map.h \
   /usr/include/c++/14/bits/stl_multimap.h \
+  /usr/include/c++/14/bits/stl_multiset.h \
   /usr/include/c++/14/bits/stl_numeric.h \
   /usr/include/c++/14/bits/stl_pair.h \
   /usr/include/c++/14/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/14/bits/stl_set.h \
   /usr/include/c++/14/bits/stl_tempbuf.h \
   /usr/include/c++/14/bits/stl_tree.h \
   /usr/include/c++/14/bits/stl_uninitialized.h \
@@ -934,6 +955,7 @@ CMakeFiles/tetris.dir/src/game/game.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/g
   /usr/include/c++/14/pstl/pstl_config.h \
   /usr/include/c++/14/random \
   /usr/include/c++/14/ratio \
+  /usr/include/c++/14/set \
   /usr/include/c++/14/stdexcept \
   /usr/include/c++/14/streambuf \
   /usr/include/c++/14/string \
@@ -1314,11 +1336,30 @@ CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o: /home/kerciu/Desktop/tetris-cpp/s
   /home/kerciu/Desktop/tetris-cpp/src/gui/gradient.h \
   /home/kerciu/Desktop/tetris-cpp/src/blocks/Block.h \
   /home/kerciu/Desktop/tetris-cpp/src/blocks/Blocks.h \
+  /home/kerciu/Desktop/tetris-cpp/src/utils/exceptions.h \
+  /home/kerciu/Desktop/tetris-cpp/src/media/AudioPlayer.h \
   /home/kerciu/Desktop/tetris-cpp/src/game/game.h \
   /home/kerciu/Desktop/tetris-cpp/src/game/score.h \
   /home/kerciu/Desktop/tetris-cpp/src/media/FontLoader.h \
   /home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.h \
   /home/kerciu/Desktop/tetris-cpp/src/gui/rounded_rectangle.h \
+  /usr/include/SFML/Audio.hpp \
+  /usr/include/SFML/Audio/AlResource.hpp \
+  /usr/include/SFML/Audio/Export.hpp \
+  /usr/include/SFML/Audio/InputSoundFile.hpp \
+  /usr/include/SFML/Audio/Listener.hpp \
+  /usr/include/SFML/Audio/Music.hpp \
+  /usr/include/SFML/Audio/OutputSoundFile.hpp \
+  /usr/include/SFML/Audio/Sound.hpp \
+  /usr/include/SFML/Audio/SoundBuffer.hpp \
+  /usr/include/SFML/Audio/SoundBufferRecorder.hpp \
+  /usr/include/SFML/Audio/SoundFileFactory.hpp \
+  /usr/include/SFML/Audio/SoundFileFactory.inl \
+  /usr/include/SFML/Audio/SoundFileReader.hpp \
+  /usr/include/SFML/Audio/SoundFileWriter.hpp \
+  /usr/include/SFML/Audio/SoundRecorder.hpp \
+  /usr/include/SFML/Audio/SoundSource.hpp \
+  /usr/include/SFML/Audio/SoundStream.hpp \
   /usr/include/SFML/Config.hpp \
   /usr/include/SFML/Graphics.hpp \
   /usr/include/SFML/Graphics/BlendMode.hpp \
@@ -1548,9 +1589,11 @@ CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o: /home/kerciu/Desktop/tetris-cpp/s
   /usr/include/c++/14/bits/stl_iterator_base_types.h \
   /usr/include/c++/14/bits/stl_map.h \
   /usr/include/c++/14/bits/stl_multimap.h \
+  /usr/include/c++/14/bits/stl_multiset.h \
   /usr/include/c++/14/bits/stl_numeric.h \
   /usr/include/c++/14/bits/stl_pair.h \
   /usr/include/c++/14/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/14/bits/stl_set.h \
   /usr/include/c++/14/bits/stl_tempbuf.h \
   /usr/include/c++/14/bits/stl_tree.h \
   /usr/include/c++/14/bits/stl_uninitialized.h \
@@ -1612,6 +1655,7 @@ CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o: /home/kerciu/Desktop/tetris-cpp/s
   /usr/include/c++/14/pstl/pstl_config.h \
   /usr/include/c++/14/random \
   /usr/include/c++/14/ratio \
+  /usr/include/c++/14/set \
   /usr/include/c++/14/sstream \
   /usr/include/c++/14/stdexcept \
   /usr/include/c++/14/streambuf \
@@ -2281,13 +2325,13 @@ CMakeFiles/tetris.dir/src/main/main.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/m
   /home/kerciu/Desktop/tetris-cpp/src/gui/gradient.h \
   /home/kerciu/Desktop/tetris-cpp/src/blocks/Block.h \
   /home/kerciu/Desktop/tetris-cpp/src/blocks/Blocks.h \
+  /home/kerciu/Desktop/tetris-cpp/src/utils/exceptions.h \
+  /home/kerciu/Desktop/tetris-cpp/src/media/AudioPlayer.h \
   /home/kerciu/Desktop/tetris-cpp/src/game/game.h \
   /home/kerciu/Desktop/tetris-cpp/src/game/score.h \
   /home/kerciu/Desktop/tetris-cpp/src/media/FontLoader.h \
   /home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.h \
   /home/kerciu/Desktop/tetris-cpp/src/gui/rounded_rectangle.h \
-  /home/kerciu/Desktop/tetris-cpp/src/utils/exceptions.h \
-  /home/kerciu/Desktop/tetris-cpp/src/media/AudioPlayer.h \
   /home/kerciu/Desktop/tetris-cpp/src/process/process.h \
   /usr/include/SFML/Audio.hpp \
   /usr/include/SFML/Audio/AlResource.hpp \
@@ -3237,13 +3281,13 @@ CMakeFiles/tetris.dir/src/process/process.cpp.o: /home/kerciu/Desktop/tetris-cpp
   /home/kerciu/Desktop/tetris-cpp/src/gui/gradient.h \
   /home/kerciu/Desktop/tetris-cpp/src/blocks/Block.h \
   /home/kerciu/Desktop/tetris-cpp/src/blocks/Blocks.h \
+  /home/kerciu/Desktop/tetris-cpp/src/utils/exceptions.h \
+  /home/kerciu/Desktop/tetris-cpp/src/media/AudioPlayer.h \
   /home/kerciu/Desktop/tetris-cpp/src/game/game.h \
   /home/kerciu/Desktop/tetris-cpp/src/game/score.h \
   /home/kerciu/Desktop/tetris-cpp/src/media/FontLoader.h \
   /home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.h \
   /home/kerciu/Desktop/tetris-cpp/src/gui/rounded_rectangle.h \
-  /home/kerciu/Desktop/tetris-cpp/src/utils/exceptions.h \
-  /home/kerciu/Desktop/tetris-cpp/src/media/AudioPlayer.h \
   /home/kerciu/Desktop/tetris-cpp/src/process/process.h \
   /usr/include/SFML/Audio.hpp \
   /usr/include/SFML/Audio/AlResource.hpp \
@@ -4124,31 +4168,11 @@ CMakeFiles/tetris.dir/src/utils/exceptions.cpp.o: /home/kerciu/Desktop/tetris-cp
 
 /home/kerciu/Desktop/tetris-cpp/src/media/FontLoader.cpp:
 
-/usr/include/SFML/Audio/SoundSource.hpp:
-
-/usr/include/SFML/Audio/SoundFileReader.hpp:
-
-/usr/include/SFML/Audio/SoundFileFactory.inl:
-
-/usr/include/SFML/Audio/SoundBufferRecorder.hpp:
-
-/usr/include/SFML/Audio/Sound.hpp:
-
-/usr/include/SFML/Audio/Listener.hpp:
-
-/usr/include/SFML/Audio/InputSoundFile.hpp:
-
-/usr/include/SFML/Audio/Export.hpp:
-
 /home/kerciu/Desktop/tetris-cpp/src/process/process.h:
 
 /home/kerciu/Desktop/tetris-cpp/src/main/main.cpp:
 
 /home/kerciu/Desktop/tetris-cpp/src/gui/gradient.cpp:
-
-/usr/include/c++/14/bits/stl_set.h:
-
-/usr/include/c++/14/bits/sstream.tcc:
 
 /home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.h:
 
@@ -4176,9 +4200,9 @@ CMakeFiles/tetris.dir/src/utils/exceptions.cpp.o: /home/kerciu/Desktop/tetris-cp
 
 /usr/include/c++/14/bits/unordered_map.h:
 
-/usr/include/SFML/Audio/SoundFileFactory.hpp:
+/usr/include/c++/14/bits/sstream.tcc:
 
-/usr/include/c++/14/bits/stl_numeric.h:
+/usr/include/c++/14/bits/stl_set.h:
 
 /usr/include/c++/14/bits/specfun.h:
 
@@ -4193,6 +4217,26 @@ CMakeFiles/tetris.dir/src/utils/exceptions.cpp.o: /home/kerciu/Desktop/tetris-cp
 /usr/include/bits/iscanonical.h:
 
 /usr/include/bits/flt-eval-method.h:
+
+/usr/include/SFML/Audio/SoundSource.hpp:
+
+/usr/include/SFML/Audio/SoundFileReader.hpp:
+
+/usr/include/SFML/Audio/SoundFileFactory.inl:
+
+/usr/include/c++/14/bits/stl_numeric.h:
+
+/usr/include/SFML/Audio/SoundFileFactory.hpp:
+
+/usr/include/SFML/Audio/SoundBufferRecorder.hpp:
+
+/usr/include/SFML/Audio/Sound.hpp:
+
+/usr/include/SFML/Audio/Listener.hpp:
+
+/usr/include/SFML/Audio/InputSoundFile.hpp:
+
+/usr/include/SFML/Audio/Export.hpp:
 
 /home/kerciu/Desktop/tetris-cpp/src/game/score.h:
 
@@ -4894,9 +4938,9 @@ CMakeFiles/tetris.dir/src/utils/exceptions.cpp.o: /home/kerciu/Desktop/tetris-cp
 
 /usr/include/c++/14/debug/assertions.h:
 
-/usr/include/SFML/Audio/SoundRecorder.hpp:
-
 /usr/include/bits/mathcalls.h:
+
+/usr/include/SFML/Audio/SoundRecorder.hpp:
 
 /usr/include/c++/14/bits/ostream.tcc:
 

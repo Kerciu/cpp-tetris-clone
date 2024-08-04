@@ -1,6 +1,8 @@
 #include "game.h"
 
-Game::Game() : grid(Grid()), blocks(generate_blocks()), current_block(nullptr), next_block(nullptr), game_over(false), score(Score())
+Game::Game() : audio_player("/home/kerciu/Desktop/tetris-cpp/assets/sound/"), 
+               grid(Grid()), blocks(generate_blocks()), game_over(false), score(Score()),
+               current_block(nullptr), next_block(nullptr)
 {
     initialize_blocks();
 }
@@ -83,6 +85,16 @@ void Game::rotate_block()
     if (!game_over) {
         current_block->rotate();
         if (is_block_outside() || !block_fits()) current_block->undo_rotation();
+        else play_rotation_sound();
+    }
+}
+
+void Game::play_rotation_sound() {
+    if (!audio_player.load_sound("rotation-sound.mp3")) {
+        std::cerr << "Failed to load rotation sound" << std::endl;
+    } else {
+        audio_player.set_sound_volume(10);
+        audio_player.play_specific_sound();
     }
 }
 
@@ -103,10 +115,21 @@ void Game::lock_block()
 
     score.update_score_on_lock(10);
     next_block = get_random_block();
-    score.update_score_rows_cleared(
-        grid.clear_full_rows()
-    );
 
+    int cleared_rows = grid.clear_full_rows();
+    if (cleared_rows > 0) {
+        play_clear_row_sound();
+        score.update_score_rows_cleared(cleared_rows);
+    }
+}
+
+void Game::play_clear_row_sound() {
+    if (!audio_player.load_sound("clear-sound.mp3")) {
+        std::cerr << "Failed to load rotation sound" << std::endl;
+    } else {
+        audio_player.set_sound_volume(10);
+        audio_player.play_specific_sound();
+    }
 }
 
 void Game::handle_input()

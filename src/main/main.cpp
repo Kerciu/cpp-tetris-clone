@@ -6,6 +6,7 @@ int main(int argc, char** argv) {
 
     Process process = Process();
     
+    process.play_start_sound();
     process.play_music();
     process.game_loop();
 

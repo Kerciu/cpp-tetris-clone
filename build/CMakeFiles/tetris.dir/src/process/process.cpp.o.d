@@ -272,9 +272,7 @@ CMakeFiles/tetris.dir/src/process/process.cpp.o: \
  /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../game/../blocks/Blocks.h \
  /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../game/../blocks/Block.h \
  /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../game/../blocks/../gui/gradient.h \
- /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../media/FontLoader.h \
- /home/kerciu/Desktop/tetris-cpp/src/process/../gui/rounded_rectangle.h \
- /home/kerciu/Desktop/tetris-cpp/src/process/../media/AudioPlayer.h \
+ /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../game/../media/AudioPlayer.h \
  /usr/include/SFML/Audio.hpp /usr/include/SFML/Audio/InputSoundFile.hpp \
  /usr/include/SFML/Audio/Export.hpp /usr/include/SFML/Audio/Listener.hpp \
  /usr/include/SFML/Audio/Music.hpp \
@@ -292,4 +290,6 @@ CMakeFiles/tetris.dir/src/process/process.cpp.o: \
  /usr/include/SFML/Audio/SoundFileFactory.inl \
  /usr/include/SFML/Audio/SoundFileReader.hpp \
  /usr/include/SFML/Audio/SoundFileWriter.hpp \
- /home/kerciu/Desktop/tetris-cpp/src/process/../media/../utils/exceptions.h
+ /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../game/../media/../utils/exceptions.h \
+ /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../media/FontLoader.h \
+ /home/kerciu/Desktop/tetris-cpp/src/process/../gui/rounded_rectangle.h

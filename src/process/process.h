@@ -11,6 +11,8 @@ class Process {
     void game_loop();
     void play_music();
 
+    void play_start_sound();
+
 private:
     std::unique_ptr<TetrisGui> tetris_gui;
     Game game;

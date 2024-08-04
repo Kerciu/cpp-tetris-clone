@@ -8,6 +8,7 @@
 #include "score.h"
 #include "../grid/Grid.h"
 #include "../blocks/Blocks.h"
+#include "../media/AudioPlayer.h"
 
 class Game
 {
@@ -38,10 +39,13 @@ private:
     block_ptr current_block;
     block_ptr next_block;
     Score score;
+    AudioPlayer audio_player;
     bool game_over;
 
     void lock_block();
+    void play_clear_row_sound();
     void rotate_block();
+    void play_rotation_sound();
     void move_block_left();
     void move_block_right();
 
