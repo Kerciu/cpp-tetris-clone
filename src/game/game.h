@@ -23,13 +23,9 @@ class Game
     void set_blocks(block_vector new_blocks);
     void set_score(const Score& new_score);
 
-    void move_block_left();
-    void move_block_right();
-    void move_block_down();
-    void lock_block();
-    void rotate_block();
     void handle_input();
-
+    void move_block_down();
+    
     void display(sf::RenderWindow* window);
     void display_next_block(sf::RenderWindow *window);
     bool is_game_over();
@@ -44,6 +40,11 @@ private:
     Score score;
     bool game_over;
 
+    void lock_block();
+    void rotate_block();
+    void move_block_left();
+    void move_block_right();
+
     bool is_block_outside();
     bool block_fits();
     sf::Keyboard::Key get_key_pressed();
@@ -55,6 +56,7 @@ private:
     block_ptr get_random_block();
     void fill_empty_vector();
     int get_random_index() const;
+
     void display_block_coords();
 };
 
