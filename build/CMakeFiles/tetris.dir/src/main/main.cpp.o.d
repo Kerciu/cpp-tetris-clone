@@ -226,10 +226,12 @@ CMakeFiles/tetris.dir/src/main/main.cpp.o: \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
  /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/TetrisGui.h \
+ /usr/include/c++/14/sstream /usr/include/c++/14/istream \
+ /usr/include/c++/14/bits/istream.tcc \
+ /usr/include/c++/14/bits/sstream.tcc \
  /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.h \
  /usr/include/c++/14/array /usr/include/c++/14/compare \
- /usr/include/c++/14/iostream /usr/include/c++/14/istream \
- /usr/include/c++/14/bits/istream.tcc \
+ /usr/include/c++/14/iostream \
  /home/kerciu/Desktop/tetris-cpp/src/grid/../utils/Coords.h \
  /home/kerciu/Desktop/tetris-cpp/src/grid/../utils/colors.h \
  /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../game/game.h \

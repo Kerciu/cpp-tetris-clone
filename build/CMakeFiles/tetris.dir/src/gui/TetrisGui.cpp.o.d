@@ -225,11 +225,12 @@ CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o: \
  /usr/include/c++/14/bits/atomic_base.h \
  /usr/include/c++/14/bits/atomic_lockfree_defines.h \
  /usr/include/c++/14/backward/auto_ptr.h \
- /usr/include/c++/14/pstl/glue_memory_defs.h \
+ /usr/include/c++/14/pstl/glue_memory_defs.h /usr/include/c++/14/sstream \
+ /usr/include/c++/14/istream /usr/include/c++/14/bits/istream.tcc \
+ /usr/include/c++/14/bits/sstream.tcc \
  /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.h \
  /usr/include/c++/14/array /usr/include/c++/14/compare \
- /usr/include/c++/14/iostream /usr/include/c++/14/istream \
- /usr/include/c++/14/bits/istream.tcc \
+ /usr/include/c++/14/iostream \
  /home/kerciu/Desktop/tetris-cpp/src/grid/../utils/Coords.h \
  /home/kerciu/Desktop/tetris-cpp/src/grid/../utils/colors.h \
  /home/kerciu/Desktop/tetris-cpp/src/gui/../game/game.h \

@@ -27,7 +27,7 @@ void TetrisGui::render(Game* game)
     window.clear();
     draw_gradient_background();
     draw_next_block();
-    draw_current_score();
+    draw_current_score(game->get_score().get_score());
     draw_game_over(game->is_game_over());
     game->display(&window);
     window.display();
@@ -40,6 +40,37 @@ void TetrisGui::draw_gradient_background()
     std::pair<int, int> size = std::make_pair(window.getSize().x, window.getSize().y);
     sf::VertexArray gradient = GradientCreator::create_gradient(hex_colors, size);
     window.draw(gradient);
+}
+
+void TetrisGui::draw_score(int score)
+{
+    sf::Text text;
+    sf::Font font = font_loader.get_font();
+    text.setFont(font);
+    text.setString(get_score_as_string(score));
+    text.setCharacterSize(45);
+    text.setFillColor(sf::Color::White);
+
+    sf::FloatRect text_bounds = text.getLocalBounds();
+
+    float text_width = text_bounds.width;
+    text.setPosition(
+        calculate_relative_position(text_width), 295
+    );
+
+    window.draw(text);
+}
+
+int TetrisGui::calculate_relative_position(int x)
+{
+    return (355 + (185 - x) / 2);
+}
+
+std::string TetrisGui::get_score_as_string(int score)
+{
+    std::stringstream ss;
+    ss << score;
+    return ss.str();
 }
 
 void TetrisGui::draw_text(std::string text_to_draw, float x, float y)
@@ -60,10 +91,11 @@ void TetrisGui::draw_next_block()
     draw_next_block_rounded_rectangle();
 }
 
-void TetrisGui::draw_current_score()
+void TetrisGui::draw_current_score(int score)
 {
     draw_text("SCORE", 370, 235);
     draw_score_rounded_rectangle();
+    draw_score(score);
 }
 
 void TetrisGui::draw_game_over(bool game_over)

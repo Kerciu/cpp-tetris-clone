@@ -1535,6 +1535,7 @@ CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o: /home/kerciu/Desktop/tetris-cpp/s
   /usr/include/c++/14/bits/shared_ptr_atomic.h \
   /usr/include/c++/14/bits/shared_ptr_base.h \
   /usr/include/c++/14/bits/specfun.h \
+  /usr/include/c++/14/bits/sstream.tcc \
   /usr/include/c++/14/bits/std_abs.h \
   /usr/include/c++/14/bits/stl_algo.h \
   /usr/include/c++/14/bits/stl_algobase.h \
@@ -1611,6 +1612,7 @@ CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o: /home/kerciu/Desktop/tetris-cpp/s
   /usr/include/c++/14/pstl/pstl_config.h \
   /usr/include/c++/14/random \
   /usr/include/c++/14/ratio \
+  /usr/include/c++/14/sstream \
   /usr/include/c++/14/stdexcept \
   /usr/include/c++/14/streambuf \
   /usr/include/c++/14/string \
@@ -2501,6 +2503,7 @@ CMakeFiles/tetris.dir/src/main/main.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/m
   /usr/include/c++/14/bits/shared_ptr_atomic.h \
   /usr/include/c++/14/bits/shared_ptr_base.h \
   /usr/include/c++/14/bits/specfun.h \
+  /usr/include/c++/14/bits/sstream.tcc \
   /usr/include/c++/14/bits/std_abs.h \
   /usr/include/c++/14/bits/stl_algo.h \
   /usr/include/c++/14/bits/stl_algobase.h \
@@ -2577,6 +2580,7 @@ CMakeFiles/tetris.dir/src/main/main.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/m
   /usr/include/c++/14/pstl/pstl_config.h \
   /usr/include/c++/14/random \
   /usr/include/c++/14/ratio \
+  /usr/include/c++/14/sstream \
   /usr/include/c++/14/stdexcept \
   /usr/include/c++/14/streambuf \
   /usr/include/c++/14/string \
@@ -3168,6 +3172,7 @@ CMakeFiles/tetris.dir/src/process/process.cpp.o: /home/kerciu/Desktop/tetris-cpp
   /usr/include/c++/14/bits/shared_ptr_atomic.h \
   /usr/include/c++/14/bits/shared_ptr_base.h \
   /usr/include/c++/14/bits/specfun.h \
+  /usr/include/c++/14/bits/sstream.tcc \
   /usr/include/c++/14/bits/std_abs.h \
   /usr/include/c++/14/bits/stl_algo.h \
   /usr/include/c++/14/bits/stl_algobase.h \
@@ -3244,6 +3249,7 @@ CMakeFiles/tetris.dir/src/process/process.cpp.o: /home/kerciu/Desktop/tetris-cpp
   /usr/include/c++/14/pstl/pstl_config.h \
   /usr/include/c++/14/random \
   /usr/include/c++/14/ratio \
+  /usr/include/c++/14/sstream \
   /usr/include/c++/14/stdexcept \
   /usr/include/c++/14/streambuf \
   /usr/include/c++/14/string \
@@ -3625,6 +3631,8 @@ CMakeFiles/tetris.dir/src/utils/colors.cpp.o: /home/kerciu/Desktop/tetris-cpp/sr
 
 /home/kerciu/Desktop/tetris-cpp/src/gui/gradient.cpp:
 
+/usr/include/c++/14/bits/sstream.tcc:
+
 /home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.h:
 
 /home/kerciu/Desktop/tetris-cpp/src/media/FontLoader.h:
@@ -3876,6 +3884,8 @@ CMakeFiles/tetris.dir/src/utils/colors.cpp.o: /home/kerciu/Desktop/tetris-cpp/sr
 /home/kerciu/Desktop/tetris-cpp/src/blocks/Block.cpp:
 
 /usr/include/SFML/Window/Context.hpp:
+
+/usr/include/c++/14/sstream:
 
 /usr/include/c++/14/cmath:
 

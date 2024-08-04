@@ -2,6 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include <memory>
 #include <string>
+#include <sstream>
 #include "Grid.h"
 #include "../game/game.h"
 #include "../media/FontLoader.h"
@@ -23,8 +24,11 @@ class TetrisGui {
 
     void draw_gradient_background();
     void draw_text(std::string text_to_draw, float x, float y);
+    void draw_score(int score);
+    int calculate_relative_position(int x);
+    std::string get_score_as_string(int score);
     void draw_next_block();
-    void draw_current_score();
+    void draw_current_score(int score);
     void draw_game_over(bool game_over);
     void draw_next_block_rounded_rectangle();
     void draw_score_rounded_rectangle();
