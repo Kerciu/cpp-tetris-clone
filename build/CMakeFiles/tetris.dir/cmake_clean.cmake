@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/tetris.dir/src/grid/Grid.cpp.o.d"
   "CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o"
   "CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o.d"
+  "CMakeFiles/tetris.dir/src/gui/arrow.cpp.o"
+  "CMakeFiles/tetris.dir/src/gui/arrow.cpp.o.d"
   "CMakeFiles/tetris.dir/src/gui/gradient.cpp.o"
   "CMakeFiles/tetris.dir/src/gui/gradient.cpp.o.d"
   "CMakeFiles/tetris.dir/src/gui/rounded_rectangle.cpp.o"

@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/kerciu/Desktop/tetris-cpp/src/game/score.cpp" "CMakeFiles/RunTests.dir/src/game/score.cpp.o" "gcc" "CMakeFiles/RunTests.dir/src/game/score.cpp.o.d"
   "/home/kerciu/Desktop/tetris-cpp/src/grid/Grid.cpp" "CMakeFiles/RunTests.dir/src/grid/Grid.cpp.o" "gcc" "CMakeFiles/RunTests.dir/src/grid/Grid.cpp.o.d"
   "/home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.cpp" "CMakeFiles/RunTests.dir/src/gui/TetrisGui.cpp.o" "gcc" "CMakeFiles/RunTests.dir/src/gui/TetrisGui.cpp.o.d"
+  "/home/kerciu/Desktop/tetris-cpp/src/gui/arrow.cpp" "CMakeFiles/RunTests.dir/src/gui/arrow.cpp.o" "gcc" "CMakeFiles/RunTests.dir/src/gui/arrow.cpp.o.d"
   "/home/kerciu/Desktop/tetris-cpp/src/gui/gradient.cpp" "CMakeFiles/RunTests.dir/src/gui/gradient.cpp.o" "gcc" "CMakeFiles/RunTests.dir/src/gui/gradient.cpp.o.d"
   "/home/kerciu/Desktop/tetris-cpp/src/gui/rounded_rectangle.cpp" "CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.o" "gcc" "CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.o.d"
   "/home/kerciu/Desktop/tetris-cpp/src/media/AudioPlayer.cpp" "CMakeFiles/RunTests.dir/src/media/AudioPlayer.cpp.o" "gcc" "CMakeFiles/RunTests.dir/src/media/AudioPlayer.cpp.o.d"

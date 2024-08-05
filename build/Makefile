@@ -411,6 +411,33 @@ src/gui/TetrisGui.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/TetrisGui.cpp.s
 .PHONY : src/gui/TetrisGui.cpp.s
 
+src/gui/arrow.o: src/gui/arrow.cpp.o
+.PHONY : src/gui/arrow.o
+
+# target to build an object file
+src/gui/arrow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/arrow.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/arrow.cpp.o
+.PHONY : src/gui/arrow.cpp.o
+
+src/gui/arrow.i: src/gui/arrow.cpp.i
+.PHONY : src/gui/arrow.i
+
+# target to preprocess a source file
+src/gui/arrow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/arrow.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/arrow.cpp.i
+.PHONY : src/gui/arrow.cpp.i
+
+src/gui/arrow.s: src/gui/arrow.cpp.s
+.PHONY : src/gui/arrow.s
+
+# target to generate assembly for a file
+src/gui/arrow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/arrow.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/arrow.cpp.s
+.PHONY : src/gui/arrow.cpp.s
+
 src/gui/gradient.o: src/gui/gradient.cpp.o
 .PHONY : src/gui/gradient.o
 
@@ -712,6 +739,9 @@ help:
 	@echo "... src/gui/TetrisGui.o"
 	@echo "... src/gui/TetrisGui.i"
 	@echo "... src/gui/TetrisGui.s"
+	@echo "... src/gui/arrow.o"
+	@echo "... src/gui/arrow.i"
+	@echo "... src/gui/arrow.s"
 	@echo "... src/gui/gradient.o"
 	@echo "... src/gui/gradient.i"
 	@echo "... src/gui/gradient.s"

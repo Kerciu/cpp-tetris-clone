@@ -8,6 +8,7 @@
 #include "../media/FontLoader.h"
 #include "rounded_rectangle.h"
 #include "gradient.h"
+#include "arrow.h"
 
 class TetrisGui {
     public:
@@ -18,18 +19,21 @@ class TetrisGui {
     void handle_events();
     void render(Game* game);
 
-    private:
+private:
     sf::RenderWindow window;
     FontLoader font_loader;
 
+    void render_gui_components(Game *game);
+
     void draw_gradient_background();
-    void draw_text(std::string text_to_draw, float x, float y);
+    void draw_text(std::string text_to_draw, float x, float y, int char_size=38);
     void draw_score(int score);
     int calculate_relative_position(int x);
     std::string get_score_as_string(int score);
     void draw_next_block();
     void draw_current_score(int score);
     void draw_game_over(bool game_over);
+    void draw_guiding_block(bool game_over);
     void draw_next_block_rounded_rectangle();
     void draw_score_rounded_rectangle();
 };

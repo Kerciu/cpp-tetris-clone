@@ -25,12 +25,18 @@ void TetrisGui::handle_events()
 void TetrisGui::render(Game* game)
 {
     window.clear();
+    render_gui_components(game);
+    game->display(&window);
+    window.display();
+}
+
+void TetrisGui::render_gui_components(Game* game)
+{
     draw_gradient_background();
     draw_next_block();
     draw_current_score(game->get_score().get_score());
     draw_game_over(game->is_game_over());
-    game->display(&window);
-    window.display();
+    draw_guiding_block(game->is_game_over());
 }
 
 void TetrisGui::draw_gradient_background()
@@ -73,13 +79,13 @@ std::string TetrisGui::get_score_as_string(int score)
     return ss.str();
 }
 
-void TetrisGui::draw_text(std::string text_to_draw, float x, float y)
+void TetrisGui::draw_text(std::string text_to_draw, float x, float y, int char_size)
 {   
     sf::Text text;
     sf::Font font = font_loader.get_font();
     text.setFont(font);
     text.setString(text_to_draw);
-    text.setCharacterSize(38);
+    text.setCharacterSize(char_size);
     text.setFillColor(sf::Color::White);
     text.setPosition(x, y);
     window.draw(text);
@@ -93,7 +99,7 @@ void TetrisGui::draw_next_block()
 
 void TetrisGui::draw_current_score(int score)
 {
-    draw_text("SCORE", 370, 235);
+    draw_text("SCORE", 375, 235);
     draw_score_rounded_rectangle();
     draw_score(score);
 }
@@ -101,7 +107,16 @@ void TetrisGui::draw_current_score(int score)
 void TetrisGui::draw_game_over(bool game_over)
 {
     if (game_over) {
-        draw_text("Game Over", 335, 405);
+        draw_text("Game Over", 340, 405);
+        draw_text("PRESS ANY ARROW\n  TO CONTINUE", 340, 475, 20);
+    }
+}
+
+void TetrisGui::draw_guiding_block(bool game_over)
+{
+    if (!game_over)
+    {
+        Arrow::draw_guiding_arrows(&window, 445, 425);
     }
 }
 

@@ -136,12 +136,12 @@ tests/googletest/googletest/clean: tests/googletest/googletest/CMakeFiles/gtest_
 CMakeFiles/tetris.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40 "Built target tetris"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42 "Built target tetris"
 .PHONY : CMakeFiles/tetris.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tetris.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kerciu/Desktop/tetris-cpp/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kerciu/Desktop/tetris-cpp/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tetris.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kerciu/Desktop/tetris-cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/tetris.dir/rule
@@ -163,12 +163,12 @@ CMakeFiles/RunTests.dir/all: tests/googletest/googletest/CMakeFiles/gtest.dir/al
 CMakeFiles/RunTests.dir/all: tests/googletest/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target RunTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target RunTests"
 .PHONY : CMakeFiles/RunTests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RunTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kerciu/Desktop/tetris-cpp/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kerciu/Desktop/tetris-cpp/build/CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RunTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kerciu/Desktop/tetris-cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/RunTests.dir/rule
@@ -189,7 +189,7 @@ CMakeFiles/RunTests.dir/clean:
 tests/googletest/googlemock/CMakeFiles/gmock.dir/all: tests/googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/googletest/googlemock/CMakeFiles/gmock.dir/build.make tests/googletest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/googletest/googlemock/CMakeFiles/gmock.dir/build.make tests/googletest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=17,18 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=18,19 "Built target gmock"
 .PHONY : tests/googletest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -216,7 +216,7 @@ tests/googletest/googlemock/CMakeFiles/gmock_main.dir/all: tests/googletest/goog
 tests/googletest/googlemock/CMakeFiles/gmock_main.dir/all: tests/googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make tests/googletest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make tests/googletest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=19,20 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=20,21 "Built target gmock_main"
 .PHONY : tests/googletest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -242,7 +242,7 @@ tests/googletest/googlemock/CMakeFiles/gmock_main.dir/clean:
 tests/googletest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f tests/googletest/googletest/CMakeFiles/gtest.dir/build.make tests/googletest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/googletest/googletest/CMakeFiles/gtest.dir/build.make tests/googletest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=21,22 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=22,23 "Built target gtest"
 .PHONY : tests/googletest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -268,7 +268,7 @@ tests/googletest/googletest/CMakeFiles/gtest.dir/clean:
 tests/googletest/googletest/CMakeFiles/gtest_main.dir/all: tests/googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/googletest/googletest/CMakeFiles/gtest_main.dir/build.make tests/googletest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/googletest/googletest/CMakeFiles/gtest_main.dir/build.make tests/googletest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=23,24 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=24,25 "Built target gtest_main"
 .PHONY : tests/googletest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.

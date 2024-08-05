@@ -290,4 +290,5 @@ CMakeFiles/RunTests.dir/src/gui/TetrisGui.cpp.o: \
  /usr/include/SFML/Audio/SoundFileWriter.hpp \
  /home/kerciu/Desktop/tetris-cpp/src/gui/../game/../media/../utils/exceptions.h \
  /home/kerciu/Desktop/tetris-cpp/src/gui/../media/FontLoader.h \
- /home/kerciu/Desktop/tetris-cpp/src/gui/rounded_rectangle.h
+ /home/kerciu/Desktop/tetris-cpp/src/gui/rounded_rectangle.h \
+ /home/kerciu/Desktop/tetris-cpp/src/gui/arrow.h

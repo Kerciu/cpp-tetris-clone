@@ -21,48 +21,14 @@
 	TotalVirtualMemory="7874"
 	TotalPhysicalMemory="7875"
 	LogicalProcessorsPerPhysical="1"
-	ProcessorClockFrequency="3500.13"
+	ProcessorClockFrequency="3571.1"
 	>
 	<Testing>
-		<StartDateTime>Aug 05 10:48 CEST</StartDateTime>
-		<StartTestTime>1722847707</StartTestTime>
-		<TestList>
-			<Test>./RunTests</Test>
-		</TestList>
-		<Test Status="failed">
-			<Name>RunTests</Name>
-			<Path>.</Path>
-			<FullName>./RunTests</FullName>
-			<FullCommandLine>/home/kerciu/Desktop/tetris-cpp/build/RunTests</FullCommandLine>
-			<Results>
-				<NamedMeasurement type="text/string" name="Exit Code">
-					<Value>NUMERICAL</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Exit Value">
-					<Value>0</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.860267</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="numeric/double" name="Processors">
-					<Value>1</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Completion Status">
-					<Value>Completed</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Command Line">
-					<Value>/home/kerciu/Desktop/tetris-cpp/build/RunTests</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Environment">
-					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
-				</NamedMeasurement>
-				<Measurement>
-					<Value encoding="base64" compression="gzip">eJytmG2PokgQx9/zKeolJodDA45K7jZxfIrZh0tm9nZzMRODUGrfYLfb3TjjfvoLsLo6ODbg8MIAVlXX719UN830r8PxCPcJY5QtwXVAoVQSFoKvgZDsCmRCFcqmMbUOxyOMYz4P4twA2ZYKztbIFEhUVrJ5ZUzc47hfUQkqxwn9ilIZU7j/5wtkx+PpX83vlEX8uS8wUJQzY5pbwd8fNZZgEq8Da9koETzmEo2bFV/jzROKkCY3A5RPim9uVGZuhZv0VCqZ/c7yu81ws/G9jg+jgMaJQONbECcIfOFDbjBbJtT6QOVM5NKaDQOgF6okiH1QIkFj+LLBUGHkwyKIJRop3qg3+TQcXMwVTLelQ+tzLiJZRrdTSzDd23Kxx6gUCllTuFb7t3B7GQB/JEFM1Q74AtQKJcI21VT6BkCYDdpcopq9ZEoCfF/RcAVU+uDYBgCxjbrJdOonsyskQ9JkHPtiNU8kBNNpl9P84Zfm2nI+7CO7drnIE7YNYhr1xDJJe1hOWB6ipqJtUlTU38smsxparQaoleDPEgIG+BLiJnsAU7l3GwSpIt/niZrxxUwEbInNo/ahau/LuFpRtmzWrX3b0WS6My1iv3Oq2ifjrXJUb/1ipD5nUiWh4rWLe3tOsnzYVKw/wHlvwWomemaSOSSa5mm9e6LaypapC5iuq6vyWNCozPR+bAem61SJO6BSCTpP0vN8rio7UtGzKtNxhIfaYx+6xqsydp/HXFQDPnIp06MF12qIRy7lFo+Yi73vN7yi9YlrV1wqtxhO7cdXS6RnzXcKgc//w1DBn27bcnvg2dZo9MEAiALxNFsK3F32Ij2LjMDpZF61ec4sVFoeouPpWt0ukM4vHrnw/awEvj8WiOyys53KALZ9HdaZVU2L5WiwRiPLtsEbFLHuMSrjei2UWwPK1UPdOfvMAHg2y192GTpW2wNCroPxasB4Ophba3QH7V6xQv9iHPNnrRTv8OS1anC19EXyhtA501CfgyUyFZR5+jK8K8DOvPVowW41YLZr9YYwcIpg/V1QaqK4lqrqPiylamuoiG15LnRHRaq7ONE0l20f1+ri61RhUQPT6eZrYckvD2C2PAJrCYqrIG4Yp47esd9dzMOn4teKw+3mhFFFgzj7ClB3V0y8qt0zT8fPNqJhqsdsmwlhNpqS/sTC1rRjALzemL5BAOaZneNv2wdUPRaNUWW3JtHpm8vbdpqwn/kWs6u34h0MNIHuucpfjf8HUTU4Uw==</Value>
-				</Measurement>
-			</Results>
-		</Test>
-		<EndDateTime>Aug 05 10:48 CEST</EndDateTime>
-		<EndTestTime>1722847708</EndTestTime>
+		<StartDateTime>Aug 05 11:12 CEST</StartDateTime>
+		<StartTestTime>1722849176</StartTestTime>
+		<TestList/>
+		<EndDateTime>Aug 05 11:12 CEST</EndDateTime>
+		<EndTestTime>1722849176</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

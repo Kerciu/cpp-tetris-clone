@@ -292,4 +292,5 @@ CMakeFiles/tetris.dir/src/process/process.cpp.o: \
  /usr/include/SFML/Audio/SoundFileWriter.hpp \
  /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../game/../media/../utils/exceptions.h \
  /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../media/FontLoader.h \
- /home/kerciu/Desktop/tetris-cpp/src/process/../gui/rounded_rectangle.h
+ /home/kerciu/Desktop/tetris-cpp/src/process/../gui/rounded_rectangle.h \
+ /home/kerciu/Desktop/tetris-cpp/src/process/../gui/arrow.h
