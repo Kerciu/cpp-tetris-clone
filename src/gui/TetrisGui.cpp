@@ -108,7 +108,7 @@ void TetrisGui::draw_game_over(bool game_over)
 {
     if (game_over) {
         draw_text("Game Over", 340, 405);
-        draw_text("PRESS ANY ARROW\n  TO CONTINUE", 340, 475, 20);
+        draw_text("P R E S S  A N Y  A R R O W\n\t\tT O  C O N T I N U E", 325, 475, 18);
     }
 }
 
