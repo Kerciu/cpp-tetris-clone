@@ -48,6 +48,7 @@ private:
     void lock_block();
     void play_clear_row_sound();
     void play_rotation_sound();
+    void play_game_over_sound();
 
     bool is_block_outside();
     bool block_fits();

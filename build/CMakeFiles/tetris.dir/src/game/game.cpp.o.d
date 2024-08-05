@@ -286,4 +286,10 @@ CMakeFiles/tetris.dir/src/game/game.cpp.o: \
  /usr/include/SFML/Audio/SoundFileFactory.inl \
  /usr/include/SFML/Audio/SoundFileReader.hpp \
  /usr/include/SFML/Audio/SoundFileWriter.hpp \
- /home/kerciu/Desktop/tetris-cpp/src/game/../media/../utils/exceptions.h
+ /home/kerciu/Desktop/tetris-cpp/src/game/../media/../utils/exceptions.h \
+ /home/kerciu/Desktop/tetris-cpp/src/process/process.h \
+ /home/kerciu/Desktop/tetris-cpp/src/process/../gui/TetrisGui.h \
+ /usr/include/c++/14/sstream /usr/include/c++/14/bits/sstream.tcc \
+ /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../media/FontLoader.h \
+ /home/kerciu/Desktop/tetris-cpp/src/process/../gui/rounded_rectangle.h \
+ /home/kerciu/Desktop/tetris-cpp/src/process/../gui/arrow.h

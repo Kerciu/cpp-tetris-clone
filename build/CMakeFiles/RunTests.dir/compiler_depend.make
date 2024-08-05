@@ -644,6 +644,11 @@ CMakeFiles/RunTests.dir/src/game/game.cpp.o: /home/kerciu/Desktop/tetris-cpp/src
   /home/kerciu/Desktop/tetris-cpp/src/media/AudioPlayer.h \
   /home/kerciu/Desktop/tetris-cpp/src/game/game.h \
   /home/kerciu/Desktop/tetris-cpp/src/game/score.h \
+  /home/kerciu/Desktop/tetris-cpp/src/media/FontLoader.h \
+  /home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.h \
+  /home/kerciu/Desktop/tetris-cpp/src/gui/arrow.h \
+  /home/kerciu/Desktop/tetris-cpp/src/gui/rounded_rectangle.h \
+  /home/kerciu/Desktop/tetris-cpp/src/process/process.h \
   /usr/include/SFML/Audio.hpp \
   /usr/include/SFML/Audio/AlResource.hpp \
   /usr/include/SFML/Audio/Export.hpp \
@@ -877,6 +882,7 @@ CMakeFiles/RunTests.dir/src/game/game.cpp.o: /home/kerciu/Desktop/tetris-cpp/src
   /usr/include/c++/14/bits/shared_ptr_atomic.h \
   /usr/include/c++/14/bits/shared_ptr_base.h \
   /usr/include/c++/14/bits/specfun.h \
+  /usr/include/c++/14/bits/sstream.tcc \
   /usr/include/c++/14/bits/std_abs.h \
   /usr/include/c++/14/bits/stl_algo.h \
   /usr/include/c++/14/bits/stl_algobase.h \
@@ -956,6 +962,7 @@ CMakeFiles/RunTests.dir/src/game/game.cpp.o: /home/kerciu/Desktop/tetris-cpp/src
   /usr/include/c++/14/random \
   /usr/include/c++/14/ratio \
   /usr/include/c++/14/set \
+  /usr/include/c++/14/sstream \
   /usr/include/c++/14/stdexcept \
   /usr/include/c++/14/streambuf \
   /usr/include/c++/14/string \
@@ -4648,8 +4655,6 @@ CMakeFiles/RunTests.dir/tests/test_tetris.cpp.o: /home/kerciu/Desktop/tetris-cpp
 
 /home/kerciu/Desktop/tetris-cpp/src/utils/Coords.cpp:
 
-/home/kerciu/Desktop/tetris-cpp/src/process/process.h:
-
 /home/kerciu/Desktop/tetris-cpp/src/process/process.cpp:
 
 /usr/include/c++/14/bits/std_mutex.h:
@@ -4659,10 +4664,6 @@ CMakeFiles/RunTests.dir/tests/test_tetris.cpp.o: /home/kerciu/Desktop/tetris-cpp
 /home/kerciu/Desktop/tetris-cpp/src/gui/gradient.cpp:
 
 /home/kerciu/Desktop/tetris-cpp/src/gui/arrow.cpp:
-
-/home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.h:
-
-/home/kerciu/Desktop/tetris-cpp/src/media/FontLoader.h:
 
 /usr/include/c++/14/unordered_map:
 
@@ -4692,9 +4693,9 @@ CMakeFiles/RunTests.dir/tests/test_tetris.cpp.o: /home/kerciu/Desktop/tetris-cpp
 
 /usr/include/c++/14/bits/unordered_map.h:
 
-/usr/include/c++/14/bits/sstream.tcc:
-
 /usr/include/c++/14/bits/stl_set.h:
+
+/usr/include/c++/14/bits/sstream.tcc:
 
 /usr/include/c++/14/bits/specfun.h:
 
@@ -4731,6 +4732,12 @@ CMakeFiles/RunTests.dir/tests/test_tetris.cpp.o: /home/kerciu/Desktop/tetris-cpp
 /usr/include/SFML/Audio/InputSoundFile.hpp:
 
 /usr/include/SFML/Audio/Export.hpp:
+
+/home/kerciu/Desktop/tetris-cpp/src/process/process.h:
+
+/home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.h:
+
+/home/kerciu/Desktop/tetris-cpp/src/media/FontLoader.h:
 
 /home/kerciu/Desktop/tetris-cpp/src/game/score.h:
 

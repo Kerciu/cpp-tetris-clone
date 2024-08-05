@@ -1,4 +1,5 @@
 #include "game.h"
+#include "process.h"
 
 Game::Game() : audio_player("/home/kerciu/Desktop/tetris-cpp/assets/sound/"), 
                grid(Grid()), blocks(generate_blocks()), game_over(false), score(Score()),
@@ -111,6 +112,7 @@ void Game::lock_block()
     if (!block_fits()) 
     {
         game_over = true;
+        play_game_over_sound();
     }
 
     score.update_score_on_lock(10);
@@ -128,6 +130,18 @@ void Game::play_clear_row_sound() {
         std::cerr << "Failed to load rotation sound" << std::endl;
     } else {
         audio_player.set_sound_volume(10);
+        audio_player.play_specific_sound();
+    }
+}
+
+void Game::play_game_over_sound()
+{
+    if (!audio_player.load_sound("game-over.mp3")) {
+        std::cerr << "Failed to load game over sound" << std::endl;
+    } 
+
+    else {
+        audio_player.set_sound_volume(15);
         audio_player.play_specific_sound();
     }
 }

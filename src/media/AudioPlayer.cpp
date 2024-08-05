@@ -54,3 +54,8 @@ void AudioPlayer::set_sound_volume(float volume)
 void AudioPlayer::set_loop(bool loop) {
     music.setLoop(loop);
 }
+
+bool AudioPlayer::is_playing()
+{
+    return music.getStatus() == sf::Music::Playing;
+}

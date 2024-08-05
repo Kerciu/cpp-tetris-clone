@@ -647,6 +647,11 @@ CMakeFiles/RunTests.dir/src/game/game.cpp.o
  /home/kerciu/Desktop/tetris-cpp/src/media/AudioPlayer.h
  /home/kerciu/Desktop/tetris-cpp/src/game/game.h
  /home/kerciu/Desktop/tetris-cpp/src/game/score.h
+ /home/kerciu/Desktop/tetris-cpp/src/media/FontLoader.h
+ /home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.h
+ /home/kerciu/Desktop/tetris-cpp/src/gui/arrow.h
+ /home/kerciu/Desktop/tetris-cpp/src/gui/rounded_rectangle.h
+ /home/kerciu/Desktop/tetris-cpp/src/process/process.h
  /usr/include/SFML/Audio.hpp
  /usr/include/SFML/Audio/AlResource.hpp
  /usr/include/SFML/Audio/Export.hpp
@@ -880,6 +885,7 @@ CMakeFiles/RunTests.dir/src/game/game.cpp.o
  /usr/include/c++/14/bits/shared_ptr_atomic.h
  /usr/include/c++/14/bits/shared_ptr_base.h
  /usr/include/c++/14/bits/specfun.h
+ /usr/include/c++/14/bits/sstream.tcc
  /usr/include/c++/14/bits/std_abs.h
  /usr/include/c++/14/bits/stl_algo.h
  /usr/include/c++/14/bits/stl_algobase.h
@@ -959,6 +965,7 @@ CMakeFiles/RunTests.dir/src/game/game.cpp.o
  /usr/include/c++/14/random
  /usr/include/c++/14/ratio
  /usr/include/c++/14/set
+ /usr/include/c++/14/sstream
  /usr/include/c++/14/stdexcept
  /usr/include/c++/14/streambuf
  /usr/include/c++/14/string

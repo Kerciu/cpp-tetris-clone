@@ -18,6 +18,7 @@ class AudioPlayer
     void set_volume(float volume);
     void set_sound_volume(float volume);
     void set_loop(bool loop);
+    bool is_playing();
 
 private:
     std::string files_path;

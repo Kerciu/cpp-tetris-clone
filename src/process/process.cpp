@@ -8,15 +8,34 @@ Process::Process() : last_update_time(sf::Time::Zero), audio_player(AudioPlayer(
 void Process::play_music()
 {
     try {
-        audio_player.load_music("Tetris Theme [NO COPYRIGHT].mp3");
+        audio_player.load_music("tetris-theme.mp3");
         audio_player.set_volume(50);
 
         audio_player.play_music_from(sf::seconds(5));
         audio_player.set_loop(true);
+
     } catch (const AudioLoadingFailure& e) {
         std::cerr << e.what() << std::endl;
         exit(EXIT_FAILURE);
     }
+}
+
+void Process::stop_music_if_game_over()
+{
+    if (game.is_game_over()) {
+        audio_player.stop_music();
+    }
+    else {
+        if (!audio_player.is_playing()) {
+            play_music();
+        }
+    }
+}
+
+void Process::reset_music()
+{
+    audio_player.stop_music();
+    play_music();
 }
 
 void Process::play_start_sound()
@@ -39,6 +58,9 @@ void Process::game_loop()
         if (event_triggered(fall_interval)) {
             game.move_block_down();
         }
+
+        stop_music_if_game_over();
+        
         tetris_gui->handle_events();
         tetris_gui->render(&game);
     }
