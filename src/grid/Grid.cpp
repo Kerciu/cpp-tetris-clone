@@ -161,3 +161,19 @@ bool Grid::validate_bounds(int row, int col)
 {
     return (col >= 0 && col < num_cols) && (row >= 0 && row < num_rows);
 }
+
+bool Grid::operator==(const Grid &other) const
+{
+    
+    if (this->grid_colors != other.grid_colors || this->grid_distribution != other.grid_distribution) 
+    {
+        return false;
+    } else {
+    return true;
+    }
+}
+
+bool Grid::operator!=(const Grid &other) const
+{
+    return !(*this == other);
+}

@@ -230,12 +230,12 @@ CMakeFiles/tetris.dir/src/process/process.cpp.o: \
  /usr/include/c++/14/sstream /usr/include/c++/14/istream \
  /usr/include/c++/14/bits/istream.tcc \
  /usr/include/c++/14/bits/sstream.tcc \
- /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.h \
+ /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../grid/Grid.h \
  /usr/include/c++/14/array /usr/include/c++/14/compare \
  /usr/include/c++/14/iostream \
- /home/kerciu/Desktop/tetris-cpp/src/grid/../utils/Coords.h \
- /home/kerciu/Desktop/tetris-cpp/src/grid/../utils/colors.h \
- /home/kerciu/Desktop/tetris-cpp/src/grid/../gui/gradient.h \
+ /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../grid/../utils/Coords.h \
+ /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../grid/../utils/colors.h \
+ /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../grid/../gui/gradient.h \
  /home/kerciu/Desktop/tetris-cpp/src/process/../gui/../game/game.h \
  /usr/include/c++/14/unordered_map \
  /usr/include/c++/14/bits/unordered_map.h \

@@ -31,3 +31,23 @@ void Coords::set_col(int new_col)
 {
     col = new_col;
 }
+
+void Coords::set_x(int new_x)
+{
+    col = new_x;
+}
+
+void Coords::set_y(int new_y)
+{
+    row = new_y;
+}
+
+bool Coords::operator==(const Coords &other) const
+{
+    return (this->row == other.row && this->col == other.col);
+}
+
+bool Coords::operator!=(const Coords &other) const
+{
+    return !(*this == other);
+}

@@ -1,0 +1,13 @@
+2:TetrisGuiTest.WindowClose
+4:TetrisGuiTest.CoordsGetters
+6:TetrisGuiTest.CoordsInvalidArgumentsInSetter
+7:TetrisGuiTest.CoordsCreationInvalidArgumentsInConstuctor
+13:TetrisGuiTest.ColorCreationVector
+14:BlockTest.InitialValues
+17:BlockTest.Rotation
+26:GameTest.Constructor
+29:GameTest.MoveBlockLeft
+30:GameTest.MoveBlockRight
+31:GameTest.MoveBlockDown
+32:GameTest.RotateBlock
+33:RunTests

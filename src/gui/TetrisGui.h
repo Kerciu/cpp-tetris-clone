@@ -3,7 +3,7 @@
 #include <memory>
 #include <string>
 #include <sstream>
-#include "Grid.h"
+#include "../grid/Grid.h"
 #include "../game/game.h"
 #include "../media/FontLoader.h"
 #include "rounded_rectangle.h"

@@ -1,0 +1,152 @@
+Start testing: Aug 05 10:48 CEST
+----------------------------------------------------------
+33/33 Testing: RunTests
+33/33 Test: RunTests
+Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests"
+Directory: /home/kerciu/Desktop/tetris-cpp/build
+"RunTests" start time: Aug 05 10:48 CEST
+Output:
+----------------------------------------------------------
+[==========] Running 32 tests from 11 test suites.
+[----------] Global test environment set-up.
+[----------] 13 tests from TetrisGuiTest
+[ RUN      ] TetrisGuiTest.WindowCreation
+[       OK ] TetrisGuiTest.WindowCreation (148 ms)
+[ RUN      ] TetrisGuiTest.WindowClose
+/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:48: Failure
+Value of: tetris_gui->is_running()
+  Actual: true
+Expected: false
+
+[  FAILED  ] TetrisGuiTest.WindowClose (35 ms)
+[ RUN      ] TetrisGuiTest.CoordsCreation
+[       OK ] TetrisGuiTest.CoordsCreation (36 ms)
+[ RUN      ] TetrisGuiTest.CoordsGetters
+/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:57: Failure
+Expected equality of these values:
+  coords.get_x()
+    Which is: 20
+  10
+
+/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:58: Failure
+Expected equality of these values:
+  coords.get_y()
+    Which is: 10
+  20
+
+[  FAILED  ] TetrisGuiTest.CoordsGetters (27 ms)
+[ RUN      ] TetrisGuiTest.CoordsSetters
+[       OK ] TetrisGuiTest.CoordsSetters (30 ms)
+[ RUN      ] TetrisGuiTest.CoordsInvalidArgumentsInSetter
+/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:71: Failure
+Expected: coords.set_x(-5) throws an exception of type std::out_of_range.
+  Actual: it throws nothing.
+
+/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:72: Failure
+Expected: coords.set_y(-10) throws an exception of type std::out_of_range.
+  Actual: it throws nothing.
+
+[  FAILED  ] TetrisGuiTest.CoordsInvalidArgumentsInSetter (35 ms)
+[ RUN      ] TetrisGuiTest.CoordsCreationInvalidArgumentsInConstuctor
+/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:76: Failure
+Expected: Coords(-10, 20) throws an exception of type std::out_of_range.
+  Actual: it throws nothing.
+
+/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:77: Failure
+Expected: Coords(10, -20) throws an exception of type std::out_of_range.
+  Actual: it throws nothing.
+
+[  FAILED  ] TetrisGuiTest.CoordsCreationInvalidArgumentsInConstuctor (33 ms)
+[ RUN      ] TetrisGuiTest.GridCreation
+[       OK ] TetrisGuiTest.GridCreation (32 ms)
+[ RUN      ] TetrisGuiTest.GridCreationDistributionGetter
+[       OK ] TetrisGuiTest.GridCreationDistributionGetter (33 ms)
+[ RUN      ] TetrisGuiTest.GridCreationDistributionSetter
+[       OK ] TetrisGuiTest.GridCreationDistributionSetter (34 ms)
+[ RUN      ] TetrisGuiTest.GridCreationColorGetter
+[       OK ] TetrisGuiTest.GridCreationColorGetter (35 ms)
+[ RUN      ] TetrisGuiTest.GridCreationColorSetter
+[       OK ] TetrisGuiTest.GridCreationColorSetter (27 ms)
+[ RUN      ] TetrisGuiTest.ColorCreationVector
+/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:130: Failure
+Expected equality of these values:
+  vec[0]
+    Which is: 4-byte object <37-3A 40-FF>
+  dark_grey
+    Which is: 4-byte object <1A-1F 28-FF>
+
+/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:131: Failure
+Expected equality of these values:
+  vec[1]
+    Which is: 4-byte object <39-99 18-FF>
+  sf::Color::Green
+    Which is: 4-byte object <00-FF 00-FF>
+
+/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:132: Failure
+Expected equality of these values:
+  vec[2]
+    Which is: 4-byte object <FF-00 4D-FF>
+  sf::Color::Red
+    Which is: 4-byte object <FF-00 00-FF>
+
+/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:133: Failure
+Expected equality of these values:
+  vec[3]
+    Which is: 4-byte object <FF-B2 00-FF>
+  orange
+    Which is: 4-byte object <E2-74 11-FF>
+
+/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:134: Failure
+Expected equality of these values:
+  vec[4]
+    Which is: 4-byte object <F6-FB 7A-FF>
+  sf::Color::Yellow
+    Which is: 4-byte object <FF-FF 00-FF>
+
+/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:135: Failure
+Expected equality of these values:
+  vec[5]
+    Which is: 4-byte object <FF-4E 88-FF>
+  sf::Color::Magenta
+    Which is: 4-byte object <FF-00 FF-FF>
+
+/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:136: Failure
+Expected equality of these values:
+  vec[6]
+    Which is: 4-byte object <03-AE D2-FF>
+  sf::Color::Cyan
+    Which is: 4-byte object <00-FF FF-FF>
+
+/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:137: Failure
+Expected equality of these values:
+  vec[7]
+    Which is: 4-byte object <10-43 9F-FF>
+  sf::Color::Blue
+    Which is: 4-byte object <00-00 FF-FF>
+
+[  FAILED  ] TetrisGuiTest.ColorCreationVector (29 ms)
+[----------] 13 tests from TetrisGuiTest (541 ms total)
+
+[----------] 4 tests from BlockTest
+[ RUN      ] BlockTest.InitialValues
+/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:145: Failure
+Expected equality of these values:
+  block.get_color_vector().size()
+    Which is: 8
+  0
+
+[  FAILED  ] BlockTest.InitialValues (0 ms)
+[ RUN      ] BlockTest.SetAndGetBlockId
+[       OK ] BlockTest.SetAndGetBlockId (0 ms)
+[ RUN      ] BlockTest.MoveBlock
+[       OK ] BlockTest.MoveBlock (0 ms)
+[ RUN      ] BlockTest.Rotation
+<end of output>
+Test time =   0.86 sec
+----------------------------------------------------------
+Test Failed.
+"RunTests" end time: Aug 05 10:48 CEST
+"RunTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 05 10:48 CEST

@@ -95,6 +95,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"gmock\" \"gtest\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kerciu/Desktop/tetris-cpp/build/CMakeFiles /home/kerciu/Desktop/tetris-cpp/build//CMakeFiles/progress.marks
@@ -139,12 +184,78 @@ tetris/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/build
 .PHONY : tetris/fast
 
+#=============================================================================
+# Target rules for targets named RunTests
+
+# Build rule for target.
+RunTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RunTests
+.PHONY : RunTests
+
+# fast build rule for target.
+RunTests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/build
+.PHONY : RunTests/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f tests/googletest/googlemock/CMakeFiles/gmock.dir/build.make tests/googletest/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f tests/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make tests/googletest/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f tests/googletest/googletest/CMakeFiles/gtest.dir/build.make tests/googletest/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f tests/googletest/googletest/CMakeFiles/gtest_main.dir/build.make tests/googletest/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
 src/blocks/Block.o: src/blocks/Block.cpp.o
 .PHONY : src/blocks/Block.o
 
 # target to build an object file
 src/blocks/Block.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/blocks/Block.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/blocks/Block.cpp.o
 .PHONY : src/blocks/Block.cpp.o
 
 src/blocks/Block.i: src/blocks/Block.cpp.i
@@ -153,6 +264,7 @@ src/blocks/Block.i: src/blocks/Block.cpp.i
 # target to preprocess a source file
 src/blocks/Block.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/blocks/Block.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/blocks/Block.cpp.i
 .PHONY : src/blocks/Block.cpp.i
 
 src/blocks/Block.s: src/blocks/Block.cpp.s
@@ -161,6 +273,7 @@ src/blocks/Block.s: src/blocks/Block.cpp.s
 # target to generate assembly for a file
 src/blocks/Block.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/blocks/Block.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/blocks/Block.cpp.s
 .PHONY : src/blocks/Block.cpp.s
 
 src/blocks/Blocks.o: src/blocks/Blocks.cpp.o
@@ -169,6 +282,7 @@ src/blocks/Blocks.o: src/blocks/Blocks.cpp.o
 # target to build an object file
 src/blocks/Blocks.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/blocks/Blocks.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/blocks/Blocks.cpp.o
 .PHONY : src/blocks/Blocks.cpp.o
 
 src/blocks/Blocks.i: src/blocks/Blocks.cpp.i
@@ -177,6 +291,7 @@ src/blocks/Blocks.i: src/blocks/Blocks.cpp.i
 # target to preprocess a source file
 src/blocks/Blocks.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/blocks/Blocks.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/blocks/Blocks.cpp.i
 .PHONY : src/blocks/Blocks.cpp.i
 
 src/blocks/Blocks.s: src/blocks/Blocks.cpp.s
@@ -185,6 +300,7 @@ src/blocks/Blocks.s: src/blocks/Blocks.cpp.s
 # target to generate assembly for a file
 src/blocks/Blocks.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/blocks/Blocks.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/blocks/Blocks.cpp.s
 .PHONY : src/blocks/Blocks.cpp.s
 
 src/game/game.o: src/game/game.cpp.o
@@ -193,6 +309,7 @@ src/game/game.o: src/game/game.cpp.o
 # target to build an object file
 src/game/game.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/game.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/game/game.cpp.o
 .PHONY : src/game/game.cpp.o
 
 src/game/game.i: src/game/game.cpp.i
@@ -201,6 +318,7 @@ src/game/game.i: src/game/game.cpp.i
 # target to preprocess a source file
 src/game/game.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/game/game.cpp.i
 .PHONY : src/game/game.cpp.i
 
 src/game/game.s: src/game/game.cpp.s
@@ -209,6 +327,7 @@ src/game/game.s: src/game/game.cpp.s
 # target to generate assembly for a file
 src/game/game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/game/game.cpp.s
 .PHONY : src/game/game.cpp.s
 
 src/game/score.o: src/game/score.cpp.o
@@ -217,6 +336,7 @@ src/game/score.o: src/game/score.cpp.o
 # target to build an object file
 src/game/score.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/score.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/game/score.cpp.o
 .PHONY : src/game/score.cpp.o
 
 src/game/score.i: src/game/score.cpp.i
@@ -225,6 +345,7 @@ src/game/score.i: src/game/score.cpp.i
 # target to preprocess a source file
 src/game/score.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/score.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/game/score.cpp.i
 .PHONY : src/game/score.cpp.i
 
 src/game/score.s: src/game/score.cpp.s
@@ -233,6 +354,7 @@ src/game/score.s: src/game/score.cpp.s
 # target to generate assembly for a file
 src/game/score.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/score.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/game/score.cpp.s
 .PHONY : src/game/score.cpp.s
 
 src/grid/Grid.o: src/grid/Grid.cpp.o
@@ -241,6 +363,7 @@ src/grid/Grid.o: src/grid/Grid.cpp.o
 # target to build an object file
 src/grid/Grid.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/grid/Grid.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/grid/Grid.cpp.o
 .PHONY : src/grid/Grid.cpp.o
 
 src/grid/Grid.i: src/grid/Grid.cpp.i
@@ -249,6 +372,7 @@ src/grid/Grid.i: src/grid/Grid.cpp.i
 # target to preprocess a source file
 src/grid/Grid.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/grid/Grid.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/grid/Grid.cpp.i
 .PHONY : src/grid/Grid.cpp.i
 
 src/grid/Grid.s: src/grid/Grid.cpp.s
@@ -257,6 +381,7 @@ src/grid/Grid.s: src/grid/Grid.cpp.s
 # target to generate assembly for a file
 src/grid/Grid.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/grid/Grid.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/grid/Grid.cpp.s
 .PHONY : src/grid/Grid.cpp.s
 
 src/gui/TetrisGui.o: src/gui/TetrisGui.cpp.o
@@ -265,6 +390,7 @@ src/gui/TetrisGui.o: src/gui/TetrisGui.cpp.o
 # target to build an object file
 src/gui/TetrisGui.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/TetrisGui.cpp.o
 .PHONY : src/gui/TetrisGui.cpp.o
 
 src/gui/TetrisGui.i: src/gui/TetrisGui.cpp.i
@@ -273,6 +399,7 @@ src/gui/TetrisGui.i: src/gui/TetrisGui.cpp.i
 # target to preprocess a source file
 src/gui/TetrisGui.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/TetrisGui.cpp.i
 .PHONY : src/gui/TetrisGui.cpp.i
 
 src/gui/TetrisGui.s: src/gui/TetrisGui.cpp.s
@@ -281,6 +408,7 @@ src/gui/TetrisGui.s: src/gui/TetrisGui.cpp.s
 # target to generate assembly for a file
 src/gui/TetrisGui.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/TetrisGui.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/TetrisGui.cpp.s
 .PHONY : src/gui/TetrisGui.cpp.s
 
 src/gui/gradient.o: src/gui/gradient.cpp.o
@@ -289,6 +417,7 @@ src/gui/gradient.o: src/gui/gradient.cpp.o
 # target to build an object file
 src/gui/gradient.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/gradient.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/gradient.cpp.o
 .PHONY : src/gui/gradient.cpp.o
 
 src/gui/gradient.i: src/gui/gradient.cpp.i
@@ -297,6 +426,7 @@ src/gui/gradient.i: src/gui/gradient.cpp.i
 # target to preprocess a source file
 src/gui/gradient.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/gradient.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/gradient.cpp.i
 .PHONY : src/gui/gradient.cpp.i
 
 src/gui/gradient.s: src/gui/gradient.cpp.s
@@ -305,6 +435,7 @@ src/gui/gradient.s: src/gui/gradient.cpp.s
 # target to generate assembly for a file
 src/gui/gradient.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/gradient.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/gradient.cpp.s
 .PHONY : src/gui/gradient.cpp.s
 
 src/gui/rounded_rectangle.o: src/gui/rounded_rectangle.cpp.o
@@ -313,6 +444,7 @@ src/gui/rounded_rectangle.o: src/gui/rounded_rectangle.cpp.o
 # target to build an object file
 src/gui/rounded_rectangle.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/rounded_rectangle.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.o
 .PHONY : src/gui/rounded_rectangle.cpp.o
 
 src/gui/rounded_rectangle.i: src/gui/rounded_rectangle.cpp.i
@@ -321,6 +453,7 @@ src/gui/rounded_rectangle.i: src/gui/rounded_rectangle.cpp.i
 # target to preprocess a source file
 src/gui/rounded_rectangle.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/rounded_rectangle.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.i
 .PHONY : src/gui/rounded_rectangle.cpp.i
 
 src/gui/rounded_rectangle.s: src/gui/rounded_rectangle.cpp.s
@@ -329,6 +462,7 @@ src/gui/rounded_rectangle.s: src/gui/rounded_rectangle.cpp.s
 # target to generate assembly for a file
 src/gui/rounded_rectangle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/rounded_rectangle.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.s
 .PHONY : src/gui/rounded_rectangle.cpp.s
 
 src/main/main.o: src/main/main.cpp.o
@@ -361,6 +495,7 @@ src/media/AudioPlayer.o: src/media/AudioPlayer.cpp.o
 # target to build an object file
 src/media/AudioPlayer.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/media/AudioPlayer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/media/AudioPlayer.cpp.o
 .PHONY : src/media/AudioPlayer.cpp.o
 
 src/media/AudioPlayer.i: src/media/AudioPlayer.cpp.i
@@ -369,6 +504,7 @@ src/media/AudioPlayer.i: src/media/AudioPlayer.cpp.i
 # target to preprocess a source file
 src/media/AudioPlayer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/media/AudioPlayer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/media/AudioPlayer.cpp.i
 .PHONY : src/media/AudioPlayer.cpp.i
 
 src/media/AudioPlayer.s: src/media/AudioPlayer.cpp.s
@@ -377,6 +513,7 @@ src/media/AudioPlayer.s: src/media/AudioPlayer.cpp.s
 # target to generate assembly for a file
 src/media/AudioPlayer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/media/AudioPlayer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/media/AudioPlayer.cpp.s
 .PHONY : src/media/AudioPlayer.cpp.s
 
 src/media/FontLoader.o: src/media/FontLoader.cpp.o
@@ -385,6 +522,7 @@ src/media/FontLoader.o: src/media/FontLoader.cpp.o
 # target to build an object file
 src/media/FontLoader.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/media/FontLoader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/media/FontLoader.cpp.o
 .PHONY : src/media/FontLoader.cpp.o
 
 src/media/FontLoader.i: src/media/FontLoader.cpp.i
@@ -393,6 +531,7 @@ src/media/FontLoader.i: src/media/FontLoader.cpp.i
 # target to preprocess a source file
 src/media/FontLoader.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/media/FontLoader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/media/FontLoader.cpp.i
 .PHONY : src/media/FontLoader.cpp.i
 
 src/media/FontLoader.s: src/media/FontLoader.cpp.s
@@ -401,6 +540,7 @@ src/media/FontLoader.s: src/media/FontLoader.cpp.s
 # target to generate assembly for a file
 src/media/FontLoader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/media/FontLoader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/media/FontLoader.cpp.s
 .PHONY : src/media/FontLoader.cpp.s
 
 src/process/process.o: src/process/process.cpp.o
@@ -409,6 +549,7 @@ src/process/process.o: src/process/process.cpp.o
 # target to build an object file
 src/process/process.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/process/process.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/process/process.cpp.o
 .PHONY : src/process/process.cpp.o
 
 src/process/process.i: src/process/process.cpp.i
@@ -417,6 +558,7 @@ src/process/process.i: src/process/process.cpp.i
 # target to preprocess a source file
 src/process/process.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/process/process.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/process/process.cpp.i
 .PHONY : src/process/process.cpp.i
 
 src/process/process.s: src/process/process.cpp.s
@@ -425,6 +567,7 @@ src/process/process.s: src/process/process.cpp.s
 # target to generate assembly for a file
 src/process/process.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/process/process.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/process/process.cpp.s
 .PHONY : src/process/process.cpp.s
 
 src/utils/Coords.o: src/utils/Coords.cpp.o
@@ -433,6 +576,7 @@ src/utils/Coords.o: src/utils/Coords.cpp.o
 # target to build an object file
 src/utils/Coords.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/Coords.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/utils/Coords.cpp.o
 .PHONY : src/utils/Coords.cpp.o
 
 src/utils/Coords.i: src/utils/Coords.cpp.i
@@ -441,6 +585,7 @@ src/utils/Coords.i: src/utils/Coords.cpp.i
 # target to preprocess a source file
 src/utils/Coords.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/Coords.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/utils/Coords.cpp.i
 .PHONY : src/utils/Coords.cpp.i
 
 src/utils/Coords.s: src/utils/Coords.cpp.s
@@ -449,6 +594,7 @@ src/utils/Coords.s: src/utils/Coords.cpp.s
 # target to generate assembly for a file
 src/utils/Coords.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/Coords.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/utils/Coords.cpp.s
 .PHONY : src/utils/Coords.cpp.s
 
 src/utils/colors.o: src/utils/colors.cpp.o
@@ -457,6 +603,7 @@ src/utils/colors.o: src/utils/colors.cpp.o
 # target to build an object file
 src/utils/colors.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/colors.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/utils/colors.cpp.o
 .PHONY : src/utils/colors.cpp.o
 
 src/utils/colors.i: src/utils/colors.cpp.i
@@ -465,6 +612,7 @@ src/utils/colors.i: src/utils/colors.cpp.i
 # target to preprocess a source file
 src/utils/colors.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/colors.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/utils/colors.cpp.i
 .PHONY : src/utils/colors.cpp.i
 
 src/utils/colors.s: src/utils/colors.cpp.s
@@ -473,6 +621,7 @@ src/utils/colors.s: src/utils/colors.cpp.s
 # target to generate assembly for a file
 src/utils/colors.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/colors.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/utils/colors.cpp.s
 .PHONY : src/utils/colors.cpp.s
 
 src/utils/exceptions.o: src/utils/exceptions.cpp.o
@@ -481,6 +630,7 @@ src/utils/exceptions.o: src/utils/exceptions.cpp.o
 # target to build an object file
 src/utils/exceptions.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/exceptions.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/utils/exceptions.cpp.o
 .PHONY : src/utils/exceptions.cpp.o
 
 src/utils/exceptions.i: src/utils/exceptions.cpp.i
@@ -489,6 +639,7 @@ src/utils/exceptions.i: src/utils/exceptions.cpp.i
 # target to preprocess a source file
 src/utils/exceptions.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/exceptions.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/utils/exceptions.cpp.i
 .PHONY : src/utils/exceptions.cpp.i
 
 src/utils/exceptions.s: src/utils/exceptions.cpp.s
@@ -497,7 +648,32 @@ src/utils/exceptions.s: src/utils/exceptions.cpp.s
 # target to generate assembly for a file
 src/utils/exceptions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/exceptions.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/utils/exceptions.cpp.s
 .PHONY : src/utils/exceptions.cpp.s
+
+tests/test_tetris.o: tests/test_tetris.cpp.o
+.PHONY : tests/test_tetris.o
+
+# target to build an object file
+tests/test_tetris.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/tests/test_tetris.cpp.o
+.PHONY : tests/test_tetris.cpp.o
+
+tests/test_tetris.i: tests/test_tetris.cpp.i
+.PHONY : tests/test_tetris.i
+
+# target to preprocess a source file
+tests/test_tetris.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/tests/test_tetris.cpp.i
+.PHONY : tests/test_tetris.cpp.i
+
+tests/test_tetris.s: tests/test_tetris.cpp.s
+.PHONY : tests/test_tetris.s
+
+# target to generate assembly for a file
+tests/test_tetris.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/tests/test_tetris.cpp.s
+.PHONY : tests/test_tetris.cpp.s
 
 # Help Target
 help:
@@ -506,8 +682,17 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... RunTests"
+	@echo "... gmock"
+	@echo "... gmock_main"
+	@echo "... gtest"
+	@echo "... gtest_main"
 	@echo "... tetris"
 	@echo "... src/blocks/Block.o"
 	@echo "... src/blocks/Block.i"
@@ -554,6 +739,9 @@ help:
 	@echo "... src/utils/exceptions.o"
 	@echo "... src/utils/exceptions.i"
 	@echo "... src/utils/exceptions.s"
+	@echo "... tests/test_tetris.o"
+	@echo "... tests/test_tetris.i"
+	@echo "... tests/test_tetris.s"
 .PHONY : help
 
 

@@ -317,8 +317,9 @@ tetris: CMakeFiles/tetris.dir/src/media/FontLoader.cpp.o
 tetris: CMakeFiles/tetris.dir/src/media/AudioPlayer.cpp.o
 tetris: CMakeFiles/tetris.dir/build.make
 tetris: /usr/lib64/libsfml-graphics.so.2.6.1
-tetris: /usr/lib64/libsfml-window.so.2.6.1
+tetris: /usr/lib64/libsfml-network.so.2.6.1
 tetris: /usr/lib64/libsfml-audio.so.2.6.1
+tetris: /usr/lib64/libsfml-window.so.2.6.1
 tetris: /usr/lib64/libsfml-system.so.2.6.1
 tetris: CMakeFiles/tetris.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable tetris"

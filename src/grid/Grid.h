@@ -28,6 +28,9 @@ class Grid {
     bool validate_bounds(int row, int col);
     void initialize_grid();
 
+    bool operator==(const Grid& other) const;
+    bool operator!=(const Grid& other) const;
+
     private:
     
     distribution grid_distribution;

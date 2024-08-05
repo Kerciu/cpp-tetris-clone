@@ -1,0 +1,5 @@
+if(EXISTS "/home/kerciu/Desktop/tetris-cpp/build/RunTests[1]_tests.cmake")
+  include("/home/kerciu/Desktop/tetris-cpp/build/RunTests[1]_tests.cmake")
+else()
+  add_test(RunTests_NOT_BUILT RunTests_NOT_BUILT)
+endif()

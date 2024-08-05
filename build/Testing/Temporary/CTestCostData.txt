@@ -1,0 +1,47 @@
+RunTests 0 0
+TetrisGuiTest.WindowCreation 1 0.140498
+TetrisGuiTest.WindowClose 0 0
+TetrisGuiTest.CoordsCreation 1 0.135959
+TetrisGuiTest.CoordsGetters 0 0
+TetrisGuiTest.CoordsSetters 1 0.136963
+TetrisGuiTest.CoordsInvalidArgumentsInSetter 0 0
+TetrisGuiTest.CoordsCreationInvalidArgumentsInConstuctor 0 0
+TetrisGuiTest.GridCreation 1 0.138963
+TetrisGuiTest.GridCreationDistributionGetter 1 0.130567
+TetrisGuiTest.GridCreationDistributionSetter 1 0.115022
+TetrisGuiTest.GridCreationColorGetter 1 0.120008
+TetrisGuiTest.GridCreationColorSetter 1 0.117569
+TetrisGuiTest.ColorCreationVector 0 0
+BlockTest.InitialValues 0 0
+BlockTest.SetAndGetBlockId 1 0.0118398
+BlockTest.MoveBlock 1 0.0115581
+BlockTest.Rotation 0 0
+LBlockTest.PositionVectors 1 0.0115476
+JBlockTest.PositionVectors 1 0.0111444
+IBlockTest.PositionVectors 1 0.0123079
+OBlockTest.PositionVectors 1 0.0115673
+SBlockTest.PositionVectors 1 0.0116471
+TBlockTest.PositionVectors 1 0.0113841
+ZBlockTest.PositionVectors 1 0.0109946
+BlockCloneTest.CloneIsUnique 1 0.0112282
+GameTest.Constructor 0 0
+GameTest.GetSetGrid 1 0.0593226
+GameTest.GetSetBlocks 1 0.0529868
+GameTest.MoveBlockLeft 0 0
+GameTest.MoveBlockRight 0 0
+GameTest.MoveBlockDown 0 0
+GameTest.RotateBlock 0 0
+---
+TetrisGuiTest.WindowClose
+TetrisGuiTest.CoordsGetters
+TetrisGuiTest.CoordsInvalidArgumentsInSetter
+TetrisGuiTest.CoordsCreationInvalidArgumentsInConstuctor
+TetrisGuiTest.ColorCreationVector
+BlockTest.InitialValues
+BlockTest.Rotation
+GameTest.Constructor
+GameTest.MoveBlockLeft
+GameTest.MoveBlockRight
+GameTest.MoveBlockDown
+GameTest.RotateBlock
+RunTests

@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/RunTests.dir/src/blocks/Block.cpp.o"
+  "CMakeFiles/RunTests.dir/src/blocks/Block.cpp.o.d"
+  "CMakeFiles/RunTests.dir/src/blocks/Blocks.cpp.o"
+  "CMakeFiles/RunTests.dir/src/blocks/Blocks.cpp.o.d"
+  "CMakeFiles/RunTests.dir/src/game/game.cpp.o"
+  "CMakeFiles/RunTests.dir/src/game/game.cpp.o.d"
+  "CMakeFiles/RunTests.dir/src/game/score.cpp.o"
+  "CMakeFiles/RunTests.dir/src/game/score.cpp.o.d"
+  "CMakeFiles/RunTests.dir/src/grid/Grid.cpp.o"
+  "CMakeFiles/RunTests.dir/src/grid/Grid.cpp.o.d"
+  "CMakeFiles/RunTests.dir/src/gui/TetrisGui.cpp.o"
+  "CMakeFiles/RunTests.dir/src/gui/TetrisGui.cpp.o.d"
+  "CMakeFiles/RunTests.dir/src/gui/gradient.cpp.o"
+  "CMakeFiles/RunTests.dir/src/gui/gradient.cpp.o.d"
+  "CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.o"
+  "CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.o.d"
+  "CMakeFiles/RunTests.dir/src/media/AudioPlayer.cpp.o"
+  "CMakeFiles/RunTests.dir/src/media/AudioPlayer.cpp.o.d"
+  "CMakeFiles/RunTests.dir/src/media/FontLoader.cpp.o"
+  "CMakeFiles/RunTests.dir/src/media/FontLoader.cpp.o.d"
+  "CMakeFiles/RunTests.dir/src/process/process.cpp.o"
+  "CMakeFiles/RunTests.dir/src/process/process.cpp.o.d"
+  "CMakeFiles/RunTests.dir/src/utils/Coords.cpp.o"
+  "CMakeFiles/RunTests.dir/src/utils/Coords.cpp.o.d"
+  "CMakeFiles/RunTests.dir/src/utils/colors.cpp.o"
+  "CMakeFiles/RunTests.dir/src/utils/colors.cpp.o.d"
+  "CMakeFiles/RunTests.dir/src/utils/exceptions.cpp.o"
+  "CMakeFiles/RunTests.dir/src/utils/exceptions.cpp.o.d"
+  "CMakeFiles/RunTests.dir/tests/test_tetris.cpp.o"
+  "CMakeFiles/RunTests.dir/tests/test_tetris.cpp.o.d"
+  "RunTests"
+  "RunTests.pdb"
+  "RunTests[1]_tests.cmake"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/RunTests.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
