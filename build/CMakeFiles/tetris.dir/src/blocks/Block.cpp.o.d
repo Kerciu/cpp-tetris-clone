@@ -109,7 +109,7 @@ CMakeFiles/tetris.dir/src/blocks/Block.cpp.o: \
  /usr/include/c++/14/pstl/glue_memory_defs.h \
  /usr/include/c++/14/pstl/execution_defs.h \
  /home/kerciu/Desktop/tetris-cpp/src/blocks/../utils/Coords.h \
- /home/kerciu/Desktop/tetris-cpp/src/blocks/../utils/colors.h \
+ /home/kerciu/Desktop/tetris-cpp/src/blocks/../utils/ColorCreator.h \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
@@ -228,6 +228,4 @@ CMakeFiles/tetris.dir/src/blocks/Block.cpp.o: \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/kerciu/Desktop/tetris-cpp/src/blocks/../gui/gradient.h \
- /usr/include/c++/14/iostream /usr/include/c++/14/istream \
- /usr/include/c++/14/bits/istream.tcc
+ /home/kerciu/Desktop/tetris-cpp/src/blocks/../gui/gui_components/GradientCreator.h

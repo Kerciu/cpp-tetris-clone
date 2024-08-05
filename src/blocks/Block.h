@@ -3,8 +3,8 @@
 #include <map>
 #include <memory>
 #include "../utils/Coords.h"
-#include "../utils/colors.h"
-#include "../gui/gradient.h"
+#include "../utils/ColorCreator.h"
+#include "../gui/gui_components/GradientCreator.h"
 
 class Block {
     public:

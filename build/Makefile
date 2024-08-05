@@ -303,59 +303,59 @@ src/blocks/Blocks.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/blocks/Blocks.cpp.s
 .PHONY : src/blocks/Blocks.cpp.s
 
-src/game/game.o: src/game/game.cpp.o
-.PHONY : src/game/game.o
+src/game/Game.o: src/game/Game.cpp.o
+.PHONY : src/game/Game.o
 
 # target to build an object file
-src/game/game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/game.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/game/game.cpp.o
-.PHONY : src/game/game.cpp.o
+src/game/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/Game.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/game/Game.cpp.o
+.PHONY : src/game/Game.cpp.o
 
-src/game/game.i: src/game/game.cpp.i
-.PHONY : src/game/game.i
+src/game/Game.i: src/game/Game.cpp.i
+.PHONY : src/game/Game.i
 
 # target to preprocess a source file
-src/game/game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/game.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/game/game.cpp.i
-.PHONY : src/game/game.cpp.i
+src/game/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/Game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/game/Game.cpp.i
+.PHONY : src/game/Game.cpp.i
 
-src/game/game.s: src/game/game.cpp.s
-.PHONY : src/game/game.s
+src/game/Game.s: src/game/Game.cpp.s
+.PHONY : src/game/Game.s
 
 # target to generate assembly for a file
-src/game/game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/game.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/game/game.cpp.s
-.PHONY : src/game/game.cpp.s
+src/game/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/Game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/game/Game.cpp.s
+.PHONY : src/game/Game.cpp.s
 
-src/game/score.o: src/game/score.cpp.o
-.PHONY : src/game/score.o
+src/game/Score.o: src/game/Score.cpp.o
+.PHONY : src/game/Score.o
 
 # target to build an object file
-src/game/score.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/score.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/game/score.cpp.o
-.PHONY : src/game/score.cpp.o
+src/game/Score.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/Score.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/game/Score.cpp.o
+.PHONY : src/game/Score.cpp.o
 
-src/game/score.i: src/game/score.cpp.i
-.PHONY : src/game/score.i
+src/game/Score.i: src/game/Score.cpp.i
+.PHONY : src/game/Score.i
 
 # target to preprocess a source file
-src/game/score.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/score.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/game/score.cpp.i
-.PHONY : src/game/score.cpp.i
+src/game/Score.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/Score.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/game/Score.cpp.i
+.PHONY : src/game/Score.cpp.i
 
-src/game/score.s: src/game/score.cpp.s
-.PHONY : src/game/score.s
+src/game/Score.s: src/game/Score.cpp.s
+.PHONY : src/game/Score.s
 
 # target to generate assembly for a file
-src/game/score.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/score.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/game/score.cpp.s
-.PHONY : src/game/score.cpp.s
+src/game/Score.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game/Score.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/game/Score.cpp.s
+.PHONY : src/game/Score.cpp.s
 
 src/grid/Grid.o: src/grid/Grid.cpp.o
 .PHONY : src/grid/Grid.o
@@ -411,86 +411,86 @@ src/gui/TetrisGui.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/TetrisGui.cpp.s
 .PHONY : src/gui/TetrisGui.cpp.s
 
-src/gui/arrow.o: src/gui/arrow.cpp.o
-.PHONY : src/gui/arrow.o
+src/gui/gui_components/Arrow.o: src/gui/gui_components/Arrow.cpp.o
+.PHONY : src/gui/gui_components/Arrow.o
 
 # target to build an object file
-src/gui/arrow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/arrow.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/arrow.cpp.o
-.PHONY : src/gui/arrow.cpp.o
+src/gui/gui_components/Arrow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/gui_components/Arrow.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/gui_components/Arrow.cpp.o
+.PHONY : src/gui/gui_components/Arrow.cpp.o
 
-src/gui/arrow.i: src/gui/arrow.cpp.i
-.PHONY : src/gui/arrow.i
+src/gui/gui_components/Arrow.i: src/gui/gui_components/Arrow.cpp.i
+.PHONY : src/gui/gui_components/Arrow.i
 
 # target to preprocess a source file
-src/gui/arrow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/arrow.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/arrow.cpp.i
-.PHONY : src/gui/arrow.cpp.i
+src/gui/gui_components/Arrow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/gui_components/Arrow.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/gui_components/Arrow.cpp.i
+.PHONY : src/gui/gui_components/Arrow.cpp.i
 
-src/gui/arrow.s: src/gui/arrow.cpp.s
-.PHONY : src/gui/arrow.s
+src/gui/gui_components/Arrow.s: src/gui/gui_components/Arrow.cpp.s
+.PHONY : src/gui/gui_components/Arrow.s
 
 # target to generate assembly for a file
-src/gui/arrow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/arrow.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/arrow.cpp.s
-.PHONY : src/gui/arrow.cpp.s
+src/gui/gui_components/Arrow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/gui_components/Arrow.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/gui_components/Arrow.cpp.s
+.PHONY : src/gui/gui_components/Arrow.cpp.s
 
-src/gui/gradient.o: src/gui/gradient.cpp.o
-.PHONY : src/gui/gradient.o
+src/gui/gui_components/GradientCreator.o: src/gui/gui_components/GradientCreator.cpp.o
+.PHONY : src/gui/gui_components/GradientCreator.o
 
 # target to build an object file
-src/gui/gradient.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/gradient.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/gradient.cpp.o
-.PHONY : src/gui/gradient.cpp.o
+src/gui/gui_components/GradientCreator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/gui_components/GradientCreator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/gui_components/GradientCreator.cpp.o
+.PHONY : src/gui/gui_components/GradientCreator.cpp.o
 
-src/gui/gradient.i: src/gui/gradient.cpp.i
-.PHONY : src/gui/gradient.i
+src/gui/gui_components/GradientCreator.i: src/gui/gui_components/GradientCreator.cpp.i
+.PHONY : src/gui/gui_components/GradientCreator.i
 
 # target to preprocess a source file
-src/gui/gradient.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/gradient.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/gradient.cpp.i
-.PHONY : src/gui/gradient.cpp.i
+src/gui/gui_components/GradientCreator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/gui_components/GradientCreator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/gui_components/GradientCreator.cpp.i
+.PHONY : src/gui/gui_components/GradientCreator.cpp.i
 
-src/gui/gradient.s: src/gui/gradient.cpp.s
-.PHONY : src/gui/gradient.s
+src/gui/gui_components/GradientCreator.s: src/gui/gui_components/GradientCreator.cpp.s
+.PHONY : src/gui/gui_components/GradientCreator.s
 
 # target to generate assembly for a file
-src/gui/gradient.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/gradient.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/gradient.cpp.s
-.PHONY : src/gui/gradient.cpp.s
+src/gui/gui_components/GradientCreator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/gui_components/GradientCreator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/gui_components/GradientCreator.cpp.s
+.PHONY : src/gui/gui_components/GradientCreator.cpp.s
 
-src/gui/rounded_rectangle.o: src/gui/rounded_rectangle.cpp.o
-.PHONY : src/gui/rounded_rectangle.o
+src/gui/gui_components/RoundedRectangleDrawer.o: src/gui/gui_components/RoundedRectangleDrawer.cpp.o
+.PHONY : src/gui/gui_components/RoundedRectangleDrawer.o
 
 # target to build an object file
-src/gui/rounded_rectangle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/rounded_rectangle.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.o
-.PHONY : src/gui/rounded_rectangle.cpp.o
+src/gui/gui_components/RoundedRectangleDrawer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/gui_components/RoundedRectangleDrawer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/gui_components/RoundedRectangleDrawer.cpp.o
+.PHONY : src/gui/gui_components/RoundedRectangleDrawer.cpp.o
 
-src/gui/rounded_rectangle.i: src/gui/rounded_rectangle.cpp.i
-.PHONY : src/gui/rounded_rectangle.i
+src/gui/gui_components/RoundedRectangleDrawer.i: src/gui/gui_components/RoundedRectangleDrawer.cpp.i
+.PHONY : src/gui/gui_components/RoundedRectangleDrawer.i
 
 # target to preprocess a source file
-src/gui/rounded_rectangle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/rounded_rectangle.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.i
-.PHONY : src/gui/rounded_rectangle.cpp.i
+src/gui/gui_components/RoundedRectangleDrawer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/gui_components/RoundedRectangleDrawer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/gui_components/RoundedRectangleDrawer.cpp.i
+.PHONY : src/gui/gui_components/RoundedRectangleDrawer.cpp.i
 
-src/gui/rounded_rectangle.s: src/gui/rounded_rectangle.cpp.s
-.PHONY : src/gui/rounded_rectangle.s
+src/gui/gui_components/RoundedRectangleDrawer.s: src/gui/gui_components/RoundedRectangleDrawer.cpp.s
+.PHONY : src/gui/gui_components/RoundedRectangleDrawer.s
 
 # target to generate assembly for a file
-src/gui/rounded_rectangle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/rounded_rectangle.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.s
-.PHONY : src/gui/rounded_rectangle.cpp.s
+src/gui/gui_components/RoundedRectangleDrawer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/gui/gui_components/RoundedRectangleDrawer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/gui/gui_components/RoundedRectangleDrawer.cpp.s
+.PHONY : src/gui/gui_components/RoundedRectangleDrawer.cpp.s
 
 src/main/main.o: src/main/main.cpp.o
 .PHONY : src/main/main.o
@@ -570,32 +570,59 @@ src/media/FontLoader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/media/FontLoader.cpp.s
 .PHONY : src/media/FontLoader.cpp.s
 
-src/process/process.o: src/process/process.cpp.o
-.PHONY : src/process/process.o
+src/process/Process.o: src/process/Process.cpp.o
+.PHONY : src/process/Process.o
 
 # target to build an object file
-src/process/process.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/process/process.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/process/process.cpp.o
-.PHONY : src/process/process.cpp.o
+src/process/Process.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/process/Process.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/process/Process.cpp.o
+.PHONY : src/process/Process.cpp.o
 
-src/process/process.i: src/process/process.cpp.i
-.PHONY : src/process/process.i
+src/process/Process.i: src/process/Process.cpp.i
+.PHONY : src/process/Process.i
 
 # target to preprocess a source file
-src/process/process.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/process/process.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/process/process.cpp.i
-.PHONY : src/process/process.cpp.i
+src/process/Process.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/process/Process.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/process/Process.cpp.i
+.PHONY : src/process/Process.cpp.i
 
-src/process/process.s: src/process/process.cpp.s
-.PHONY : src/process/process.s
+src/process/Process.s: src/process/Process.cpp.s
+.PHONY : src/process/Process.s
 
 # target to generate assembly for a file
-src/process/process.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/process/process.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/process/process.cpp.s
-.PHONY : src/process/process.cpp.s
+src/process/Process.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/process/Process.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/process/Process.cpp.s
+.PHONY : src/process/Process.cpp.s
+
+src/utils/ColorCreator.o: src/utils/ColorCreator.cpp.o
+.PHONY : src/utils/ColorCreator.o
+
+# target to build an object file
+src/utils/ColorCreator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/ColorCreator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/utils/ColorCreator.cpp.o
+.PHONY : src/utils/ColorCreator.cpp.o
+
+src/utils/ColorCreator.i: src/utils/ColorCreator.cpp.i
+.PHONY : src/utils/ColorCreator.i
+
+# target to preprocess a source file
+src/utils/ColorCreator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/ColorCreator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/utils/ColorCreator.cpp.i
+.PHONY : src/utils/ColorCreator.cpp.i
+
+src/utils/ColorCreator.s: src/utils/ColorCreator.cpp.s
+.PHONY : src/utils/ColorCreator.s
+
+# target to generate assembly for a file
+src/utils/ColorCreator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/ColorCreator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/utils/ColorCreator.cpp.s
+.PHONY : src/utils/ColorCreator.cpp.s
 
 src/utils/Coords.o: src/utils/Coords.cpp.o
 .PHONY : src/utils/Coords.o
@@ -623,33 +650,6 @@ src/utils/Coords.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/Coords.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/utils/Coords.cpp.s
 .PHONY : src/utils/Coords.cpp.s
-
-src/utils/colors.o: src/utils/colors.cpp.o
-.PHONY : src/utils/colors.o
-
-# target to build an object file
-src/utils/colors.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/colors.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/utils/colors.cpp.o
-.PHONY : src/utils/colors.cpp.o
-
-src/utils/colors.i: src/utils/colors.cpp.i
-.PHONY : src/utils/colors.i
-
-# target to preprocess a source file
-src/utils/colors.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/colors.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/utils/colors.cpp.i
-.PHONY : src/utils/colors.cpp.i
-
-src/utils/colors.s: src/utils/colors.cpp.s
-.PHONY : src/utils/colors.s
-
-# target to generate assembly for a file
-src/utils/colors.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/utils/colors.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunTests.dir/build.make CMakeFiles/RunTests.dir/src/utils/colors.cpp.s
-.PHONY : src/utils/colors.cpp.s
 
 src/utils/exceptions.o: src/utils/exceptions.cpp.o
 .PHONY : src/utils/exceptions.o
@@ -727,27 +727,27 @@ help:
 	@echo "... src/blocks/Blocks.o"
 	@echo "... src/blocks/Blocks.i"
 	@echo "... src/blocks/Blocks.s"
-	@echo "... src/game/game.o"
-	@echo "... src/game/game.i"
-	@echo "... src/game/game.s"
-	@echo "... src/game/score.o"
-	@echo "... src/game/score.i"
-	@echo "... src/game/score.s"
+	@echo "... src/game/Game.o"
+	@echo "... src/game/Game.i"
+	@echo "... src/game/Game.s"
+	@echo "... src/game/Score.o"
+	@echo "... src/game/Score.i"
+	@echo "... src/game/Score.s"
 	@echo "... src/grid/Grid.o"
 	@echo "... src/grid/Grid.i"
 	@echo "... src/grid/Grid.s"
 	@echo "... src/gui/TetrisGui.o"
 	@echo "... src/gui/TetrisGui.i"
 	@echo "... src/gui/TetrisGui.s"
-	@echo "... src/gui/arrow.o"
-	@echo "... src/gui/arrow.i"
-	@echo "... src/gui/arrow.s"
-	@echo "... src/gui/gradient.o"
-	@echo "... src/gui/gradient.i"
-	@echo "... src/gui/gradient.s"
-	@echo "... src/gui/rounded_rectangle.o"
-	@echo "... src/gui/rounded_rectangle.i"
-	@echo "... src/gui/rounded_rectangle.s"
+	@echo "... src/gui/gui_components/Arrow.o"
+	@echo "... src/gui/gui_components/Arrow.i"
+	@echo "... src/gui/gui_components/Arrow.s"
+	@echo "... src/gui/gui_components/GradientCreator.o"
+	@echo "... src/gui/gui_components/GradientCreator.i"
+	@echo "... src/gui/gui_components/GradientCreator.s"
+	@echo "... src/gui/gui_components/RoundedRectangleDrawer.o"
+	@echo "... src/gui/gui_components/RoundedRectangleDrawer.i"
+	@echo "... src/gui/gui_components/RoundedRectangleDrawer.s"
 	@echo "... src/main/main.o"
 	@echo "... src/main/main.i"
 	@echo "... src/main/main.s"
@@ -757,15 +757,15 @@ help:
 	@echo "... src/media/FontLoader.o"
 	@echo "... src/media/FontLoader.i"
 	@echo "... src/media/FontLoader.s"
-	@echo "... src/process/process.o"
-	@echo "... src/process/process.i"
-	@echo "... src/process/process.s"
+	@echo "... src/process/Process.o"
+	@echo "... src/process/Process.i"
+	@echo "... src/process/Process.s"
+	@echo "... src/utils/ColorCreator.o"
+	@echo "... src/utils/ColorCreator.i"
+	@echo "... src/utils/ColorCreator.s"
 	@echo "... src/utils/Coords.o"
 	@echo "... src/utils/Coords.i"
 	@echo "... src/utils/Coords.s"
-	@echo "... src/utils/colors.o"
-	@echo "... src/utils/colors.i"
-	@echo "... src/utils/colors.s"
 	@echo "... src/utils/exceptions.o"
 	@echo "... src/utils/exceptions.i"
 	@echo "... src/utils/exceptions.s"

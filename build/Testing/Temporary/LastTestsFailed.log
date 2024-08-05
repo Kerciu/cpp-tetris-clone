@@ -1,6 +1,1 @@
 15:BlockTest.Rotation
-27:GameTest.MoveBlockLeft
-28:GameTest.MoveBlockRight
-29:GameTest.MoveBlockDown
-30:GameTest.RotateBlock
-31:RunTests

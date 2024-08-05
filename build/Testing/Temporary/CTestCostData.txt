@@ -1,40 +1,34 @@
 RunTests 0 0
-TetrisGuiTest.WindowCreation 4 0.0362856
-TetrisGuiTest.WindowClose 1 0.124409
-TetrisGuiTest.CoordsCreation 4 0.0358207
-TetrisGuiTest.CoordsGetters 2 0.0830961
-TetrisGuiTest.CoordsSetters 4 0.0312394
+TetrisGuiTest.WindowCreation 8 0.0169193
+TetrisGuiTest.WindowClose 5 0.0293993
+TetrisGuiTest.CoordsCreation 8 0.0178685
+TetrisGuiTest.CoordsGetters 6 0.0217686
+TetrisGuiTest.CoordsSetters 8 0.0174168
 TetrisGuiTest.CoordsInvalidArgumentsInSetter 0 0
 TetrisGuiTest.CoordsCreationInvalidArgumentsInConstuctor 0 0
-TetrisGuiTest.GridCreation 4 0.0316982
-TetrisGuiTest.GridCreationDistributionGetter 4 0.0318674
-TetrisGuiTest.GridCreationDistributionSetter 4 0.0324998
-TetrisGuiTest.GridCreationColorGetter 4 0.0344701
-TetrisGuiTest.GridCreationColorSetter 4 0.0315895
-TetrisGuiTest.ColorCreationVector 2 0.062133
-BlockTest.InitialValues 2 0.00624775
-BlockTest.SetAndGetBlockId 4 0.00315184
-BlockTest.MoveBlock 4 0.00289621
+TetrisGuiTest.GridCreation 8 0.0171378
+TetrisGuiTest.GridCreationDistributionGetter 8 0.0159955
+TetrisGuiTest.GridCreationDistributionSetter 8 0.0252929
+TetrisGuiTest.GridCreationColorGetter 8 0.0216867
+TetrisGuiTest.GridCreationColorSetter 8 0.0152109
+TetrisGuiTest.ColorCreationVector 6 0.020738
+BlockTest.InitialValues 6 0.00211239
+BlockTest.SetAndGetBlockId 8 0.0015827
+BlockTest.MoveBlock 8 0.00142033
 BlockTest.Rotation 0 0
-LBlockTest.PositionVectors 4 0.00605089
-JBlockTest.PositionVectors 4 0.00282461
-IBlockTest.PositionVectors 4 0.00282703
-OBlockTest.PositionVectors 4 0.00280723
-SBlockTest.PositionVectors 4 0.00289411
-TBlockTest.PositionVectors 4 0.00274025
-ZBlockTest.PositionVectors 4 0.00278232
-BlockCloneTest.CloneIsUnique 4 0.00284912
-GameTest.Constructor 2 0.0277152
-GameTest.GetSetGrid 4 0.0145978
-GameTest.GetSetBlocks 4 0.0141344
+LBlockTest.PositionVectors 8 0.00143614
+JBlockTest.PositionVectors 8 0.00139992
+IBlockTest.PositionVectors 8 0.00143969
+OBlockTest.PositionVectors 8 0.00143232
+SBlockTest.PositionVectors 8 0.00146048
+TBlockTest.PositionVectors 8 0.00145864
+ZBlockTest.PositionVectors 8 0.00154007
+BlockCloneTest.CloneIsUnique 8 0.00172578
+GameTest.Constructor 6 0.0137637
+GameTest.GetSetGrid 8 0.007583
+GameTest.GetSetBlocks 8 0.00768346
 GameTest.MoveBlockLeft 0 0
 GameTest.MoveBlockRight 0 0
 GameTest.MoveBlockDown 0 0
 GameTest.RotateBlock 0 0
 ---
-BlockTest.Rotation
-GameTest.MoveBlockLeft
-GameTest.MoveBlockRight
-GameTest.MoveBlockDown
-GameTest.RotateBlock
-RunTests

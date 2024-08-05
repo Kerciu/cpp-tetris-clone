@@ -304,9 +304,9 @@ CMakeFiles/RunTests.dir/tests/test_tetris.cpp.o: \
  /home/kerciu/Desktop/tetris-cpp/tests/../src/gui/TetrisGui.h \
  /home/kerciu/Desktop/tetris-cpp/tests/../src/gui/../grid/Grid.h \
  /home/kerciu/Desktop/tetris-cpp/tests/../src/gui/../grid/../utils/Coords.h \
- /home/kerciu/Desktop/tetris-cpp/tests/../src/gui/../grid/../utils/colors.h \
- /home/kerciu/Desktop/tetris-cpp/tests/../src/gui/../grid/../gui/gradient.h \
- /home/kerciu/Desktop/tetris-cpp/tests/../src/gui/../game/game.h \
+ /home/kerciu/Desktop/tetris-cpp/tests/../src/gui/../grid/../utils/ColorCreator.h \
+ /home/kerciu/Desktop/tetris-cpp/tests/../src/gui/../grid/../gui/gui_components/GradientCreator.h \
+ /home/kerciu/Desktop/tetris-cpp/tests/../src/gui/../game/Game.h \
  /usr/include/c++/14/chrono /usr/include/c++/14/random \
  /usr/include/c++/14/cmath /usr/include/math.h \
  /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
@@ -332,7 +332,7 @@ CMakeFiles/RunTests.dir/tests/test_tetris.cpp.o: \
  /usr/include/c++/14/bits/random.tcc /usr/include/c++/14/numeric \
  /usr/include/c++/14/bits/stl_numeric.h \
  /usr/include/c++/14/pstl/glue_numeric_defs.h \
- /home/kerciu/Desktop/tetris-cpp/tests/../src/gui/../game/score.h \
+ /home/kerciu/Desktop/tetris-cpp/tests/../src/gui/../game/Score.h \
  /home/kerciu/Desktop/tetris-cpp/tests/../src/gui/../game/../blocks/Blocks.h \
  /home/kerciu/Desktop/tetris-cpp/tests/../src/gui/../game/../blocks/Block.h \
  /home/kerciu/Desktop/tetris-cpp/tests/../src/gui/../game/../media/AudioPlayer.h \
@@ -353,5 +353,5 @@ CMakeFiles/RunTests.dir/tests/test_tetris.cpp.o: \
  /usr/include/SFML/Audio/SoundFileWriter.hpp \
  /home/kerciu/Desktop/tetris-cpp/tests/../src/gui/../game/../media/../utils/exceptions.h \
  /home/kerciu/Desktop/tetris-cpp/tests/../src/gui/../media/FontLoader.h \
- /home/kerciu/Desktop/tetris-cpp/tests/../src/gui/rounded_rectangle.h \
- /home/kerciu/Desktop/tetris-cpp/tests/../src/gui/arrow.h
+ /home/kerciu/Desktop/tetris-cpp/tests/../src/gui/gui_components/RoundedRectangleDrawer.h \
+ /home/kerciu/Desktop/tetris-cpp/tests/../src/gui/gui_components/Arrow.h

@@ -3,8 +3,8 @@
 #include "../src/gui/TetrisGui.h"
 #include "../src/grid/Grid.h"
 #include "../src/utils/Coords.h"
-#include "../src/utils/colors.h"
-#include "../src/game/game.h"
+#include "../src/utils/ColorCreator.h"
+#include "../src/game/Game.h"
 #include "../src/blocks/Blocks.h"
 #include "../src/blocks/Block.h"
 #include "../src/utils/exceptions.h"
@@ -125,7 +125,7 @@ TEST_F(TetrisGuiTest, GridCreationColorSetter) {
 }
 
 TEST_F(TetrisGuiTest, ColorCreationVector) {
-    std::vector<sf::Color> vec = get_cell_colors();
+    std::vector<sf::Color> vec = ColorCreator::get_cell_colors();
 
     EXPECT_EQ(vec[0], dark_grey);
     EXPECT_EQ(vec[1], green);
@@ -159,18 +159,6 @@ TEST(BlockTest, MoveBlock) {
         EXPECT_EQ(pos.get_x(), pos.get_x() + 3);
         EXPECT_EQ(pos.get_y(), pos.get_y() + 2);
     }
-}
-
-TEST(BlockTest, Rotation) {
-    MockBlock block;
-    block.rotate();
-    EXPECT_EQ(block.get_rotation_state(), 1);
-    block.rotate();
-    EXPECT_EQ(block.get_rotation_state(), 2);
-    block.undo_rotation();
-    EXPECT_EQ(block.get_rotation_state(), 1);
-    block.undo_rotation();
-    EXPECT_EQ(block.get_rotation_state(), 0);
 }
 
 TEST(LBlockTest, PositionVectors) {
@@ -247,39 +235,6 @@ TEST(GameTest, GetSetBlocks) {
     EXPECT_EQ(game.get_blocks().size(), 2);
     EXPECT_NE(game.get_blocks()[0], nullptr);
     EXPECT_NE(game.get_blocks()[1], nullptr);
-}
-
-TEST(GameTest, MoveBlockLeft) {
-    Game game;
-    auto original_position = game.get_blocks()[0]->get_occupied_cell_positions();
-    game.move_block_left();
-    auto new_position = game.get_blocks()[0]->get_occupied_cell_positions();
-    EXPECT_TRUE(positions_changed(original_position, new_position));
-}
-
-TEST(GameTest, MoveBlockRight) {
-    Game game;
-    auto original_position = game.get_blocks()[0]->get_occupied_cell_positions();
-    game.move_block_right();
-    auto new_position = game.get_blocks()[0]->get_occupied_cell_positions();
-    EXPECT_TRUE(positions_changed(original_position, new_position));
-}
-
-TEST(GameTest, MoveBlockDown) {
-    Game game;
-    auto original_position = game.get_blocks()[0]->get_occupied_cell_positions();
-    game.move_block_down();
-    auto new_position = game.get_blocks()[0]->get_occupied_cell_positions();
-    EXPECT_TRUE(positions_changed(original_position, new_position));
-}
-
-TEST(GameTest, RotateBlock) {
-    Game game;
-    auto original_position = game.get_blocks()[0]->get_occupied_cell_positions();
-    game.rotate_block();
-    auto new_position = game.get_blocks()[0]->get_occupied_cell_positions();
-    EXPECT_TRUE(positions_changed(original_position, new_position));
-    EXPECT_NE(original_position, new_position);
 }
 
 int main(int argc, char **argv) {

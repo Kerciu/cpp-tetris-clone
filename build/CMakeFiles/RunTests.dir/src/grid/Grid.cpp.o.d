@@ -217,5 +217,5 @@ CMakeFiles/RunTests.dir/src/grid/Grid.cpp.o: \
  /usr/include/SFML/Graphics/VertexBuffer.hpp /usr/include/c++/14/iostream \
  /usr/include/c++/14/istream /usr/include/c++/14/bits/istream.tcc \
  /home/kerciu/Desktop/tetris-cpp/src/grid/../utils/Coords.h \
- /home/kerciu/Desktop/tetris-cpp/src/grid/../utils/colors.h \
- /home/kerciu/Desktop/tetris-cpp/src/grid/../gui/gradient.h
+ /home/kerciu/Desktop/tetris-cpp/src/grid/../utils/ColorCreator.h \
+ /home/kerciu/Desktop/tetris-cpp/src/grid/../gui/gui_components/GradientCreator.h

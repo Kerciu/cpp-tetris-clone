@@ -1,9 +1,8 @@
 #include "Block.h"
-#include <iostream>
 
 Block::Block() : cell_size(30), rotation(0), block_id(0), row_offset(0), col_offset(0)
 {
-    colors = get_cell_colors();
+    colors = ColorCreator::get_cell_colors();
 }
 
 int Block::get_block_id()
@@ -61,8 +60,8 @@ void Block::draw_block(sf::RenderWindow* window, int offset_x, int offset_y) {
         int x_coord = coord.get_x() * cell_size + offset_x;
         int y_coord = coord.get_y() * cell_size + offset_y;
 
-        sf::Color top_color = get_cell_colors()[this->get_block_id()];
-        sf::Color bottom_color = get_appropriate_gradient_color(top_color);
+        sf::Color top_color = ColorCreator::get_cell_colors()[this->get_block_id()];
+        sf::Color bottom_color = ColorCreator::get_appropriate_gradient_color(top_color);
 
 
         sf::VertexArray gradient = GradientCreator::create_gradient(std::make_pair(top_color, bottom_color), std::make_pair(cell_size - OFFSET, cell_size - OFFSET));

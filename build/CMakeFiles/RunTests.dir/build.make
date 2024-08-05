@@ -97,47 +97,47 @@ CMakeFiles/RunTests.dir/src/gui/TetrisGui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunTests.dir/src/gui/TetrisGui.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kerciu/Desktop/tetris-cpp/src/gui/TetrisGui.cpp -o CMakeFiles/RunTests.dir/src/gui/TetrisGui.cpp.s
 
-CMakeFiles/RunTests.dir/src/gui/gradient.cpp.o: CMakeFiles/RunTests.dir/flags.make
-CMakeFiles/RunTests.dir/src/gui/gradient.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/gui/gradient.cpp
-CMakeFiles/RunTests.dir/src/gui/gradient.cpp.o: CMakeFiles/RunTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RunTests.dir/src/gui/gradient.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RunTests.dir/src/gui/gradient.cpp.o -MF CMakeFiles/RunTests.dir/src/gui/gradient.cpp.o.d -o CMakeFiles/RunTests.dir/src/gui/gradient.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/gui/gradient.cpp
+CMakeFiles/RunTests.dir/src/gui/gui_components/GradientCreator.cpp.o: CMakeFiles/RunTests.dir/flags.make
+CMakeFiles/RunTests.dir/src/gui/gui_components/GradientCreator.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/gui/gui_components/GradientCreator.cpp
+CMakeFiles/RunTests.dir/src/gui/gui_components/GradientCreator.cpp.o: CMakeFiles/RunTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RunTests.dir/src/gui/gui_components/GradientCreator.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RunTests.dir/src/gui/gui_components/GradientCreator.cpp.o -MF CMakeFiles/RunTests.dir/src/gui/gui_components/GradientCreator.cpp.o.d -o CMakeFiles/RunTests.dir/src/gui/gui_components/GradientCreator.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/gui/gui_components/GradientCreator.cpp
 
-CMakeFiles/RunTests.dir/src/gui/gradient.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RunTests.dir/src/gui/gradient.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kerciu/Desktop/tetris-cpp/src/gui/gradient.cpp > CMakeFiles/RunTests.dir/src/gui/gradient.cpp.i
+CMakeFiles/RunTests.dir/src/gui/gui_components/GradientCreator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RunTests.dir/src/gui/gui_components/GradientCreator.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kerciu/Desktop/tetris-cpp/src/gui/gui_components/GradientCreator.cpp > CMakeFiles/RunTests.dir/src/gui/gui_components/GradientCreator.cpp.i
 
-CMakeFiles/RunTests.dir/src/gui/gradient.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunTests.dir/src/gui/gradient.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kerciu/Desktop/tetris-cpp/src/gui/gradient.cpp -o CMakeFiles/RunTests.dir/src/gui/gradient.cpp.s
+CMakeFiles/RunTests.dir/src/gui/gui_components/GradientCreator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunTests.dir/src/gui/gui_components/GradientCreator.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kerciu/Desktop/tetris-cpp/src/gui/gui_components/GradientCreator.cpp -o CMakeFiles/RunTests.dir/src/gui/gui_components/GradientCreator.cpp.s
 
-CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.o: CMakeFiles/RunTests.dir/flags.make
-CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/gui/rounded_rectangle.cpp
-CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.o: CMakeFiles/RunTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.o -MF CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.o.d -o CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/gui/rounded_rectangle.cpp
+CMakeFiles/RunTests.dir/src/gui/gui_components/RoundedRectangleDrawer.cpp.o: CMakeFiles/RunTests.dir/flags.make
+CMakeFiles/RunTests.dir/src/gui/gui_components/RoundedRectangleDrawer.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/gui/gui_components/RoundedRectangleDrawer.cpp
+CMakeFiles/RunTests.dir/src/gui/gui_components/RoundedRectangleDrawer.cpp.o: CMakeFiles/RunTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RunTests.dir/src/gui/gui_components/RoundedRectangleDrawer.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RunTests.dir/src/gui/gui_components/RoundedRectangleDrawer.cpp.o -MF CMakeFiles/RunTests.dir/src/gui/gui_components/RoundedRectangleDrawer.cpp.o.d -o CMakeFiles/RunTests.dir/src/gui/gui_components/RoundedRectangleDrawer.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/gui/gui_components/RoundedRectangleDrawer.cpp
 
-CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kerciu/Desktop/tetris-cpp/src/gui/rounded_rectangle.cpp > CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.i
+CMakeFiles/RunTests.dir/src/gui/gui_components/RoundedRectangleDrawer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RunTests.dir/src/gui/gui_components/RoundedRectangleDrawer.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kerciu/Desktop/tetris-cpp/src/gui/gui_components/RoundedRectangleDrawer.cpp > CMakeFiles/RunTests.dir/src/gui/gui_components/RoundedRectangleDrawer.cpp.i
 
-CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kerciu/Desktop/tetris-cpp/src/gui/rounded_rectangle.cpp -o CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.s
+CMakeFiles/RunTests.dir/src/gui/gui_components/RoundedRectangleDrawer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunTests.dir/src/gui/gui_components/RoundedRectangleDrawer.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kerciu/Desktop/tetris-cpp/src/gui/gui_components/RoundedRectangleDrawer.cpp -o CMakeFiles/RunTests.dir/src/gui/gui_components/RoundedRectangleDrawer.cpp.s
 
-CMakeFiles/RunTests.dir/src/gui/arrow.cpp.o: CMakeFiles/RunTests.dir/flags.make
-CMakeFiles/RunTests.dir/src/gui/arrow.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/gui/arrow.cpp
-CMakeFiles/RunTests.dir/src/gui/arrow.cpp.o: CMakeFiles/RunTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RunTests.dir/src/gui/arrow.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RunTests.dir/src/gui/arrow.cpp.o -MF CMakeFiles/RunTests.dir/src/gui/arrow.cpp.o.d -o CMakeFiles/RunTests.dir/src/gui/arrow.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/gui/arrow.cpp
+CMakeFiles/RunTests.dir/src/gui/gui_components/Arrow.cpp.o: CMakeFiles/RunTests.dir/flags.make
+CMakeFiles/RunTests.dir/src/gui/gui_components/Arrow.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/gui/gui_components/Arrow.cpp
+CMakeFiles/RunTests.dir/src/gui/gui_components/Arrow.cpp.o: CMakeFiles/RunTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RunTests.dir/src/gui/gui_components/Arrow.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RunTests.dir/src/gui/gui_components/Arrow.cpp.o -MF CMakeFiles/RunTests.dir/src/gui/gui_components/Arrow.cpp.o.d -o CMakeFiles/RunTests.dir/src/gui/gui_components/Arrow.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/gui/gui_components/Arrow.cpp
 
-CMakeFiles/RunTests.dir/src/gui/arrow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RunTests.dir/src/gui/arrow.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kerciu/Desktop/tetris-cpp/src/gui/arrow.cpp > CMakeFiles/RunTests.dir/src/gui/arrow.cpp.i
+CMakeFiles/RunTests.dir/src/gui/gui_components/Arrow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RunTests.dir/src/gui/gui_components/Arrow.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kerciu/Desktop/tetris-cpp/src/gui/gui_components/Arrow.cpp > CMakeFiles/RunTests.dir/src/gui/gui_components/Arrow.cpp.i
 
-CMakeFiles/RunTests.dir/src/gui/arrow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunTests.dir/src/gui/arrow.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kerciu/Desktop/tetris-cpp/src/gui/arrow.cpp -o CMakeFiles/RunTests.dir/src/gui/arrow.cpp.s
+CMakeFiles/RunTests.dir/src/gui/gui_components/Arrow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunTests.dir/src/gui/gui_components/Arrow.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kerciu/Desktop/tetris-cpp/src/gui/gui_components/Arrow.cpp -o CMakeFiles/RunTests.dir/src/gui/gui_components/Arrow.cpp.s
 
 CMakeFiles/RunTests.dir/src/grid/Grid.cpp.o: CMakeFiles/RunTests.dir/flags.make
 CMakeFiles/RunTests.dir/src/grid/Grid.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/grid/Grid.cpp
@@ -167,19 +167,19 @@ CMakeFiles/RunTests.dir/src/utils/Coords.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunTests.dir/src/utils/Coords.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kerciu/Desktop/tetris-cpp/src/utils/Coords.cpp -o CMakeFiles/RunTests.dir/src/utils/Coords.cpp.s
 
-CMakeFiles/RunTests.dir/src/utils/colors.cpp.o: CMakeFiles/RunTests.dir/flags.make
-CMakeFiles/RunTests.dir/src/utils/colors.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/utils/colors.cpp
-CMakeFiles/RunTests.dir/src/utils/colors.cpp.o: CMakeFiles/RunTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RunTests.dir/src/utils/colors.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RunTests.dir/src/utils/colors.cpp.o -MF CMakeFiles/RunTests.dir/src/utils/colors.cpp.o.d -o CMakeFiles/RunTests.dir/src/utils/colors.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/utils/colors.cpp
+CMakeFiles/RunTests.dir/src/utils/ColorCreator.cpp.o: CMakeFiles/RunTests.dir/flags.make
+CMakeFiles/RunTests.dir/src/utils/ColorCreator.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/utils/ColorCreator.cpp
+CMakeFiles/RunTests.dir/src/utils/ColorCreator.cpp.o: CMakeFiles/RunTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RunTests.dir/src/utils/ColorCreator.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RunTests.dir/src/utils/ColorCreator.cpp.o -MF CMakeFiles/RunTests.dir/src/utils/ColorCreator.cpp.o.d -o CMakeFiles/RunTests.dir/src/utils/ColorCreator.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/utils/ColorCreator.cpp
 
-CMakeFiles/RunTests.dir/src/utils/colors.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RunTests.dir/src/utils/colors.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kerciu/Desktop/tetris-cpp/src/utils/colors.cpp > CMakeFiles/RunTests.dir/src/utils/colors.cpp.i
+CMakeFiles/RunTests.dir/src/utils/ColorCreator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RunTests.dir/src/utils/ColorCreator.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kerciu/Desktop/tetris-cpp/src/utils/ColorCreator.cpp > CMakeFiles/RunTests.dir/src/utils/ColorCreator.cpp.i
 
-CMakeFiles/RunTests.dir/src/utils/colors.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunTests.dir/src/utils/colors.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kerciu/Desktop/tetris-cpp/src/utils/colors.cpp -o CMakeFiles/RunTests.dir/src/utils/colors.cpp.s
+CMakeFiles/RunTests.dir/src/utils/ColorCreator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunTests.dir/src/utils/ColorCreator.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kerciu/Desktop/tetris-cpp/src/utils/ColorCreator.cpp -o CMakeFiles/RunTests.dir/src/utils/ColorCreator.cpp.s
 
 CMakeFiles/RunTests.dir/src/utils/exceptions.cpp.o: CMakeFiles/RunTests.dir/flags.make
 CMakeFiles/RunTests.dir/src/utils/exceptions.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/utils/exceptions.cpp
@@ -223,47 +223,47 @@ CMakeFiles/RunTests.dir/src/blocks/Blocks.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunTests.dir/src/blocks/Blocks.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kerciu/Desktop/tetris-cpp/src/blocks/Blocks.cpp -o CMakeFiles/RunTests.dir/src/blocks/Blocks.cpp.s
 
-CMakeFiles/RunTests.dir/src/game/game.cpp.o: CMakeFiles/RunTests.dir/flags.make
-CMakeFiles/RunTests.dir/src/game/game.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/game/game.cpp
-CMakeFiles/RunTests.dir/src/game/game.cpp.o: CMakeFiles/RunTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RunTests.dir/src/game/game.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RunTests.dir/src/game/game.cpp.o -MF CMakeFiles/RunTests.dir/src/game/game.cpp.o.d -o CMakeFiles/RunTests.dir/src/game/game.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/game/game.cpp
+CMakeFiles/RunTests.dir/src/game/Game.cpp.o: CMakeFiles/RunTests.dir/flags.make
+CMakeFiles/RunTests.dir/src/game/Game.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/game/Game.cpp
+CMakeFiles/RunTests.dir/src/game/Game.cpp.o: CMakeFiles/RunTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RunTests.dir/src/game/Game.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RunTests.dir/src/game/Game.cpp.o -MF CMakeFiles/RunTests.dir/src/game/Game.cpp.o.d -o CMakeFiles/RunTests.dir/src/game/Game.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/game/Game.cpp
 
-CMakeFiles/RunTests.dir/src/game/game.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RunTests.dir/src/game/game.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kerciu/Desktop/tetris-cpp/src/game/game.cpp > CMakeFiles/RunTests.dir/src/game/game.cpp.i
+CMakeFiles/RunTests.dir/src/game/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RunTests.dir/src/game/Game.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kerciu/Desktop/tetris-cpp/src/game/Game.cpp > CMakeFiles/RunTests.dir/src/game/Game.cpp.i
 
-CMakeFiles/RunTests.dir/src/game/game.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunTests.dir/src/game/game.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kerciu/Desktop/tetris-cpp/src/game/game.cpp -o CMakeFiles/RunTests.dir/src/game/game.cpp.s
+CMakeFiles/RunTests.dir/src/game/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunTests.dir/src/game/Game.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kerciu/Desktop/tetris-cpp/src/game/Game.cpp -o CMakeFiles/RunTests.dir/src/game/Game.cpp.s
 
-CMakeFiles/RunTests.dir/src/game/score.cpp.o: CMakeFiles/RunTests.dir/flags.make
-CMakeFiles/RunTests.dir/src/game/score.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/game/score.cpp
-CMakeFiles/RunTests.dir/src/game/score.cpp.o: CMakeFiles/RunTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RunTests.dir/src/game/score.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RunTests.dir/src/game/score.cpp.o -MF CMakeFiles/RunTests.dir/src/game/score.cpp.o.d -o CMakeFiles/RunTests.dir/src/game/score.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/game/score.cpp
+CMakeFiles/RunTests.dir/src/game/Score.cpp.o: CMakeFiles/RunTests.dir/flags.make
+CMakeFiles/RunTests.dir/src/game/Score.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/game/Score.cpp
+CMakeFiles/RunTests.dir/src/game/Score.cpp.o: CMakeFiles/RunTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RunTests.dir/src/game/Score.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RunTests.dir/src/game/Score.cpp.o -MF CMakeFiles/RunTests.dir/src/game/Score.cpp.o.d -o CMakeFiles/RunTests.dir/src/game/Score.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/game/Score.cpp
 
-CMakeFiles/RunTests.dir/src/game/score.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RunTests.dir/src/game/score.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kerciu/Desktop/tetris-cpp/src/game/score.cpp > CMakeFiles/RunTests.dir/src/game/score.cpp.i
+CMakeFiles/RunTests.dir/src/game/Score.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RunTests.dir/src/game/Score.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kerciu/Desktop/tetris-cpp/src/game/Score.cpp > CMakeFiles/RunTests.dir/src/game/Score.cpp.i
 
-CMakeFiles/RunTests.dir/src/game/score.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunTests.dir/src/game/score.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kerciu/Desktop/tetris-cpp/src/game/score.cpp -o CMakeFiles/RunTests.dir/src/game/score.cpp.s
+CMakeFiles/RunTests.dir/src/game/Score.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunTests.dir/src/game/Score.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kerciu/Desktop/tetris-cpp/src/game/Score.cpp -o CMakeFiles/RunTests.dir/src/game/Score.cpp.s
 
-CMakeFiles/RunTests.dir/src/process/process.cpp.o: CMakeFiles/RunTests.dir/flags.make
-CMakeFiles/RunTests.dir/src/process/process.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/process/process.cpp
-CMakeFiles/RunTests.dir/src/process/process.cpp.o: CMakeFiles/RunTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RunTests.dir/src/process/process.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RunTests.dir/src/process/process.cpp.o -MF CMakeFiles/RunTests.dir/src/process/process.cpp.o.d -o CMakeFiles/RunTests.dir/src/process/process.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/process/process.cpp
+CMakeFiles/RunTests.dir/src/process/Process.cpp.o: CMakeFiles/RunTests.dir/flags.make
+CMakeFiles/RunTests.dir/src/process/Process.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/process/Process.cpp
+CMakeFiles/RunTests.dir/src/process/Process.cpp.o: CMakeFiles/RunTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kerciu/Desktop/tetris-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RunTests.dir/src/process/Process.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RunTests.dir/src/process/Process.cpp.o -MF CMakeFiles/RunTests.dir/src/process/Process.cpp.o.d -o CMakeFiles/RunTests.dir/src/process/Process.cpp.o -c /home/kerciu/Desktop/tetris-cpp/src/process/Process.cpp
 
-CMakeFiles/RunTests.dir/src/process/process.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RunTests.dir/src/process/process.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kerciu/Desktop/tetris-cpp/src/process/process.cpp > CMakeFiles/RunTests.dir/src/process/process.cpp.i
+CMakeFiles/RunTests.dir/src/process/Process.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RunTests.dir/src/process/Process.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kerciu/Desktop/tetris-cpp/src/process/Process.cpp > CMakeFiles/RunTests.dir/src/process/Process.cpp.i
 
-CMakeFiles/RunTests.dir/src/process/process.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunTests.dir/src/process/process.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kerciu/Desktop/tetris-cpp/src/process/process.cpp -o CMakeFiles/RunTests.dir/src/process/process.cpp.s
+CMakeFiles/RunTests.dir/src/process/Process.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunTests.dir/src/process/Process.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kerciu/Desktop/tetris-cpp/src/process/Process.cpp -o CMakeFiles/RunTests.dir/src/process/Process.cpp.s
 
 CMakeFiles/RunTests.dir/src/media/FontLoader.cpp.o: CMakeFiles/RunTests.dir/flags.make
 CMakeFiles/RunTests.dir/src/media/FontLoader.cpp.o: /home/kerciu/Desktop/tetris-cpp/src/media/FontLoader.cpp
@@ -297,18 +297,18 @@ CMakeFiles/RunTests.dir/src/media/AudioPlayer.cpp.s: cmake_force
 RunTests_OBJECTS = \
 "CMakeFiles/RunTests.dir/tests/test_tetris.cpp.o" \
 "CMakeFiles/RunTests.dir/src/gui/TetrisGui.cpp.o" \
-"CMakeFiles/RunTests.dir/src/gui/gradient.cpp.o" \
-"CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.o" \
-"CMakeFiles/RunTests.dir/src/gui/arrow.cpp.o" \
+"CMakeFiles/RunTests.dir/src/gui/gui_components/GradientCreator.cpp.o" \
+"CMakeFiles/RunTests.dir/src/gui/gui_components/RoundedRectangleDrawer.cpp.o" \
+"CMakeFiles/RunTests.dir/src/gui/gui_components/Arrow.cpp.o" \
 "CMakeFiles/RunTests.dir/src/grid/Grid.cpp.o" \
 "CMakeFiles/RunTests.dir/src/utils/Coords.cpp.o" \
-"CMakeFiles/RunTests.dir/src/utils/colors.cpp.o" \
+"CMakeFiles/RunTests.dir/src/utils/ColorCreator.cpp.o" \
 "CMakeFiles/RunTests.dir/src/utils/exceptions.cpp.o" \
 "CMakeFiles/RunTests.dir/src/blocks/Block.cpp.o" \
 "CMakeFiles/RunTests.dir/src/blocks/Blocks.cpp.o" \
-"CMakeFiles/RunTests.dir/src/game/game.cpp.o" \
-"CMakeFiles/RunTests.dir/src/game/score.cpp.o" \
-"CMakeFiles/RunTests.dir/src/process/process.cpp.o" \
+"CMakeFiles/RunTests.dir/src/game/Game.cpp.o" \
+"CMakeFiles/RunTests.dir/src/game/Score.cpp.o" \
+"CMakeFiles/RunTests.dir/src/process/Process.cpp.o" \
 "CMakeFiles/RunTests.dir/src/media/FontLoader.cpp.o" \
 "CMakeFiles/RunTests.dir/src/media/AudioPlayer.cpp.o"
 
@@ -317,25 +317,24 @@ RunTests_EXTERNAL_OBJECTS =
 
 RunTests: CMakeFiles/RunTests.dir/tests/test_tetris.cpp.o
 RunTests: CMakeFiles/RunTests.dir/src/gui/TetrisGui.cpp.o
-RunTests: CMakeFiles/RunTests.dir/src/gui/gradient.cpp.o
-RunTests: CMakeFiles/RunTests.dir/src/gui/rounded_rectangle.cpp.o
-RunTests: CMakeFiles/RunTests.dir/src/gui/arrow.cpp.o
+RunTests: CMakeFiles/RunTests.dir/src/gui/gui_components/GradientCreator.cpp.o
+RunTests: CMakeFiles/RunTests.dir/src/gui/gui_components/RoundedRectangleDrawer.cpp.o
+RunTests: CMakeFiles/RunTests.dir/src/gui/gui_components/Arrow.cpp.o
 RunTests: CMakeFiles/RunTests.dir/src/grid/Grid.cpp.o
 RunTests: CMakeFiles/RunTests.dir/src/utils/Coords.cpp.o
-RunTests: CMakeFiles/RunTests.dir/src/utils/colors.cpp.o
+RunTests: CMakeFiles/RunTests.dir/src/utils/ColorCreator.cpp.o
 RunTests: CMakeFiles/RunTests.dir/src/utils/exceptions.cpp.o
 RunTests: CMakeFiles/RunTests.dir/src/blocks/Block.cpp.o
 RunTests: CMakeFiles/RunTests.dir/src/blocks/Blocks.cpp.o
-RunTests: CMakeFiles/RunTests.dir/src/game/game.cpp.o
-RunTests: CMakeFiles/RunTests.dir/src/game/score.cpp.o
-RunTests: CMakeFiles/RunTests.dir/src/process/process.cpp.o
+RunTests: CMakeFiles/RunTests.dir/src/game/Game.cpp.o
+RunTests: CMakeFiles/RunTests.dir/src/game/Score.cpp.o
+RunTests: CMakeFiles/RunTests.dir/src/process/Process.cpp.o
 RunTests: CMakeFiles/RunTests.dir/src/media/FontLoader.cpp.o
 RunTests: CMakeFiles/RunTests.dir/src/media/AudioPlayer.cpp.o
 RunTests: CMakeFiles/RunTests.dir/build.make
 RunTests: lib/libgtest.a
 RunTests: lib/libgtest_main.a
 RunTests: /usr/lib64/libsfml-graphics.so.2.6.1
-RunTests: /usr/lib64/libsfml-network.so.2.6.1
 RunTests: /usr/lib64/libsfml-audio.so.2.6.1
 RunTests: lib/libgtest.a
 RunTests: /usr/lib64/libsfml-window.so.2.6.1

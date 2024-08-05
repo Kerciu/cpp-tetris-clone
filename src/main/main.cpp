@@ -1,6 +1,6 @@
 #include <SFML/Window.hpp>
 #include <memory>
-#include "../process/process.h"
+#include "../process/Process.h"
 
 int main(int argc, char** argv) {
 

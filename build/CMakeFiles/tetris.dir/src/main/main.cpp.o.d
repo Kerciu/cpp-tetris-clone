@@ -192,7 +192,7 @@ CMakeFiles/tetris.dir/src/main/main.cpp.o: \
  /usr/include/c++/14/bits/atomic_lockfree_defines.h \
  /usr/include/c++/14/backward/auto_ptr.h \
  /usr/include/c++/14/pstl/glue_memory_defs.h \
- /home/kerciu/Desktop/tetris-cpp/src/main/../process/process.h \
+ /home/kerciu/Desktop/tetris-cpp/src/main/../process/Process.h \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Graphics/BlendMode.hpp \
  /usr/include/SFML/Graphics/Export.hpp \
  /usr/include/SFML/Graphics/CircleShape.hpp \
@@ -233,9 +233,9 @@ CMakeFiles/tetris.dir/src/main/main.cpp.o: \
  /usr/include/c++/14/array /usr/include/c++/14/compare \
  /usr/include/c++/14/iostream \
  /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../grid/../utils/Coords.h \
- /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../grid/../utils/colors.h \
- /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../grid/../gui/gradient.h \
- /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../game/game.h \
+ /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../grid/../utils/ColorCreator.h \
+ /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../grid/../gui/gui_components/GradientCreator.h \
+ /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../game/Game.h \
  /usr/include/c++/14/unordered_map \
  /usr/include/c++/14/bits/unordered_map.h \
  /usr/include/c++/14/bits/hashtable.h \
@@ -268,7 +268,7 @@ CMakeFiles/tetris.dir/src/main/main.cpp.o: \
  /usr/include/c++/14/bits/random.tcc /usr/include/c++/14/numeric \
  /usr/include/c++/14/bits/stl_numeric.h \
  /usr/include/c++/14/pstl/glue_numeric_defs.h \
- /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../game/score.h \
+ /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../game/Score.h \
  /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../game/../blocks/Blocks.h \
  /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../game/../blocks/Block.h \
  /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../game/../media/AudioPlayer.h \
@@ -291,5 +291,5 @@ CMakeFiles/tetris.dir/src/main/main.cpp.o: \
  /usr/include/SFML/Audio/SoundFileWriter.hpp \
  /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../game/../media/../utils/exceptions.h \
  /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/../media/FontLoader.h \
- /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/rounded_rectangle.h \
- /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/arrow.h
+ /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/gui_components/RoundedRectangleDrawer.h \
+ /home/kerciu/Desktop/tetris-cpp/src/main/../process/../gui/gui_components/Arrow.h

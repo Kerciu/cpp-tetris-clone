@@ -28,7 +28,7 @@ void Grid::draw_grid_rectangle(sf::RenderWindow* window, int row, int col) {
 void Grid::draw_rectangle_if_gradient(sf::RenderWindow* window, int row, int col) {
     int cell_val = grid_distribution[row][col];
     sf::Color top_color = grid_colors[cell_val];
-    sf::Color bottom_color = get_appropriate_gradient_color(top_color);
+    sf::Color bottom_color = ColorCreator::get_appropriate_gradient_color(top_color);
 
     Coords coords(row * cell_size + OFFSET + PX_OFFSET, col * cell_size + OFFSET + PX_OFFSET);
 
@@ -92,7 +92,7 @@ void Grid::initialize_grid()
         }
     }
 
-    this->grid_colors = get_cell_colors();
+    this->grid_colors = ColorCreator::get_cell_colors();
 }
 
 void Grid::print_grid_to_console()

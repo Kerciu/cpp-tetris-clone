@@ -4,11 +4,11 @@
 #include <string>
 #include <sstream>
 #include "../grid/Grid.h"
-#include "../game/game.h"
+#include "../game/Game.h"
 #include "../media/FontLoader.h"
-#include "rounded_rectangle.h"
-#include "gradient.h"
-#include "arrow.h"
+#include "gui_components/RoundedRectangleDrawer.h"
+#include "gui_components/GradientCreator.h"
+#include "gui_components/Arrow.h"
 
 class TetrisGui {
     public:

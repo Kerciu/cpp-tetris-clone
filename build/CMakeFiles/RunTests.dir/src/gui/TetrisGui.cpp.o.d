@@ -232,9 +232,9 @@ CMakeFiles/RunTests.dir/src/gui/TetrisGui.cpp.o: \
  /usr/include/c++/14/array /usr/include/c++/14/compare \
  /usr/include/c++/14/iostream \
  /home/kerciu/Desktop/tetris-cpp/src/gui/../grid/../utils/Coords.h \
- /home/kerciu/Desktop/tetris-cpp/src/gui/../grid/../utils/colors.h \
- /home/kerciu/Desktop/tetris-cpp/src/gui/../grid/../gui/gradient.h \
- /home/kerciu/Desktop/tetris-cpp/src/gui/../game/game.h \
+ /home/kerciu/Desktop/tetris-cpp/src/gui/../grid/../utils/ColorCreator.h \
+ /home/kerciu/Desktop/tetris-cpp/src/gui/../grid/../gui/gui_components/GradientCreator.h \
+ /home/kerciu/Desktop/tetris-cpp/src/gui/../game/Game.h \
  /usr/include/c++/14/unordered_map \
  /usr/include/c++/14/bits/unordered_map.h \
  /usr/include/c++/14/bits/hashtable.h \
@@ -267,7 +267,7 @@ CMakeFiles/RunTests.dir/src/gui/TetrisGui.cpp.o: \
  /usr/include/c++/14/bits/random.tcc /usr/include/c++/14/numeric \
  /usr/include/c++/14/bits/stl_numeric.h \
  /usr/include/c++/14/pstl/glue_numeric_defs.h \
- /home/kerciu/Desktop/tetris-cpp/src/gui/../game/score.h \
+ /home/kerciu/Desktop/tetris-cpp/src/gui/../game/Score.h \
  /home/kerciu/Desktop/tetris-cpp/src/gui/../game/../blocks/Blocks.h \
  /home/kerciu/Desktop/tetris-cpp/src/gui/../game/../blocks/Block.h \
  /home/kerciu/Desktop/tetris-cpp/src/gui/../game/../media/AudioPlayer.h \
@@ -290,5 +290,5 @@ CMakeFiles/RunTests.dir/src/gui/TetrisGui.cpp.o: \
  /usr/include/SFML/Audio/SoundFileWriter.hpp \
  /home/kerciu/Desktop/tetris-cpp/src/gui/../game/../media/../utils/exceptions.h \
  /home/kerciu/Desktop/tetris-cpp/src/gui/../media/FontLoader.h \
- /home/kerciu/Desktop/tetris-cpp/src/gui/rounded_rectangle.h \
- /home/kerciu/Desktop/tetris-cpp/src/gui/arrow.h
+ /home/kerciu/Desktop/tetris-cpp/src/gui/gui_components/RoundedRectangleDrawer.h \
+ /home/kerciu/Desktop/tetris-cpp/src/gui/gui_components/Arrow.h

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/kerciu/Desktop/tetris-cpp/src/gui -I/home/kerciu/Desktop/tetris-cpp/src/grid -I/home/kerciu/Desktop/tetris-cpp/src/main -I/home/kerciu/Desktop/tetris-cpp/src/utils -I/home/kerciu/Desktop/tetris-cpp/src/blocks -I/home/kerciu/Desktop/tetris-cpp/src/game -I/home/kerciu/Desktop/tetris-cpp/src/process -I/home/kerciu/Desktop/tetris-cpp/src/media -isystem /home/kerciu/Desktop/tetris-cpp/tests/googletest/googletest/include -isystem /home/kerciu/Desktop/tetris-cpp/tests/googletest/googletest
+CXX_INCLUDES = -isystem /home/kerciu/Desktop/tetris-cpp/tests/googletest/googletest/include -isystem /home/kerciu/Desktop/tetris-cpp/tests/googletest/googletest
 
 CXX_FLAGS = -g -std=gnu++17
 
