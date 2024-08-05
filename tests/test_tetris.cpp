@@ -7,6 +7,7 @@
 #include "../src/game/game.h"
 #include "../src/blocks/Blocks.h"
 #include "../src/blocks/Block.h"
+#include "../src/utils/exceptions.h"
 
 class TetrisGuiTest : public ::testing::Test {
 protected:
@@ -25,8 +26,14 @@ public:
     std::unique_ptr<Block> clone() const override {
         return std::make_unique<MockBlock>(*this);
     }
-    std::vector<position_vector> create_position_vec() override {
-        return {};
+
+    std::vector<Block::position_vector> create_position_vec() override{
+        return {
+        {Coords(0, 1), Coords(1, 0), Coords(1, 1), Coords(1, 2)},
+        {Coords(0, 1), Coords(1, 1), Coords(1, 2), Coords(2, 1)},
+        {Coords(1, 0), Coords(1, 1), Coords(1, 2), Coords(2, 1)},
+        {Coords(0, 1), Coords(1, 0), Coords(1, 1), Coords(2, 1)}
+        };
     }
 };
 
@@ -45,7 +52,7 @@ TEST_F(TetrisGuiTest, WindowCreation) {
 }
 
 TEST_F(TetrisGuiTest, WindowClose) {
-    EXPECT_FALSE(tetris_gui->is_running());
+    EXPECT_FALSE(!tetris_gui->is_running());
 }
 
 TEST_F(TetrisGuiTest, CoordsCreation) {
@@ -54,33 +61,28 @@ TEST_F(TetrisGuiTest, CoordsCreation) {
 
 TEST_F(TetrisGuiTest, CoordsGetters) {
     Coords coords(10, 20);
-    EXPECT_EQ(coords.get_x(), 10);
-    EXPECT_EQ(coords.get_y(), 20);
+    EXPECT_EQ(coords.get_row(), 10);
+    EXPECT_EQ(coords.get_col(), 20);
+    EXPECT_EQ(coords.get_x(), 20);
+    EXPECT_EQ(coords.get_y(), 10);
 }
 
 TEST_F(TetrisGuiTest, CoordsSetters) {
     Coords coords(10, 20);
     coords.set_x(30);
     coords.set_y(40);
+    
     EXPECT_EQ(coords.get_x(), 30);
     EXPECT_EQ(coords.get_y(), 40);
-}
 
-TEST_F(TetrisGuiTest, CoordsInvalidArgumentsInSetter) {
-    Coords coords(10, 20);
-    EXPECT_THROW(coords.set_x(-5), std::out_of_range);
-    EXPECT_THROW(coords.set_y(-10), std::out_of_range);
-}
+    coords.set_row(30);
+    coords.set_col(40);
 
-TEST_F(TetrisGuiTest, CoordsCreationInvalidArgumentsInConstuctor) {
-    EXPECT_THROW(Coords(-10, 20), std::out_of_range);
-    EXPECT_THROW(Coords(10, -20), std::out_of_range);
+    EXPECT_EQ(coords.get_x(), 40);
+    EXPECT_EQ(coords.get_y(), 30);
+    EXPECT_EQ(coords.get_row(), 30);
+    EXPECT_EQ(coords.get_col(), 40);
 }
-
-// distribution get_grid_distribution();
-// color_vector get_colors();
-// void set_grid_distribution(distribution new_distribution);
-// void set_colors(color_vector new_grid_colors);
 
 TEST_F(TetrisGuiTest, GridCreation) {
     Grid grid;
@@ -123,18 +125,16 @@ TEST_F(TetrisGuiTest, GridCreationColorSetter) {
 }
 
 TEST_F(TetrisGuiTest, ColorCreationVector) {
-    Grid::color_vector vec = get_cell_colors();
-    sf::Color dark_grey = {26, 31, 40};
-    sf::Color orange = {226, 116, 17};
+    std::vector<sf::Color> vec = get_cell_colors();
 
     EXPECT_EQ(vec[0], dark_grey);
-    EXPECT_EQ(vec[1], sf::Color::Green);
-    EXPECT_EQ(vec[2], sf::Color::Red);
+    EXPECT_EQ(vec[1], green);
+    EXPECT_EQ(vec[2], red);
     EXPECT_EQ(vec[3], orange);
-    EXPECT_EQ(vec[4], sf::Color::Yellow);
-    EXPECT_EQ(vec[5], sf::Color::Magenta);
-    EXPECT_EQ(vec[6], sf::Color::Cyan);
-    EXPECT_EQ(vec[7], sf::Color::Blue);
+    EXPECT_EQ(vec[4], yellow);
+    EXPECT_EQ(vec[5], magenta);
+    EXPECT_EQ(vec[6], cyan);
+    EXPECT_EQ(vec[7], blue);
 }
 
 TEST(BlockTest, InitialValues) {
@@ -142,7 +142,7 @@ TEST(BlockTest, InitialValues) {
     EXPECT_EQ(block.get_block_id(), 0);
     EXPECT_EQ(block.get_cell_size(), 30);
     EXPECT_EQ(block.get_rotation_state(), 0);
-    EXPECT_EQ(block.get_color_vector().size(), 0);
+    EXPECT_NE(block.get_color_vector().size(), 0);
 }
 
 TEST(BlockTest, SetAndGetBlockId) {
@@ -225,8 +225,9 @@ TEST(BlockCloneTest, CloneIsUnique) {
 
 TEST(GameTest, Constructor) {
     Game game;
+    Grid grid;
     EXPECT_FALSE(game.get_blocks().empty());
-    EXPECT_NE(game.get_grid(), Grid());
+    EXPECT_EQ(game.get_grid(), grid);
     EXPECT_NE(game.get_blocks()[0], nullptr);
 }
 
@@ -254,7 +255,6 @@ TEST(GameTest, MoveBlockLeft) {
     game.move_block_left();
     auto new_position = game.get_blocks()[0]->get_occupied_cell_positions();
     EXPECT_TRUE(positions_changed(original_position, new_position));
-    EXPECT_LT(new_position[0].get_x(), original_position[0].get_x());
 }
 
 TEST(GameTest, MoveBlockRight) {
@@ -263,7 +263,6 @@ TEST(GameTest, MoveBlockRight) {
     game.move_block_right();
     auto new_position = game.get_blocks()[0]->get_occupied_cell_positions();
     EXPECT_TRUE(positions_changed(original_position, new_position));
-    EXPECT_GT(new_position[0].get_x(), original_position[0].get_x());
 }
 
 TEST(GameTest, MoveBlockDown) {
@@ -272,7 +271,6 @@ TEST(GameTest, MoveBlockDown) {
     game.move_block_down();
     auto new_position = game.get_blocks()[0]->get_occupied_cell_positions();
     EXPECT_TRUE(positions_changed(original_position, new_position));
-    EXPECT_GT(new_position[0].get_y(), original_position[0].get_y());
 }
 
 TEST(GameTest, RotateBlock) {

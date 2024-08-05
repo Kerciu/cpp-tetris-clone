@@ -1,10 +1,10 @@
-Start testing: Aug 05 10:50 CEST
+Start testing: Aug 05 11:06 CEST
 ----------------------------------------------------------
-1/33 Testing: TetrisGuiTest.WindowCreation
-1/33 Test: TetrisGuiTest.WindowCreation
+1/31 Testing: TetrisGuiTest.WindowCreation
+1/31 Test: TetrisGuiTest.WindowCreation
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=TetrisGuiTest.WindowCreation" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"TetrisGuiTest.WindowCreation" start time: Aug 05 10:50 CEST
+"TetrisGuiTest.WindowCreation" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = TetrisGuiTest.WindowCreation
@@ -12,25 +12,25 @@ Note: Google Test filter = TetrisGuiTest.WindowCreation
 [----------] Global test environment set-up.
 [----------] 1 test from TetrisGuiTest
 [ RUN      ] TetrisGuiTest.WindowCreation
-[       OK ] TetrisGuiTest.WindowCreation (111 ms)
-[----------] 1 test from TetrisGuiTest (111 ms total)
+[       OK ] TetrisGuiTest.WindowCreation (105 ms)
+[----------] 1 test from TetrisGuiTest (105 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (112 ms total)
+[==========] 1 test from 1 test suite ran. (105 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.14 sec
+Test time =   0.15 sec
 ----------------------------------------------------------
 Test Passed.
-"TetrisGuiTest.WindowCreation" end time: Aug 05 10:50 CEST
+"TetrisGuiTest.WindowCreation" end time: Aug 05 11:06 CEST
 "TetrisGuiTest.WindowCreation" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/33 Testing: TetrisGuiTest.WindowClose
-2/33 Test: TetrisGuiTest.WindowClose
+2/31 Testing: TetrisGuiTest.WindowClose
+2/31 Test: TetrisGuiTest.WindowClose
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=TetrisGuiTest.WindowClose" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"TetrisGuiTest.WindowClose" start time: Aug 05 10:50 CEST
+"TetrisGuiTest.WindowClose" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = TetrisGuiTest.WindowClose
@@ -38,34 +38,25 @@ Note: Google Test filter = TetrisGuiTest.WindowClose
 [----------] Global test environment set-up.
 [----------] 1 test from TetrisGuiTest
 [ RUN      ] TetrisGuiTest.WindowClose
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:48: Failure
-Value of: tetris_gui->is_running()
-  Actual: true
-Expected: false
-
-[  FAILED  ] TetrisGuiTest.WindowClose (96 ms)
-[----------] 1 test from TetrisGuiTest (96 ms total)
+[       OK ] TetrisGuiTest.WindowClose (98 ms)
+[----------] 1 test from TetrisGuiTest (98 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (96 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] TetrisGuiTest.WindowClose
-
- 1 FAILED TEST
+[==========] 1 test from 1 test suite ran. (98 ms total)
+[  PASSED  ] 1 test.
 <end of output>
-Test time =   0.13 sec
+Test time =   0.12 sec
 ----------------------------------------------------------
-Test Failed.
-"TetrisGuiTest.WindowClose" end time: Aug 05 10:50 CEST
+Test Passed.
+"TetrisGuiTest.WindowClose" end time: Aug 05 11:06 CEST
 "TetrisGuiTest.WindowClose" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/33 Testing: TetrisGuiTest.CoordsCreation
-3/33 Test: TetrisGuiTest.CoordsCreation
+3/31 Testing: TetrisGuiTest.CoordsCreation
+3/31 Test: TetrisGuiTest.CoordsCreation
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=TetrisGuiTest.CoordsCreation" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"TetrisGuiTest.CoordsCreation" start time: Aug 05 10:50 CEST
+"TetrisGuiTest.CoordsCreation" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = TetrisGuiTest.CoordsCreation
@@ -73,25 +64,25 @@ Note: Google Test filter = TetrisGuiTest.CoordsCreation
 [----------] Global test environment set-up.
 [----------] 1 test from TetrisGuiTest
 [ RUN      ] TetrisGuiTest.CoordsCreation
-[       OK ] TetrisGuiTest.CoordsCreation (106 ms)
-[----------] 1 test from TetrisGuiTest (107 ms total)
+[       OK ] TetrisGuiTest.CoordsCreation (123 ms)
+[----------] 1 test from TetrisGuiTest (123 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (107 ms total)
+[==========] 1 test from 1 test suite ran. (123 ms total)
 [  PASSED  ] 1 test.
 <end of output>
 Test time =   0.14 sec
 ----------------------------------------------------------
 Test Passed.
-"TetrisGuiTest.CoordsCreation" end time: Aug 05 10:50 CEST
+"TetrisGuiTest.CoordsCreation" end time: Aug 05 11:06 CEST
 "TetrisGuiTest.CoordsCreation" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-4/33 Testing: TetrisGuiTest.CoordsGetters
-4/33 Test: TetrisGuiTest.CoordsGetters
+4/31 Testing: TetrisGuiTest.CoordsGetters
+4/31 Test: TetrisGuiTest.CoordsGetters
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=TetrisGuiTest.CoordsGetters" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"TetrisGuiTest.CoordsGetters" start time: Aug 05 10:50 CEST
+"TetrisGuiTest.CoordsGetters" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = TetrisGuiTest.CoordsGetters
@@ -99,41 +90,25 @@ Note: Google Test filter = TetrisGuiTest.CoordsGetters
 [----------] Global test environment set-up.
 [----------] 1 test from TetrisGuiTest
 [ RUN      ] TetrisGuiTest.CoordsGetters
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:57: Failure
-Expected equality of these values:
-  coords.get_x()
-    Which is: 20
-  10
-
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:58: Failure
-Expected equality of these values:
-  coords.get_y()
-    Which is: 10
-  20
-
-[  FAILED  ] TetrisGuiTest.CoordsGetters (140 ms)
-[----------] 1 test from TetrisGuiTest (140 ms total)
+[       OK ] TetrisGuiTest.CoordsGetters (145 ms)
+[----------] 1 test from TetrisGuiTest (145 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (140 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] TetrisGuiTest.CoordsGetters
-
- 1 FAILED TEST
+[==========] 1 test from 1 test suite ran. (145 ms total)
+[  PASSED  ] 1 test.
 <end of output>
 Test time =   0.17 sec
 ----------------------------------------------------------
-Test Failed.
-"TetrisGuiTest.CoordsGetters" end time: Aug 05 10:50 CEST
+Test Passed.
+"TetrisGuiTest.CoordsGetters" end time: Aug 05 11:06 CEST
 "TetrisGuiTest.CoordsGetters" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-5/33 Testing: TetrisGuiTest.CoordsSetters
-5/33 Test: TetrisGuiTest.CoordsSetters
+5/31 Testing: TetrisGuiTest.CoordsSetters
+5/31 Test: TetrisGuiTest.CoordsSetters
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=TetrisGuiTest.CoordsSetters" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"TetrisGuiTest.CoordsSetters" start time: Aug 05 10:50 CEST
+"TetrisGuiTest.CoordsSetters" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = TetrisGuiTest.CoordsSetters
@@ -141,101 +116,25 @@ Note: Google Test filter = TetrisGuiTest.CoordsSetters
 [----------] Global test environment set-up.
 [----------] 1 test from TetrisGuiTest
 [ RUN      ] TetrisGuiTest.CoordsSetters
-[       OK ] TetrisGuiTest.CoordsSetters (115 ms)
-[----------] 1 test from TetrisGuiTest (115 ms total)
+[       OK ] TetrisGuiTest.CoordsSetters (101 ms)
+[----------] 1 test from TetrisGuiTest (101 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (115 ms total)
+[==========] 1 test from 1 test suite ran. (101 ms total)
 [  PASSED  ] 1 test.
-<end of output>
-Test time =   0.14 sec
-----------------------------------------------------------
-Test Passed.
-"TetrisGuiTest.CoordsSetters" end time: Aug 05 10:50 CEST
-"TetrisGuiTest.CoordsSetters" time elapsed: 00:00:00
-----------------------------------------------------------
-
-6/33 Testing: TetrisGuiTest.CoordsInvalidArgumentsInSetter
-6/33 Test: TetrisGuiTest.CoordsInvalidArgumentsInSetter
-Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=TetrisGuiTest.CoordsInvalidArgumentsInSetter" "--gtest_also_run_disabled_tests"
-Directory: /home/kerciu/Desktop/tetris-cpp/build
-"TetrisGuiTest.CoordsInvalidArgumentsInSetter" start time: Aug 05 10:50 CEST
-Output:
-----------------------------------------------------------
-Note: Google Test filter = TetrisGuiTest.CoordsInvalidArgumentsInSetter
-[==========] Running 1 test from 1 test suite.
-[----------] Global test environment set-up.
-[----------] 1 test from TetrisGuiTest
-[ RUN      ] TetrisGuiTest.CoordsInvalidArgumentsInSetter
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:71: Failure
-Expected: coords.set_x(-5) throws an exception of type std::out_of_range.
-  Actual: it throws nothing.
-
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:72: Failure
-Expected: coords.set_y(-10) throws an exception of type std::out_of_range.
-  Actual: it throws nothing.
-
-[  FAILED  ] TetrisGuiTest.CoordsInvalidArgumentsInSetter (98 ms)
-[----------] 1 test from TetrisGuiTest (98 ms total)
-
-[----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (99 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] TetrisGuiTest.CoordsInvalidArgumentsInSetter
-
- 1 FAILED TEST
-<end of output>
-Test time =   0.13 sec
-----------------------------------------------------------
-Test Failed.
-"TetrisGuiTest.CoordsInvalidArgumentsInSetter" end time: Aug 05 10:50 CEST
-"TetrisGuiTest.CoordsInvalidArgumentsInSetter" time elapsed: 00:00:00
-----------------------------------------------------------
-
-7/33 Testing: TetrisGuiTest.CoordsCreationInvalidArgumentsInConstuctor
-7/33 Test: TetrisGuiTest.CoordsCreationInvalidArgumentsInConstuctor
-Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=TetrisGuiTest.CoordsCreationInvalidArgumentsInConstuctor" "--gtest_also_run_disabled_tests"
-Directory: /home/kerciu/Desktop/tetris-cpp/build
-"TetrisGuiTest.CoordsCreationInvalidArgumentsInConstuctor" start time: Aug 05 10:50 CEST
-Output:
-----------------------------------------------------------
-Note: Google Test filter = TetrisGuiTest.CoordsCreationInvalidArgumentsInConstuctor
-[==========] Running 1 test from 1 test suite.
-[----------] Global test environment set-up.
-[----------] 1 test from TetrisGuiTest
-[ RUN      ] TetrisGuiTest.CoordsCreationInvalidArgumentsInConstuctor
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:76: Failure
-Expected: Coords(-10, 20) throws an exception of type std::out_of_range.
-  Actual: it throws nothing.
-
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:77: Failure
-Expected: Coords(10, -20) throws an exception of type std::out_of_range.
-  Actual: it throws nothing.
-
-[  FAILED  ] TetrisGuiTest.CoordsCreationInvalidArgumentsInConstuctor (102 ms)
-[----------] 1 test from TetrisGuiTest (102 ms total)
-
-[----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (102 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] TetrisGuiTest.CoordsCreationInvalidArgumentsInConstuctor
-
- 1 FAILED TEST
 <end of output>
 Test time =   0.12 sec
 ----------------------------------------------------------
-Test Failed.
-"TetrisGuiTest.CoordsCreationInvalidArgumentsInConstuctor" end time: Aug 05 10:50 CEST
-"TetrisGuiTest.CoordsCreationInvalidArgumentsInConstuctor" time elapsed: 00:00:00
+Test Passed.
+"TetrisGuiTest.CoordsSetters" end time: Aug 05 11:06 CEST
+"TetrisGuiTest.CoordsSetters" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-8/33 Testing: TetrisGuiTest.GridCreation
-8/33 Test: TetrisGuiTest.GridCreation
+6/31 Testing: TetrisGuiTest.GridCreation
+6/31 Test: TetrisGuiTest.GridCreation
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=TetrisGuiTest.GridCreation" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"TetrisGuiTest.GridCreation" start time: Aug 05 10:50 CEST
+"TetrisGuiTest.GridCreation" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = TetrisGuiTest.GridCreation
@@ -243,25 +142,25 @@ Note: Google Test filter = TetrisGuiTest.GridCreation
 [----------] Global test environment set-up.
 [----------] 1 test from TetrisGuiTest
 [ RUN      ] TetrisGuiTest.GridCreation
-[       OK ] TetrisGuiTest.GridCreation (118 ms)
-[----------] 1 test from TetrisGuiTest (118 ms total)
+[       OK ] TetrisGuiTest.GridCreation (101 ms)
+[----------] 1 test from TetrisGuiTest (102 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (118 ms total)
+[==========] 1 test from 1 test suite ran. (102 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.14 sec
+Test time =   0.13 sec
 ----------------------------------------------------------
 Test Passed.
-"TetrisGuiTest.GridCreation" end time: Aug 05 10:50 CEST
+"TetrisGuiTest.GridCreation" end time: Aug 05 11:06 CEST
 "TetrisGuiTest.GridCreation" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-9/33 Testing: TetrisGuiTest.GridCreationDistributionGetter
-9/33 Test: TetrisGuiTest.GridCreationDistributionGetter
+7/31 Testing: TetrisGuiTest.GridCreationDistributionGetter
+7/31 Test: TetrisGuiTest.GridCreationDistributionGetter
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=TetrisGuiTest.GridCreationDistributionGetter" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"TetrisGuiTest.GridCreationDistributionGetter" start time: Aug 05 10:50 CEST
+"TetrisGuiTest.GridCreationDistributionGetter" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = TetrisGuiTest.GridCreationDistributionGetter
@@ -273,21 +172,21 @@ Note: Google Test filter = TetrisGuiTest.GridCreationDistributionGetter
 [----------] 1 test from TetrisGuiTest (105 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (106 ms total)
+[==========] 1 test from 1 test suite ran. (105 ms total)
 [  PASSED  ] 1 test.
 <end of output>
 Test time =   0.13 sec
 ----------------------------------------------------------
 Test Passed.
-"TetrisGuiTest.GridCreationDistributionGetter" end time: Aug 05 10:50 CEST
+"TetrisGuiTest.GridCreationDistributionGetter" end time: Aug 05 11:06 CEST
 "TetrisGuiTest.GridCreationDistributionGetter" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-10/33 Testing: TetrisGuiTest.GridCreationDistributionSetter
-10/33 Test: TetrisGuiTest.GridCreationDistributionSetter
+8/31 Testing: TetrisGuiTest.GridCreationDistributionSetter
+8/31 Test: TetrisGuiTest.GridCreationDistributionSetter
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=TetrisGuiTest.GridCreationDistributionSetter" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"TetrisGuiTest.GridCreationDistributionSetter" start time: Aug 05 10:50 CEST
+"TetrisGuiTest.GridCreationDistributionSetter" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = TetrisGuiTest.GridCreationDistributionSetter
@@ -295,25 +194,25 @@ Note: Google Test filter = TetrisGuiTest.GridCreationDistributionSetter
 [----------] Global test environment set-up.
 [----------] 1 test from TetrisGuiTest
 [ RUN      ] TetrisGuiTest.GridCreationDistributionSetter
-[       OK ] TetrisGuiTest.GridCreationDistributionSetter (88 ms)
-[----------] 1 test from TetrisGuiTest (88 ms total)
+[       OK ] TetrisGuiTest.GridCreationDistributionSetter (106 ms)
+[----------] 1 test from TetrisGuiTest (106 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (88 ms total)
+[==========] 1 test from 1 test suite ran. (106 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.12 sec
+Test time =   0.13 sec
 ----------------------------------------------------------
 Test Passed.
-"TetrisGuiTest.GridCreationDistributionSetter" end time: Aug 05 10:50 CEST
+"TetrisGuiTest.GridCreationDistributionSetter" end time: Aug 05 11:06 CEST
 "TetrisGuiTest.GridCreationDistributionSetter" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-11/33 Testing: TetrisGuiTest.GridCreationColorGetter
-11/33 Test: TetrisGuiTest.GridCreationColorGetter
+9/31 Testing: TetrisGuiTest.GridCreationColorGetter
+9/31 Test: TetrisGuiTest.GridCreationColorGetter
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=TetrisGuiTest.GridCreationColorGetter" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"TetrisGuiTest.GridCreationColorGetter" start time: Aug 05 10:50 CEST
+"TetrisGuiTest.GridCreationColorGetter" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = TetrisGuiTest.GridCreationColorGetter
@@ -321,25 +220,25 @@ Note: Google Test filter = TetrisGuiTest.GridCreationColorGetter
 [----------] Global test environment set-up.
 [----------] 1 test from TetrisGuiTest
 [ RUN      ] TetrisGuiTest.GridCreationColorGetter
-[       OK ] TetrisGuiTest.GridCreationColorGetter (92 ms)
-[----------] 1 test from TetrisGuiTest (92 ms total)
+[       OK ] TetrisGuiTest.GridCreationColorGetter (105 ms)
+[----------] 1 test from TetrisGuiTest (105 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (92 ms total)
+[==========] 1 test from 1 test suite ran. (105 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.12 sec
+Test time =   0.14 sec
 ----------------------------------------------------------
 Test Passed.
-"TetrisGuiTest.GridCreationColorGetter" end time: Aug 05 10:50 CEST
+"TetrisGuiTest.GridCreationColorGetter" end time: Aug 05 11:06 CEST
 "TetrisGuiTest.GridCreationColorGetter" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-12/33 Testing: TetrisGuiTest.GridCreationColorSetter
-12/33 Test: TetrisGuiTest.GridCreationColorSetter
+10/31 Testing: TetrisGuiTest.GridCreationColorSetter
+10/31 Test: TetrisGuiTest.GridCreationColorSetter
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=TetrisGuiTest.GridCreationColorSetter" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"TetrisGuiTest.GridCreationColorSetter" start time: Aug 05 10:50 CEST
+"TetrisGuiTest.GridCreationColorSetter" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = TetrisGuiTest.GridCreationColorSetter
@@ -347,25 +246,25 @@ Note: Google Test filter = TetrisGuiTest.GridCreationColorSetter
 [----------] Global test environment set-up.
 [----------] 1 test from TetrisGuiTest
 [ RUN      ] TetrisGuiTest.GridCreationColorSetter
-[       OK ] TetrisGuiTest.GridCreationColorSetter (91 ms)
-[----------] 1 test from TetrisGuiTest (92 ms total)
+[       OK ] TetrisGuiTest.GridCreationColorSetter (103 ms)
+[----------] 1 test from TetrisGuiTest (103 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (92 ms total)
+[==========] 1 test from 1 test suite ran. (103 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.12 sec
+Test time =   0.13 sec
 ----------------------------------------------------------
 Test Passed.
-"TetrisGuiTest.GridCreationColorSetter" end time: Aug 05 10:50 CEST
+"TetrisGuiTest.GridCreationColorSetter" end time: Aug 05 11:06 CEST
 "TetrisGuiTest.GridCreationColorSetter" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-13/33 Testing: TetrisGuiTest.ColorCreationVector
-13/33 Test: TetrisGuiTest.ColorCreationVector
+11/31 Testing: TetrisGuiTest.ColorCreationVector
+11/31 Test: TetrisGuiTest.ColorCreationVector
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=TetrisGuiTest.ColorCreationVector" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"TetrisGuiTest.ColorCreationVector" start time: Aug 05 10:50 CEST
+"TetrisGuiTest.ColorCreationVector" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = TetrisGuiTest.ColorCreationVector
@@ -373,85 +272,25 @@ Note: Google Test filter = TetrisGuiTest.ColorCreationVector
 [----------] Global test environment set-up.
 [----------] 1 test from TetrisGuiTest
 [ RUN      ] TetrisGuiTest.ColorCreationVector
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:130: Failure
-Expected equality of these values:
-  vec[0]
-    Which is: 4-byte object <37-3A 40-FF>
-  dark_grey
-    Which is: 4-byte object <1A-1F 28-FF>
-
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:131: Failure
-Expected equality of these values:
-  vec[1]
-    Which is: 4-byte object <39-99 18-FF>
-  sf::Color::Green
-    Which is: 4-byte object <00-FF 00-FF>
-
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:132: Failure
-Expected equality of these values:
-  vec[2]
-    Which is: 4-byte object <FF-00 4D-FF>
-  sf::Color::Red
-    Which is: 4-byte object <FF-00 00-FF>
-
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:133: Failure
-Expected equality of these values:
-  vec[3]
-    Which is: 4-byte object <FF-B2 00-FF>
-  orange
-    Which is: 4-byte object <E2-74 11-FF>
-
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:134: Failure
-Expected equality of these values:
-  vec[4]
-    Which is: 4-byte object <F6-FB 7A-FF>
-  sf::Color::Yellow
-    Which is: 4-byte object <FF-FF 00-FF>
-
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:135: Failure
-Expected equality of these values:
-  vec[5]
-    Which is: 4-byte object <FF-4E 88-FF>
-  sf::Color::Magenta
-    Which is: 4-byte object <FF-00 FF-FF>
-
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:136: Failure
-Expected equality of these values:
-  vec[6]
-    Which is: 4-byte object <03-AE D2-FF>
-  sf::Color::Cyan
-    Which is: 4-byte object <00-FF FF-FF>
-
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:137: Failure
-Expected equality of these values:
-  vec[7]
-    Which is: 4-byte object <10-43 9F-FF>
-  sf::Color::Blue
-    Which is: 4-byte object <00-00 FF-FF>
-
-[  FAILED  ] TetrisGuiTest.ColorCreationVector (100 ms)
-[----------] 1 test from TetrisGuiTest (101 ms total)
+[       OK ] TetrisGuiTest.ColorCreationVector (95 ms)
+[----------] 1 test from TetrisGuiTest (95 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (102 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] TetrisGuiTest.ColorCreationVector
-
- 1 FAILED TEST
+[==========] 1 test from 1 test suite ran. (95 ms total)
+[  PASSED  ] 1 test.
 <end of output>
 Test time =   0.12 sec
 ----------------------------------------------------------
-Test Failed.
-"TetrisGuiTest.ColorCreationVector" end time: Aug 05 10:50 CEST
+Test Passed.
+"TetrisGuiTest.ColorCreationVector" end time: Aug 05 11:06 CEST
 "TetrisGuiTest.ColorCreationVector" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-14/33 Testing: BlockTest.InitialValues
-14/33 Test: BlockTest.InitialValues
+12/31 Testing: BlockTest.InitialValues
+12/31 Test: BlockTest.InitialValues
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=BlockTest.InitialValues" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"BlockTest.InitialValues" start time: Aug 05 10:50 CEST
+"BlockTest.InitialValues" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = BlockTest.InitialValues
@@ -459,35 +298,25 @@ Note: Google Test filter = BlockTest.InitialValues
 [----------] Global test environment set-up.
 [----------] 1 test from BlockTest
 [ RUN      ] BlockTest.InitialValues
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:145: Failure
-Expected equality of these values:
-  block.get_color_vector().size()
-    Which is: 8
-  0
-
-[  FAILED  ] BlockTest.InitialValues (0 ms)
+[       OK ] BlockTest.InitialValues (0 ms)
 [----------] 1 test from BlockTest (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] BlockTest.InitialValues
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
-Test Failed.
-"BlockTest.InitialValues" end time: Aug 05 10:50 CEST
+Test Passed.
+"BlockTest.InitialValues" end time: Aug 05 11:06 CEST
 "BlockTest.InitialValues" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-15/33 Testing: BlockTest.SetAndGetBlockId
-15/33 Test: BlockTest.SetAndGetBlockId
+13/31 Testing: BlockTest.SetAndGetBlockId
+13/31 Test: BlockTest.SetAndGetBlockId
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=BlockTest.SetAndGetBlockId" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"BlockTest.SetAndGetBlockId" start time: Aug 05 10:50 CEST
+"BlockTest.SetAndGetBlockId" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = BlockTest.SetAndGetBlockId
@@ -505,15 +334,15 @@ Note: Google Test filter = BlockTest.SetAndGetBlockId
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"BlockTest.SetAndGetBlockId" end time: Aug 05 10:50 CEST
+"BlockTest.SetAndGetBlockId" end time: Aug 05 11:06 CEST
 "BlockTest.SetAndGetBlockId" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-16/33 Testing: BlockTest.MoveBlock
-16/33 Test: BlockTest.MoveBlock
+14/31 Testing: BlockTest.MoveBlock
+14/31 Test: BlockTest.MoveBlock
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=BlockTest.MoveBlock" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"BlockTest.MoveBlock" start time: Aug 05 10:50 CEST
+"BlockTest.MoveBlock" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = BlockTest.MoveBlock
@@ -531,15 +360,15 @@ Note: Google Test filter = BlockTest.MoveBlock
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"BlockTest.MoveBlock" end time: Aug 05 10:50 CEST
+"BlockTest.MoveBlock" end time: Aug 05 11:06 CEST
 "BlockTest.MoveBlock" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-17/33 Testing: BlockTest.Rotation
-17/33 Test: BlockTest.Rotation
+15/31 Testing: BlockTest.Rotation
+15/31 Test: BlockTest.Rotation
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=BlockTest.Rotation" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"BlockTest.Rotation" start time: Aug 05 10:50 CEST
+"BlockTest.Rotation" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = BlockTest.Rotation
@@ -548,18 +377,18 @@ Note: Google Test filter = BlockTest.Rotation
 [----------] 1 test from BlockTest
 [ RUN      ] BlockTest.Rotation
 <end of output>
-Test time =   0.14 sec
+Test time =   0.13 sec
 ----------------------------------------------------------
 Test Failed.
-"BlockTest.Rotation" end time: Aug 05 10:50 CEST
+"BlockTest.Rotation" end time: Aug 05 11:06 CEST
 "BlockTest.Rotation" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-18/33 Testing: LBlockTest.PositionVectors
-18/33 Test: LBlockTest.PositionVectors
+16/31 Testing: LBlockTest.PositionVectors
+16/31 Test: LBlockTest.PositionVectors
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=LBlockTest.PositionVectors" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"LBlockTest.PositionVectors" start time: Aug 05 10:50 CEST
+"LBlockTest.PositionVectors" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = LBlockTest.PositionVectors
@@ -574,18 +403,18 @@ Note: Google Test filter = LBlockTest.PositionVectors
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"LBlockTest.PositionVectors" end time: Aug 05 10:50 CEST
+"LBlockTest.PositionVectors" end time: Aug 05 11:06 CEST
 "LBlockTest.PositionVectors" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-19/33 Testing: JBlockTest.PositionVectors
-19/33 Test: JBlockTest.PositionVectors
+17/31 Testing: JBlockTest.PositionVectors
+17/31 Test: JBlockTest.PositionVectors
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=JBlockTest.PositionVectors" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"JBlockTest.PositionVectors" start time: Aug 05 10:50 CEST
+"JBlockTest.PositionVectors" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = JBlockTest.PositionVectors
@@ -603,15 +432,15 @@ Note: Google Test filter = JBlockTest.PositionVectors
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"JBlockTest.PositionVectors" end time: Aug 05 10:50 CEST
+"JBlockTest.PositionVectors" end time: Aug 05 11:06 CEST
 "JBlockTest.PositionVectors" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-20/33 Testing: IBlockTest.PositionVectors
-20/33 Test: IBlockTest.PositionVectors
+18/31 Testing: IBlockTest.PositionVectors
+18/31 Test: IBlockTest.PositionVectors
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=IBlockTest.PositionVectors" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"IBlockTest.PositionVectors" start time: Aug 05 10:50 CEST
+"IBlockTest.PositionVectors" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = IBlockTest.PositionVectors
@@ -629,15 +458,15 @@ Note: Google Test filter = IBlockTest.PositionVectors
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"IBlockTest.PositionVectors" end time: Aug 05 10:50 CEST
+"IBlockTest.PositionVectors" end time: Aug 05 11:06 CEST
 "IBlockTest.PositionVectors" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-21/33 Testing: OBlockTest.PositionVectors
-21/33 Test: OBlockTest.PositionVectors
+19/31 Testing: OBlockTest.PositionVectors
+19/31 Test: OBlockTest.PositionVectors
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=OBlockTest.PositionVectors" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"OBlockTest.PositionVectors" start time: Aug 05 10:50 CEST
+"OBlockTest.PositionVectors" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = OBlockTest.PositionVectors
@@ -655,15 +484,15 @@ Note: Google Test filter = OBlockTest.PositionVectors
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"OBlockTest.PositionVectors" end time: Aug 05 10:50 CEST
+"OBlockTest.PositionVectors" end time: Aug 05 11:06 CEST
 "OBlockTest.PositionVectors" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-22/33 Testing: SBlockTest.PositionVectors
-22/33 Test: SBlockTest.PositionVectors
+20/31 Testing: SBlockTest.PositionVectors
+20/31 Test: SBlockTest.PositionVectors
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=SBlockTest.PositionVectors" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"SBlockTest.PositionVectors" start time: Aug 05 10:50 CEST
+"SBlockTest.PositionVectors" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = SBlockTest.PositionVectors
@@ -681,15 +510,15 @@ Note: Google Test filter = SBlockTest.PositionVectors
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"SBlockTest.PositionVectors" end time: Aug 05 10:50 CEST
+"SBlockTest.PositionVectors" end time: Aug 05 11:06 CEST
 "SBlockTest.PositionVectors" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-23/33 Testing: TBlockTest.PositionVectors
-23/33 Test: TBlockTest.PositionVectors
+21/31 Testing: TBlockTest.PositionVectors
+21/31 Test: TBlockTest.PositionVectors
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=TBlockTest.PositionVectors" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"TBlockTest.PositionVectors" start time: Aug 05 10:50 CEST
+"TBlockTest.PositionVectors" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = TBlockTest.PositionVectors
@@ -707,15 +536,15 @@ Note: Google Test filter = TBlockTest.PositionVectors
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TBlockTest.PositionVectors" end time: Aug 05 10:50 CEST
+"TBlockTest.PositionVectors" end time: Aug 05 11:06 CEST
 "TBlockTest.PositionVectors" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-24/33 Testing: ZBlockTest.PositionVectors
-24/33 Test: ZBlockTest.PositionVectors
+22/31 Testing: ZBlockTest.PositionVectors
+22/31 Test: ZBlockTest.PositionVectors
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=ZBlockTest.PositionVectors" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"ZBlockTest.PositionVectors" start time: Aug 05 10:50 CEST
+"ZBlockTest.PositionVectors" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = ZBlockTest.PositionVectors
@@ -733,15 +562,15 @@ Note: Google Test filter = ZBlockTest.PositionVectors
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"ZBlockTest.PositionVectors" end time: Aug 05 10:50 CEST
+"ZBlockTest.PositionVectors" end time: Aug 05 11:06 CEST
 "ZBlockTest.PositionVectors" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-25/33 Testing: BlockCloneTest.CloneIsUnique
-25/33 Test: BlockCloneTest.CloneIsUnique
+23/31 Testing: BlockCloneTest.CloneIsUnique
+23/31 Test: BlockCloneTest.CloneIsUnique
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=BlockCloneTest.CloneIsUnique" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"BlockCloneTest.CloneIsUnique" start time: Aug 05 10:50 CEST
+"BlockCloneTest.CloneIsUnique" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = BlockCloneTest.CloneIsUnique
@@ -759,15 +588,15 @@ Note: Google Test filter = BlockCloneTest.CloneIsUnique
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"BlockCloneTest.CloneIsUnique" end time: Aug 05 10:50 CEST
+"BlockCloneTest.CloneIsUnique" end time: Aug 05 11:06 CEST
 "BlockCloneTest.CloneIsUnique" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-26/33 Testing: GameTest.Constructor
-26/33 Test: GameTest.Constructor
+24/31 Testing: GameTest.Constructor
+24/31 Test: GameTest.Constructor
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=GameTest.Constructor" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"GameTest.Constructor" start time: Aug 05 10:50 CEST
+"GameTest.Constructor" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = GameTest.Constructor
@@ -775,32 +604,25 @@ Note: Google Test filter = GameTest.Constructor
 [----------] Global test environment set-up.
 [----------] 1 test from GameTest
 [ RUN      ] GameTest.Constructor
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:229: Failure
-Expected: (game.get_grid()) != (Grid()), actual: 824-byte object <00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 ... 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 20-4C 5F-31 00-00 00-00 40-4C 5F-31 00-00 00-00 40-4C 5F-31 00-00 00-00> vs 824-byte object <00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 ... 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 70-C2 84-31 00-00 00-00 90-C2 84-31 00-00 00-00 90-C2 84-31 00-00 00-00>
-
-[  FAILED  ] GameTest.Constructor (95 ms)
-[----------] 1 test from GameTest (95 ms total)
+[       OK ] GameTest.Constructor (42 ms)
+[----------] 1 test from GameTest (43 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (95 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] GameTest.Constructor
-
- 1 FAILED TEST
+[==========] 1 test from 1 test suite ran. (43 ms total)
+[  PASSED  ] 1 test.
 <end of output>
-Test time =   0.11 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
-Test Failed.
-"GameTest.Constructor" end time: Aug 05 10:50 CEST
+Test Passed.
+"GameTest.Constructor" end time: Aug 05 11:06 CEST
 "GameTest.Constructor" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-27/33 Testing: GameTest.GetSetGrid
-27/33 Test: GameTest.GetSetGrid
+25/31 Testing: GameTest.GetSetGrid
+25/31 Test: GameTest.GetSetGrid
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=GameTest.GetSetGrid" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"GameTest.GetSetGrid" start time: Aug 05 10:50 CEST
+"GameTest.GetSetGrid" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = GameTest.GetSetGrid
@@ -808,25 +630,25 @@ Note: Google Test filter = GameTest.GetSetGrid
 [----------] Global test environment set-up.
 [----------] 1 test from GameTest
 [ RUN      ] GameTest.GetSetGrid
-[       OK ] GameTest.GetSetGrid (46 ms)
-[----------] 1 test from GameTest (46 ms total)
+[       OK ] GameTest.GetSetGrid (44 ms)
+[----------] 1 test from GameTest (44 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (46 ms total)
+[==========] 1 test from 1 test suite ran. (44 ms total)
 [  PASSED  ] 1 test.
 <end of output>
 Test time =   0.06 sec
 ----------------------------------------------------------
 Test Passed.
-"GameTest.GetSetGrid" end time: Aug 05 10:50 CEST
+"GameTest.GetSetGrid" end time: Aug 05 11:06 CEST
 "GameTest.GetSetGrid" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-28/33 Testing: GameTest.GetSetBlocks
-28/33 Test: GameTest.GetSetBlocks
+26/31 Testing: GameTest.GetSetBlocks
+26/31 Test: GameTest.GetSetBlocks
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=GameTest.GetSetBlocks" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"GameTest.GetSetBlocks" start time: Aug 05 10:50 CEST
+"GameTest.GetSetBlocks" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = GameTest.GetSetBlocks
@@ -834,25 +656,25 @@ Note: Google Test filter = GameTest.GetSetBlocks
 [----------] Global test environment set-up.
 [----------] 1 test from GameTest
 [ RUN      ] GameTest.GetSetBlocks
-[       OK ] GameTest.GetSetBlocks (40 ms)
-[----------] 1 test from GameTest (40 ms total)
+[       OK ] GameTest.GetSetBlocks (44 ms)
+[----------] 1 test from GameTest (44 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (40 ms total)
+[==========] 1 test from 1 test suite ran. (44 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.05 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Passed.
-"GameTest.GetSetBlocks" end time: Aug 05 10:50 CEST
+"GameTest.GetSetBlocks" end time: Aug 05 11:06 CEST
 "GameTest.GetSetBlocks" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-29/33 Testing: GameTest.MoveBlockLeft
-29/33 Test: GameTest.MoveBlockLeft
+27/31 Testing: GameTest.MoveBlockLeft
+27/31 Test: GameTest.MoveBlockLeft
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=GameTest.MoveBlockLeft" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"GameTest.MoveBlockLeft" start time: Aug 05 10:50 CEST
+"GameTest.MoveBlockLeft" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = GameTest.MoveBlockLeft
@@ -860,37 +682,34 @@ Note: Google Test filter = GameTest.MoveBlockLeft
 [----------] Global test environment set-up.
 [----------] 1 test from GameTest
 [ RUN      ] GameTest.MoveBlockLeft
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:256: Failure
+/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:257: Failure
 Value of: positions_changed(original_position, new_position)
   Actual: false
 Expected: true
 
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:257: Failure
-Expected: (new_position[0].get_x()) < (original_position[0].get_x()), actual: 3 vs 3
-
-[  FAILED  ] GameTest.MoveBlockLeft (43 ms)
-[----------] 1 test from GameTest (43 ms total)
+[  FAILED  ] GameTest.MoveBlockLeft (41 ms)
+[----------] 1 test from GameTest (41 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (43 ms total)
+[==========] 1 test from 1 test suite ran. (41 ms total)
 [  PASSED  ] 0 tests.
 [  FAILED  ] 1 test, listed below:
 [  FAILED  ] GameTest.MoveBlockLeft
 
  1 FAILED TEST
 <end of output>
-Test time =   0.06 sec
+Test time =   0.05 sec
 ----------------------------------------------------------
 Test Failed.
-"GameTest.MoveBlockLeft" end time: Aug 05 10:50 CEST
+"GameTest.MoveBlockLeft" end time: Aug 05 11:06 CEST
 "GameTest.MoveBlockLeft" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-30/33 Testing: GameTest.MoveBlockRight
-30/33 Test: GameTest.MoveBlockRight
+28/31 Testing: GameTest.MoveBlockRight
+28/31 Test: GameTest.MoveBlockRight
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=GameTest.MoveBlockRight" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"GameTest.MoveBlockRight" start time: Aug 05 10:50 CEST
+"GameTest.MoveBlockRight" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = GameTest.MoveBlockRight
@@ -903,32 +722,29 @@ Value of: positions_changed(original_position, new_position)
   Actual: false
 Expected: true
 
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:266: Failure
-Expected: (new_position[0].get_x()) > (original_position[0].get_x()), actual: 3 vs 3
-
-[  FAILED  ] GameTest.MoveBlockRight (41 ms)
-[----------] 1 test from GameTest (41 ms total)
+[  FAILED  ] GameTest.MoveBlockRight (43 ms)
+[----------] 1 test from GameTest (43 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (41 ms total)
+[==========] 1 test from 1 test suite ran. (43 ms total)
 [  PASSED  ] 0 tests.
 [  FAILED  ] 1 test, listed below:
 [  FAILED  ] GameTest.MoveBlockRight
 
  1 FAILED TEST
 <end of output>
-Test time =   0.05 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Failed.
-"GameTest.MoveBlockRight" end time: Aug 05 10:50 CEST
+"GameTest.MoveBlockRight" end time: Aug 05 11:06 CEST
 "GameTest.MoveBlockRight" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-31/33 Testing: GameTest.MoveBlockDown
-31/33 Test: GameTest.MoveBlockDown
+29/31 Testing: GameTest.MoveBlockDown
+29/31 Test: GameTest.MoveBlockDown
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=GameTest.MoveBlockDown" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"GameTest.MoveBlockDown" start time: Aug 05 10:50 CEST
+"GameTest.MoveBlockDown" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = GameTest.MoveBlockDown
@@ -936,19 +752,16 @@ Note: Google Test filter = GameTest.MoveBlockDown
 [----------] Global test environment set-up.
 [----------] 1 test from GameTest
 [ RUN      ] GameTest.MoveBlockDown
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:274: Failure
+/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:273: Failure
 Value of: positions_changed(original_position, new_position)
   Actual: false
 Expected: true
 
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:275: Failure
-Expected: (new_position[0].get_y()) > (original_position[0].get_y()), actual: 0 vs 0
-
-[  FAILED  ] GameTest.MoveBlockDown (41 ms)
-[----------] 1 test from GameTest (41 ms total)
+[  FAILED  ] GameTest.MoveBlockDown (39 ms)
+[----------] 1 test from GameTest (39 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (41 ms total)
+[==========] 1 test from 1 test suite ran. (39 ms total)
 [  PASSED  ] 0 tests.
 [  FAILED  ] 1 test, listed below:
 [  FAILED  ] GameTest.MoveBlockDown
@@ -958,15 +771,15 @@ Expected: (new_position[0].get_y()) > (original_position[0].get_y()), actual: 0 
 Test time =   0.05 sec
 ----------------------------------------------------------
 Test Failed.
-"GameTest.MoveBlockDown" end time: Aug 05 10:50 CEST
+"GameTest.MoveBlockDown" end time: Aug 05 11:06 CEST
 "GameTest.MoveBlockDown" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-32/33 Testing: GameTest.RotateBlock
-32/33 Test: GameTest.RotateBlock
+30/31 Testing: GameTest.RotateBlock
+30/31 Test: GameTest.RotateBlock
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests" "--gtest_filter=GameTest.RotateBlock" "--gtest_also_run_disabled_tests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"GameTest.RotateBlock" start time: Aug 05 10:50 CEST
+"GameTest.RotateBlock" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = GameTest.RotateBlock
@@ -974,19 +787,19 @@ Note: Google Test filter = GameTest.RotateBlock
 [----------] Global test environment set-up.
 [----------] 1 test from GameTest
 [ RUN      ] GameTest.RotateBlock
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:283: Failure
+/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:281: Failure
 Value of: positions_changed(original_position, new_position)
   Actual: false
 Expected: true
 
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:284: Failure
+/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:282: Failure
 Expected: (original_position) != (new_position), actual: { 8-byte object <00-00 00-00 03-00 00-00>, 8-byte object <00-00 00-00 04-00 00-00>, 8-byte object <00-00 00-00 05-00 00-00>, 8-byte object <00-00 00-00 06-00 00-00> } vs { 8-byte object <00-00 00-00 03-00 00-00>, 8-byte object <00-00 00-00 04-00 00-00>, 8-byte object <00-00 00-00 05-00 00-00>, 8-byte object <00-00 00-00 06-00 00-00> }
 
-[  FAILED  ] GameTest.RotateBlock (43 ms)
-[----------] 1 test from GameTest (43 ms total)
+[  FAILED  ] GameTest.RotateBlock (46 ms)
+[----------] 1 test from GameTest (46 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (43 ms total)
+[==========] 1 test from 1 test suite ran. (46 ms total)
 [  PASSED  ] 0 tests.
 [  FAILED  ] 1 test, listed below:
 [  FAILED  ] GameTest.RotateBlock
@@ -996,157 +809,58 @@ Expected: (original_position) != (new_position), actual: { 8-byte object <00-00 
 Test time =   0.06 sec
 ----------------------------------------------------------
 Test Failed.
-"GameTest.RotateBlock" end time: Aug 05 10:50 CEST
+"GameTest.RotateBlock" end time: Aug 05 11:06 CEST
 "GameTest.RotateBlock" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-33/33 Testing: RunTests
-33/33 Test: RunTests
+31/31 Testing: RunTests
+31/31 Test: RunTests
 Command: "/home/kerciu/Desktop/tetris-cpp/build/RunTests"
 Directory: /home/kerciu/Desktop/tetris-cpp/build
-"RunTests" start time: Aug 05 10:50 CEST
+"RunTests" start time: Aug 05 11:06 CEST
 Output:
 ----------------------------------------------------------
-[==========] Running 32 tests from 11 test suites.
+[==========] Running 30 tests from 11 test suites.
 [----------] Global test environment set-up.
-[----------] 13 tests from TetrisGuiTest
+[----------] 11 tests from TetrisGuiTest
 [ RUN      ] TetrisGuiTest.WindowCreation
-[       OK ] TetrisGuiTest.WindowCreation (110 ms)
+[       OK ] TetrisGuiTest.WindowCreation (104 ms)
 [ RUN      ] TetrisGuiTest.WindowClose
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:48: Failure
-Value of: tetris_gui->is_running()
-  Actual: true
-Expected: false
-
-[  FAILED  ] TetrisGuiTest.WindowClose (46 ms)
+[       OK ] TetrisGuiTest.WindowClose (48 ms)
 [ RUN      ] TetrisGuiTest.CoordsCreation
-[       OK ] TetrisGuiTest.CoordsCreation (41 ms)
+[       OK ] TetrisGuiTest.CoordsCreation (39 ms)
 [ RUN      ] TetrisGuiTest.CoordsGetters
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:57: Failure
-Expected equality of these values:
-  coords.get_x()
-    Which is: 20
-  10
-
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:58: Failure
-Expected equality of these values:
-  coords.get_y()
-    Which is: 10
-  20
-
-[  FAILED  ] TetrisGuiTest.CoordsGetters (44 ms)
+[       OK ] TetrisGuiTest.CoordsGetters (40 ms)
 [ RUN      ] TetrisGuiTest.CoordsSetters
-[       OK ] TetrisGuiTest.CoordsSetters (65 ms)
-[ RUN      ] TetrisGuiTest.CoordsInvalidArgumentsInSetter
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:71: Failure
-Expected: coords.set_x(-5) throws an exception of type std::out_of_range.
-  Actual: it throws nothing.
-
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:72: Failure
-Expected: coords.set_y(-10) throws an exception of type std::out_of_range.
-  Actual: it throws nothing.
-
-[  FAILED  ] TetrisGuiTest.CoordsInvalidArgumentsInSetter (43 ms)
-[ RUN      ] TetrisGuiTest.CoordsCreationInvalidArgumentsInConstuctor
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:76: Failure
-Expected: Coords(-10, 20) throws an exception of type std::out_of_range.
-  Actual: it throws nothing.
-
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:77: Failure
-Expected: Coords(10, -20) throws an exception of type std::out_of_range.
-  Actual: it throws nothing.
-
-[  FAILED  ] TetrisGuiTest.CoordsCreationInvalidArgumentsInConstuctor (65 ms)
+[       OK ] TetrisGuiTest.CoordsSetters (48 ms)
 [ RUN      ] TetrisGuiTest.GridCreation
-[       OK ] TetrisGuiTest.GridCreation (43 ms)
+[       OK ] TetrisGuiTest.GridCreation (39 ms)
 [ RUN      ] TetrisGuiTest.GridCreationDistributionGetter
-[       OK ] TetrisGuiTest.GridCreationDistributionGetter (53 ms)
+[       OK ] TetrisGuiTest.GridCreationDistributionGetter (47 ms)
 [ RUN      ] TetrisGuiTest.GridCreationDistributionSetter
-[       OK ] TetrisGuiTest.GridCreationDistributionSetter (45 ms)
+[       OK ] TetrisGuiTest.GridCreationDistributionSetter (44 ms)
 [ RUN      ] TetrisGuiTest.GridCreationColorGetter
-[       OK ] TetrisGuiTest.GridCreationColorGetter (44 ms)
+[       OK ] TetrisGuiTest.GridCreationColorGetter (37 ms)
 [ RUN      ] TetrisGuiTest.GridCreationColorSetter
-[       OK ] TetrisGuiTest.GridCreationColorSetter (49 ms)
+[       OK ] TetrisGuiTest.GridCreationColorSetter (38 ms)
 [ RUN      ] TetrisGuiTest.ColorCreationVector
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:130: Failure
-Expected equality of these values:
-  vec[0]
-    Which is: 4-byte object <37-3A 40-FF>
-  dark_grey
-    Which is: 4-byte object <1A-1F 28-FF>
-
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:131: Failure
-Expected equality of these values:
-  vec[1]
-    Which is: 4-byte object <39-99 18-FF>
-  sf::Color::Green
-    Which is: 4-byte object <00-FF 00-FF>
-
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:132: Failure
-Expected equality of these values:
-  vec[2]
-    Which is: 4-byte object <FF-00 4D-FF>
-  sf::Color::Red
-    Which is: 4-byte object <FF-00 00-FF>
-
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:133: Failure
-Expected equality of these values:
-  vec[3]
-    Which is: 4-byte object <FF-B2 00-FF>
-  orange
-    Which is: 4-byte object <E2-74 11-FF>
-
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:134: Failure
-Expected equality of these values:
-  vec[4]
-    Which is: 4-byte object <F6-FB 7A-FF>
-  sf::Color::Yellow
-    Which is: 4-byte object <FF-FF 00-FF>
-
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:135: Failure
-Expected equality of these values:
-  vec[5]
-    Which is: 4-byte object <FF-4E 88-FF>
-  sf::Color::Magenta
-    Which is: 4-byte object <FF-00 FF-FF>
-
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:136: Failure
-Expected equality of these values:
-  vec[6]
-    Which is: 4-byte object <03-AE D2-FF>
-  sf::Color::Cyan
-    Which is: 4-byte object <00-FF FF-FF>
-
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:137: Failure
-Expected equality of these values:
-  vec[7]
-    Which is: 4-byte object <10-43 9F-FF>
-  sf::Color::Blue
-    Which is: 4-byte object <00-00 FF-FF>
-
-[  FAILED  ] TetrisGuiTest.ColorCreationVector (42 ms)
-[----------] 13 tests from TetrisGuiTest (697 ms total)
+[       OK ] TetrisGuiTest.ColorCreationVector (36 ms)
+[----------] 11 tests from TetrisGuiTest (529 ms total)
 
 [----------] 4 tests from BlockTest
 [ RUN      ] BlockTest.InitialValues
-/home/kerciu/Desktop/tetris-cpp/tests/test_tetris.cpp:145: Failure
-Expected equality of these values:
-  block.get_color_vector().size()
-    Which is: 8
-  0
-
-[  FAILED  ] BlockTest.InitialValues (0 ms)
+[       OK ] BlockTest.InitialValues (0 ms)
 [ RUN      ] BlockTest.SetAndGetBlockId
 [       OK ] BlockTest.SetAndGetBlockId (0 ms)
 [ RUN      ] BlockTest.MoveBlock
 [       OK ] BlockTest.MoveBlock (0 ms)
 [ RUN      ] BlockTest.Rotation
 <end of output>
-Test time =   0.99 sec
+Test time =   0.84 sec
 ----------------------------------------------------------
 Test Failed.
-"RunTests" end time: Aug 05 10:50 CEST
+"RunTests" end time: Aug 05 11:06 CEST
 "RunTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Aug 05 10:50 CEST
+End testing: Aug 05 11:06 CEST
