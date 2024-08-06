@@ -11,7 +11,7 @@ A simple clone of popular game named Tetris using C++ programming language and S
 
 2. Navigate to the project **build** directory:
     ```sh
-    cd tetris-clone/build
+    cd tetris-clone-main/build
     ```
 
 3. Compile the project:
@@ -41,8 +41,9 @@ A simple clone of popular game named Tetris using C++ programming language and S
 </p>
 
 ## 📝 Notes
-Music used for the game: [Tetris Theme [NO COPYRIGHT]](https://www.youtube.com/watch?v=Q7mcjjl_P3k)
-Sound effects used for the game: [Pixabay](https://pixabay.com/sound-effects/)
+- Music used for the game: [Tetris Theme [NO COPYRIGHT]](https://www.youtube.com/watch?v=Q7mcjjl_P3k)
+- Sound effects used for the game: [Pixabay](https://pixabay.com/sound-effects/)
+- Fortnite font used for the game: [Dafontfree](https://www.dafontfree.io/fortnite-font/)
 
 ## 📜 License
 This project is licensed under the MIT License. See the [LICENCE](LICENCE) file for details. 📝
