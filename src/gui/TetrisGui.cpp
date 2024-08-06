@@ -2,7 +2,7 @@
 
 TetrisGui::TetrisGui(std::string window_name, int width, int height)
     : window(sf::VideoMode(width, height), window_name),
-      font_loader(FontLoader("/home/kerciu/Desktop/tetris-cpp/assets/font/Tetris.ttf"))
+      font_loader(FontLoader("../assets/font/fortnite.otf"))
 {
     window.setFramerateLimit(60);
 }
@@ -93,13 +93,13 @@ void TetrisGui::draw_text(std::string text_to_draw, float x, float y, int char_s
 
 void TetrisGui::draw_next_block()
 {
-    draw_text("Next Block", 335, 15);
+    draw_text("Next Block", 350, 15);
     draw_next_block_rounded_rectangle();
 }
 
 void TetrisGui::draw_current_score(int score)
 {
-    draw_text("SCORE", 375, 235);
+    draw_text("SCORE", 390, 235);
     draw_score_rounded_rectangle();
     draw_score(score);
 }
@@ -107,8 +107,8 @@ void TetrisGui::draw_current_score(int score)
 void TetrisGui::draw_game_over(bool game_over)
 {
     if (game_over) {
-        draw_text("Game Over", 340, 405);
-        draw_text("P R E S S  A N Y  A R R O W\n\t\tT O  C O N T I N U E", 325, 475, 18);
+        draw_text("Game Over", 350, 405);
+        draw_text("P R E S S  A N Y  A R R O W\n\t\tT O  C O N T I N U E", 365, 475, 18);
     }
 }
 
@@ -116,7 +116,7 @@ void TetrisGui::draw_guiding_block(bool game_over)
 {
     if (!game_over)
     {
-        Arrow::draw_guiding_arrows(&window, 445, 425);
+        Arrow::draw_guiding_arrows(&window, 440, 425);
     }
 }
 

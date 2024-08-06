@@ -1,6 +1,6 @@
 #include "Game.h"
 
-Game::Game() : audio_player("/home/kerciu/Desktop/tetris-cpp/assets/sound/"), 
+Game::Game() : audio_player("../assets/sound/"), 
                grid(Grid()), blocks(generate_blocks()), game_over(false), score(Score()),
                current_block(nullptr), next_block(nullptr)
 {

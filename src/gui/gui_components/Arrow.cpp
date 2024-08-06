@@ -16,9 +16,9 @@ void Arrow::combine_arrow_w_text(sf::RenderWindow* window, float x, float y)
     draw_arrow(window, x + obj_spacing / 1.5, y + obj_spacing/1.5, x + obj_spacing / 1.5 - shaft_spacing, y + obj_spacing / 1.5, 90); // move right
     draw_arrow(window, x - obj_spacing / 1.5, y + obj_spacing/1.5, x - obj_spacing / 1.5 + shaft_spacing, y + obj_spacing / 1.5, 270); // move left
 
-    draw_guiding_text(window, x, y, "Rotate", -30, -50);
-    draw_guiding_text(window, x, y + text_spacing, "Move Down", -45, 20);
-    draw_guiding_text(window, x + text_spacing, y + text_spacing/2, "Move Right", -82, -55);
+    draw_guiding_text(window, x, y, "Rotate", -25, -55);
+    draw_guiding_text(window, x, y + text_spacing, "Move Down", -40, 20);
+    draw_guiding_text(window, x + text_spacing, y + text_spacing/2, "Move Right", -72, -55);
     draw_guiding_text(window, x - text_spacing, y + text_spacing/2, "Move Left", 0, -55);
 }
 
@@ -44,11 +44,11 @@ void Arrow::draw_guiding_text(sf::RenderWindow* window, float x, float y, const 
 {   
     float offset = 30.0f;
     sf::Text text_obj;
-    FontLoader font_loader("/home/kerciu/Desktop/tetris-cpp/assets/font/Tetris.ttf");
+    FontLoader font_loader("../assets/font/fortnite.otf");
     sf::Font font = font_loader.get_font();
     text_obj.setString(text);
     text_obj.setFont(font);
-    text_obj.setCharacterSize(15);
+    text_obj.setCharacterSize(20);
 
     text_obj.setFillColor(sf::Color::White);
     text_obj.setPosition(x + offsetX, y + offsetY);

@@ -26,7 +26,7 @@ private:
     void render_gui_components(Game *game);
 
     void draw_gradient_background();
-    void draw_text(std::string text_to_draw, float x, float y, int char_size=38);
+    void draw_text(std::string text_to_draw, float x, float y, int char_size=48);
     void draw_score(int score);
     int calculate_relative_position(int x);
     std::string get_score_as_string(int score);
